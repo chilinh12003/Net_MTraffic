@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<UpdatePlugContent>
+  <CelltickParserVersion>2.1</CelltickParserVersion>
+  <BeforeTheClickMessage>
+    <MessageTimestamp>07-08-2012T13:0:0</MessageTimestamp>
+    <RegularBTCMessage>
+      <Index>1</Index>
+      <Content>Xa stress voi truyen cuoi: AN CUOP CUNG THUA</Content>
+      <Menu>
+        <MenuItem>
+          <ItemText>TinCuoi0.5</ItemText>
+          <ItemAction ActionType="smsdd">
+            <AfterTheClickMessage>
+              <RegularATCMessage>
+                <Content>
+                  Trong tiem an, mot thuc khach giat minh:
+                  - Nhung 3 trieu dong cho bua an nay u? Nay chu tiem, ne tinh dong nghiep giam bot so tien cho toi chu!
+                  - The ra ong cung lam viec o tiem an a?
+                  - Khong phai. Toi lam nghe an cuop!
+                </Content>
+                <Menu>
+                  <MenuItem>
+                    <ItemText>GameHOT15</ItemText>
+                    <ItemAction ActionType="sms">
+                      <AdditionalServiceType>
+                        <ServiceAddress>9752</ServiceAddress>
+                        <ServiceKey>VLIVEGAME 1958</ServiceKey>
+                      </AdditionalServiceType>
+                    </ItemAction>
+                  </MenuItem>
+                  <MenuItem>
+                    <ItemText>VideoNong5</ItemText>
+                    <ItemAction ActionType="sms">
+                      <AdditionalServiceType>
+                        <ServiceAddress>9552 </ServiceAddress>
+                        <ServiceKey>VLIVECLIPFULL 2670</ServiceKey>
+                      </AdditionalServiceType>
+                    </ItemAction>
+                  </MenuItem>
+                  <MenuItem>
+                    <ItemText>VideoVui5</ItemText>
+                    <ItemAction ActionType="sms">
+                      <AdditionalServiceType>
+                        <ServiceAddress>9552 </ServiceAddress>
+                        <ServiceKey>VLIVECLIPFULL 2666</ServiceKey>
+                      </AdditionalServiceType>
+                    </ItemAction>
+                  </MenuItem>                 
+                </Menu>
+              </RegularATCMessage>
+            </AfterTheClickMessage>
+          </ItemAction>
+        </MenuItem>
+        <MenuItem>
+          <ItemText>GameHOT15</ItemText>
+          <ItemAction ActionType="sms">
+            <AdditionalServiceType>
+              <ServiceAddress>9752</ServiceAddress>
+              <ServiceKey>VLIVEGAME 1958</ServiceKey>
+            </AdditionalServiceType>
+          </ItemAction>
+        </MenuItem>
+        <MenuItem>
+          <ItemText>VideoNong5</ItemText>
+          <ItemAction ActionType="sms">
+            <AdditionalServiceType>
+              <ServiceAddress>9552</ServiceAddress>
+              <ServiceKey>VLIVECLIPFULL 2670</ServiceKey>
+            </AdditionalServiceType>
+          </ItemAction>
+        </MenuItem>
+        <MenuItem>
+          <ItemText>VideoVui5</ItemText>
+          <ItemAction ActionType="sms">
+            <AdditionalServiceType>
+              <ServiceAddress>9552 </ServiceAddress>
+              <ServiceKey>VLIVECLIPFULL 2666</ServiceKey>
+            </AdditionalServiceType>
+          </ItemAction>
+        </MenuItem>       
+      </Menu>
+    </RegularBTCMessage>
+  </BeforeTheClickMessage>
+</UpdatePlugContent>
+

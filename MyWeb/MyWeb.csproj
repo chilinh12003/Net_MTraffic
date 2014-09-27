@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BF19464-2672-4B32-90CD-F54FDD867CEF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyWeb</RootNamespace>
+    <AssemblyName>MyWeb</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MyBase">
+      <HintPath>..\..\..\DLL Libraries\Source\MyBase\bin\Debug\MyBase.dll</HintPath>
+    </Reference>
+    <Reference Include="MyUtility">
+      <HintPath>..\..\..\DLL Libraries\Source\MyUtility\bin\Debug\MyUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="UrlRewritingNet.UrlRewriter">
+      <HintPath>..\..\..\DLL\UrlRewritingNet.UrlRewriter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="images\frame_1sua.gif" />
+    <Content Include="images\frame_1sua.png" />
+    <Content Include="images\frame_2sua.png" />
+    <Content Include="Scripts\jscript_zjcarousellite.js" />
+    <Content Include="Templates\News\NewsDetail.htm" />
+    <Content Include="Templates\News\NewsSlide_Repeat.htm" />
+    <Content Include="Templates\News\OtherNews.htm" />
+    <Content Include="Templates\News\OtherNews_Repeat.htm" />
+    <Content Include="Templates\News\Promotion.htm" />
+    <Content Include="Templates\News\Promotion_Repeat.htm" />
+    <Content Include="Templates\Service\HomeService_Repeat.htm" />
+    <Content Include="Templates\Service\ListGroup.htm" />
+    <Content Include="Templates\Service\ListGroup_Repeat.htm" />
+    <Content Include="Templates\Service\ListService.htm" />
+    <Content Include="Templates\Service\ListService_Repeat.htm" />
+    <Content Include="Templates\Service\OtherService.htm" />
+    <Content Include="Templates\Service\OtherService_Repeat.htm" />
+    <Content Include="Templates\Service\ServiceDetail.htm" />
+    <Content Include="images\anninhgiaothong.jpg" />
+    <Content Include="images\arrowl.png" />
+    <Content Include="images\arrowr.png" />
+    <Content Include="images\arrows.png" />
+    <Content Include="images\banglaioto.jpg" />
+    <Content Include="images\banglaiquocte.jpg" />
+    <Content Include="images\banglaixemay.jpg" />
+    <Content Include="images\banner.gif" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\banner_flash1.jpg" />
+    <Content Include="images\banner_flash2.jpg" />
+    <Content Include="images\banner_flash3.jpg" />
+    <Content Include="images\banner_hcm.jpg" />
+    <Content Include="images\bg_footer.jpg" />
+    <Content Include="images\bg_nav.png" />
+    <Content Include="images\bg_nav_top.jpg" />
+    <Content Include="images\bg_soantin.jpg" />
+    <Content Include="images\bienbao.jpg" />
+    <Content Include="images\bullets.png" />
+    <Content Include="images\doibanglaixe.jpg" />
+    <Content Include="images\giaothong.jpg" />
+    <Content Include="images\giaothonggiocaodiem.jpg" />
+    <Content Include="images\giaothonghanoi.jpg" />
+    <Content Include="images\giaothonghcm.jpg" />
+    <Content Include="images\giaothongthegioi.jpg" />
+    <Content Include="images\giaothongtuyenduong.jpg" />
+    <Content Include="images\goidichvu.jpg" />
+    <Content Include="images\goigiaothonghcm.jpg" />
+    <Content Include="images\goigiaothonghn.jpg" />
+    <Content Include="images\goihinhsu.jpg" />
+    <Content Include="images\goikhampha.jpg" />
+    <Content Include="images\goiluatgiaothong.jpg" />
+    <Content Include="images\goituvan.jpg" />
+    <Content Include="images\gthanoi.jpg" />
+    <Content Include="images\gthcm.jpg" />
+    <Content Include="images\hinhsu.jpg" />
+    <Content Include="images\hoidapgiaothong.jpg" />
+    <Content Include="images\hoso.jpg" />
+    <Content Include="images\icon_nav_left.png" />
+    <Content Include="images\icon_tinkhac.jpg" />
+    <Content Include="images\icon_title.png" />
+    <Content Include="images\icon_title_dichvu.png" />
+    <Content Include="images\images_tintuc.jpg" />
+    <Content Include="images\images_tintuc1.jpg" />
+    <Content Include="images\images_tintuc2.jpg" />
+    <Content Include="images\images_tintuc3.jpg" />
+    <Content Include="images\images_tintuc4.jpg" />
+    <Content Include="images\images_tintuc5.jpg" />
+    <Content Include="images\img_tintuc1.jpg" />
+    <Content Include="images\img_tintuc2.jpg" />
+    <Content Include="images\img_tintuc3.jpg" />
+    <Content Include="images\img_tintuc4.jpg" />
+    <Content Include="images\khampha.jpg" />
+    <Content Include="images\lichsutenduong.jpg" />
+    <Content Include="images\line_home.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo_traffic.jpg" />
+    <Content Include="images\logo_vov.png" />
+    <Content Include="images\luatgiaothong.jpg" />
+    <Content Include="images\noimages.jpg" />
+    <Content Include="images\shadow_title_dichvu.png" />
+    <Content Include="images\support.png" />
+    <Content Include="images\tinhhuonggt.jpg" />
+    <Content Include="images\tuvan.jpg" />
+    <Content Include="images\vanbanphapluat.jpg" />
+    <Content Include="images\vanhoagiaothong.jpg" />
+    <Content Include="images\vhgiaothong.jpg" />
+    <Content Include="Scripts\Forall.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery.nivo.slider.pack.js" />
+    <Content Include="Style\nivo-slider.css" />
+    <Content Include="Style\style.css" />
+    <Content Include="Templates\News\NewsSlide.htm" />
+    <Content Include="Templates\Service\HomeService.htm" />
+    <Content Include="Templates\Static\Banner.htm" />
+    <Content Include="Templates\Static\Contact.htm" />
+    <Content Include="Templates\Static\Notice.htm" />
+    <Content Include="Templates\Static\Footer.htm" />
+    <Content Include="Templates\Static\Header.htm" />
+    <Content Include="Templates\Static\Content.htm" />
+    <Content Include="Templates\Static\Paging.htm" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.ashx.cs">
+      <DependentUpon>Error.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PHome\Contact.ashx.cs">
+      <DependentUpon>Contact.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PNews\NewsDetail.ashx.cs">
+      <DependentUpon>NewsDetail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PNews\Promotion.ashx.cs">
+      <DependentUpon>Promotion.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PService\Service.ashx.cs">
+      <DependentUpon>Service.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PService\ServiceDetail.ashx.cs">
+      <DependentUpon>ServiceDetail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="PHome\Home.ashx.cs">
+      <DependentUpon>Home.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PHome\Home.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyLoad\MyLoad.csproj">
+      <Project>{A6257E96-F7CC-44A9-99A7-88493CC5C86D}</Project>
+      <Name>MyLoad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MySetting\MySetting.csproj">
+      <Project>{806C8AE7-4E83-4BFB-A76B-A77EB11EB262}</Project>
+      <Name>MySetting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyVOVTraffic\MyMTraffic.csproj">
+      <Project>{066E3A46-9FA2-4234-A9B4-34D767E650EA}</Project>
+      <Name>MyVOVTraffic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PService\Service.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PService\ServiceDetail.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PNews\Promotion.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PNews\NewsDetail.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PHome\Contact.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Error.ashx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3011</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8082/MTraffic_Web</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

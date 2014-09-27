@@ -1,0 +1,39 @@
+﻿.TreeView
+{
+    float:left;
+    width:100%;
+}
+.ParentNode
+{
+    float:left;
+    padding-left:5px;
+   clear:both;
+}
+.ParentNode input[type=checkbox]
+{
+    float:left;
+}
+.ParentNode label
+{
+    float:left;
+    font-weight:bold;
+    color:Red;
+    padding-top:3px;
+}
+.ChildNode
+{
+    float:left;
+    padding-left:25px;
+    clear:both;
+    
+}
+.ChildNode input[type=checkbox]
+{
+    float:left;
+}
+.ChildNode label
+{
+    float:left;
+    padding-top:3px;
+    font-weight:normal;
+}

@@ -1,0 +1,163 @@
+﻿11/09/2013 - 09:48:39 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\SubInfo.aspx.cs || Admin_Paging_VNP1_GetTotalPage_Callback_Change || 194 || 9 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:48:39 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || get_Data || 39 || 21 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:48:39 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || BindDa || 148 || 13 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:48:39 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || lbtn_First_Click || 159 || 17 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+-----------------------------------------------------------
+11/09/2013 - 09:48:39 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\SubInfo.aspx.cs || Admin_Paging_VNP2_GetTotalPage_Callback_Change || 288 || 9 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:48:39 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || get_Data || 39 || 21 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:48:39 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || BindDa || 148 || 13 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:48:39 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || lbtn_First_Click || 159 || 17 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+-----------------------------------------------------------
+11/09/2013 - 09:48:39 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\SubInfo.aspx.cs || Admin_Paging_VNP3_GetTotalPage_Callback_Change || 370 || 9 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:48:39 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || get_Data || 39 || 21 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:48:39 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || BindDa || 148 || 13 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:48:39 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || lbtn_First_Click || 159 || 17 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+-----------------------------------------------------------
+11/09/2013 - 09:50:24 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\SubInfo.aspx.cs || Admin_Paging_VNP1_GetTotalPage_Callback_Change || 194 || 9 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:50:24 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || get_Data || 39 || 21 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:50:24 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || BindDa || 148 || 13 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:50:24 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || lbtn_First_Click || 159 || 17 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+-----------------------------------------------------------
+11/09/2013 - 09:50:24 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\SubInfo.aspx.cs || Admin_Paging_VNP2_GetTotalPage_Callback_Change || 288 || 9 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:50:24 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || get_Data || 39 || 21 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:50:24 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || BindDa || 148 || 13 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:50:24 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || lbtn_First_Click || 159 || 17 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+-----------------------------------------------------------
+11/09/2013 - 09:50:24 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\SubInfo.aspx.cs || Admin_Paging_VNP3_GetTotalPage_Callback_Change || 370 || 9 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:50:24 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || get_Data || 39 || 21 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:50:24 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || BindDa || 148 || 13 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:50:24 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || lbtn_First_Click || 159 || 17 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+-----------------------------------------------------------
+11/09/2013 - 09:51:23 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\SubInfo.aspx.cs || Admin_Paging_VNP1_GetTotalPage_Callback_Change || 194 || 9 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:51:23 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || get_Data || 39 || 21 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:51:23 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || BindDa || 148 || 13 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:51:23 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || lbtn_First_Click || 159 || 17 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+-----------------------------------------------------------
+11/09/2013 - 09:51:23 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\SubInfo.aspx.cs || Admin_Paging_VNP2_GetTotalPage_Callback_Change || 288 || 9 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:51:23 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || get_Data || 39 || 21 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:51:23 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || BindDa || 148 || 13 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:51:23 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || lbtn_First_Click || 159 || 17 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+-----------------------------------------------------------
+11/09/2013 - 09:51:23 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\SubInfo.aspx.cs || Admin_Paging_VNP3_GetTotalPage_Callback_Change || 370 || 9 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:51:23 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || get_Data || 39 || 21 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:51:23 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || BindDa || 148 || 13 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:51:23 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || lbtn_First_Click || 159 || 17 || A column named 'ServiceName' already belongs to this DataTable. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+-----------------------------------------------------------
+11/09/2013 - 09:55:38 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\SubInfo.aspx.cs || Admin_Paging_VNP1_GetTotalPage_Callback_Change || 183 || 9 || 
+		BEGIN  
+		WITH Temp AS
+		(
+			SELECT	* , ROW_NUMBER() OVER (ORDER BY ChargeLogID DESC ) AS RowIndex 	
+			FROM	ChargeLog 
+				 WHERE	MSISDN = @SearchContent  AND ChargeLog.PID = 1 AND ChargeLog.ChargeTypeID IN (1,3)  AND ChargeLog.ChargeDate BETWEEN @BeginDate AND @EndDate 
+			
+		)
+		SELECT *
+		FROM	Temp
+		WHERE	RowIndex BETWEEN 1 AND 5	
+		END
+		 || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:55:38 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || get_Data || 39 || 21 || 
+		BEGIN  
+		WITH Temp AS
+		(
+			SELECT	* , ROW_NUMBER() OVER (ORDER BY ChargeLogID DESC ) AS RowIndex 	
+			FROM	ChargeLog 
+				 WHERE	MSISDN = @SearchContent  AND ChargeLog.PID = 1 AND ChargeLog.ChargeTypeID IN (1,3)  AND ChargeLog.ChargeDate BETWEEN @BeginDate AND @EndDate 
+			
+		)
+		SELECT *
+		FROM	Temp
+		WHERE	RowIndex BETWEEN 1 AND 5	
+		END
+		 || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:55:38 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || BindDa || 148 || 13 || 
+		BEGIN  
+		WITH Temp AS
+		(
+			SELECT	* , ROW_NUMBER() OVER (ORDER BY ChargeLogID DESC ) AS RowIndex 	
+			FROM	ChargeLog 
+				 WHERE	MSISDN = @SearchContent  AND ChargeLog.PID = 1 AND ChargeLog.ChargeTypeID IN (1,3)  AND ChargeLog.ChargeDate BETWEEN @BeginDate AND @EndDate 
+			
+		)
+		SELECT *
+		FROM	Temp
+		WHERE	RowIndex BETWEEN 1 AND 5	
+		END
+		 || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:55:38 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || lbtn_First_Click || 159 || 17 || 
+		BEGIN  
+		WITH Temp AS
+		(
+			SELECT	* , ROW_NUMBER() OVER (ORDER BY ChargeLogID DESC ) AS RowIndex 	
+			FROM	ChargeLog 
+				 WHERE	MSISDN = @SearchContent  AND ChargeLog.PID = 1 AND ChargeLog.ChargeTypeID IN (1,3)  AND ChargeLog.ChargeDate BETWEEN @BeginDate AND @EndDate 
+			
+		)
+		SELECT *
+		FROM	Temp
+		WHERE	RowIndex BETWEEN 1 AND 5	
+		END
+		 || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+-----------------------------------------------------------
+11/09/2013 - 09:55:38 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\SubInfo.aspx.cs || Admin_Paging_VNP2_GetTotalPage_Callback_Change || 265 || 9 || 
+		BEGIN  
+		WITH Temp AS
+		(
+			SELECT	* , ROW_NUMBER() OVER (ORDER BY ChargeLogID DESC ) AS RowIndex 	
+			FROM	ChargeLog 
+				 WHERE	MSISDN = @SearchContent  AND ChargeLog.PID = 1 AND ChargeLog.ChargeTypeID =2  AND ChargeLog.ChargeDate BETWEEN @BeginDate AND @EndDate 
+			
+		)
+		SELECT *
+		FROM	Temp
+		WHERE	RowIndex BETWEEN 1 AND 5	
+		END
+		 || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:55:38 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || get_Data || 39 || 21 || 
+		BEGIN  
+		WITH Temp AS
+		(
+			SELECT	* , ROW_NUMBER() OVER (ORDER BY ChargeLogID DESC ) AS RowIndex 	
+			FROM	ChargeLog 
+				 WHERE	MSISDN = @SearchContent  AND ChargeLog.PID = 1 AND ChargeLog.ChargeTypeID =2  AND ChargeLog.ChargeDate BETWEEN @BeginDate AND @EndDate 
+			
+		)
+		SELECT *
+		FROM	Temp
+		WHERE	RowIndex BETWEEN 1 AND 5	
+		END
+		 || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:55:38 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || BindDa || 148 || 13 || 
+		BEGIN  
+		WITH Temp AS
+		(
+			SELECT	* , ROW_NUMBER() OVER (ORDER BY ChargeLogID DESC ) AS RowIndex 	
+			FROM	ChargeLog 
+				 WHERE	MSISDN = @SearchContent  AND ChargeLog.PID = 1 AND ChargeLog.ChargeTypeID =2  AND ChargeLog.ChargeDate BETWEEN @BeginDate AND @EndDate 
+			
+		)
+		SELECT *
+		FROM	Temp
+		WHERE	RowIndex BETWEEN 1 AND 5	
+		END
+		 || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 09:55:38 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging_VNP.ascx.cs || lbtn_First_Click || 159 || 17 || 
+		BEGIN  
+		WITH Temp AS
+		(
+			SELECT	* , ROW_NUMBER() OVER (ORDER BY ChargeLogID DESC ) AS RowIndex 	
+			FROM	ChargeLog 
+				 WHERE	MSISDN = @SearchContent  AND ChargeLog.PID = 1 AND ChargeLog.ChargeTypeID =2  AND ChargeLog.ChargeDate BETWEEN @BeginDate AND @EndDate 
+			
+		)
+		SELECT *
+		FROM	Temp
+		WHERE	RowIndex BETWEEN 1 AND 5	
+		END
+		 || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+-----------------------------------------------------------
+11/09/2013 - 10:25:37 || u1uoohvbeenedxjesgk21cvc || d:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_ChargeByDay_Price.aspx || __DataBind__control4 || 65 || 13 || DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'ChargeTypeName'. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 10:25:37 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || BindDa || 164 || 13 || DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'ChargeTypeName'. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+11/09/2013 - 10:25:37 || u1uoohvbeenedxjesgk21cvc || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || lbtn_First_Click || 174 || 17 || DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'ChargeTypeName'. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+-----------------------------------------------------------

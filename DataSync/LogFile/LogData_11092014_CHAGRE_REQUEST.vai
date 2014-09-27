@@ -1,0 +1,37 @@
+﻿11/09/2014 - 09:55:14 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>20140911095513680</SequenceNumber><SubId>84917248888</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="3" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+11/09/2014 - 09:55:14 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<REQUEST>
+  <requestid>21656</requestid>
+  <msisdn>84915168505</msisdn>
+  <packagename>GTHN</packagename>
+  <fromdate>20130801000000</fromdate>
+  <todate>20131022164530</todate>
+  <application>TEST</application>
+  <channel>API</channel>
+  <username>namnt</username>
+  <userip>10.149.57.140</userip>
+</REQUEST>
+11/09/2014 - 09:59:14 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>20140911095914640</SequenceNumber><SubId>84917248888</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="3" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+11/09/2014 - 09:59:14 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+  <Error>0</Error>
+  <ErrorDesc>Successfull</ErrorDesc>
+  <InternalCode></InternalCode>
+  <SequenceNumber>1234567890</SequenceNumber>
+  <PRICE>15000</PRICE>
+  <PROMOTION>0</PROMOTION>
+  <NOTE></NOTE>
+</CCGWResponse>
+
+11/09/2014 - 14:04:47 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1410419068066</SequenceNumber><SubId>84919438389</SubId><Price>1000</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>DK LGT</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="5" contentname="LGT" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+11/09/2014 - 14:04:48 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+  <Error>0</Error>
+  <ErrorDesc>Successfull</ErrorDesc>
+  <InternalCode></InternalCode>
+  <SequenceNumber>1234567890</SequenceNumber>
+  <PRICE>15000</PRICE>
+  <PROMOTION>0</PROMOTION>
+  <NOTE></NOTE>
+</CCGWResponse>
+

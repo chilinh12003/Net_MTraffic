@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66712B0E-8357-48CB-AAFA-69C5EC07113F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tempate</RootNamespace>
+    <AssemblyName>Tempate</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="chi-tiet-tin.html" />
+    <Content Include="css\nivo-slider.css" />
+    <Content Include="css\style.css" />
+    <Content Include="dang-ky-dich-vu.html" />
+    <Content Include="detail-an-ninh-giao-thong.html" />
+    <Content Include="detail-ban-tin.html" />
+    <Content Include="detail-bang-lai-oto.html" />
+    <Content Include="detail-bang-lai-quoc-te.html" />
+    <Content Include="detail-bang-lai-xe-may.html" />
+    <Content Include="detail-bien-bao-giao-thong.html" />
+    <Content Include="detail-doi-bang-lai-xe.html" />
+    <Content Include="detail-giao-thong-hcm.html" />
+    <Content Include="detail-giao-thong-hn.html" />
+    <Content Include="detail-giao-thong-the-gioi.html" />
+    <Content Include="detail-giao-thong-tuyen-duong.html" />
+    <Content Include="detail-ho-so-vu-an.html" />
+    <Content Include="detail-hoi-dap-giao-thong.html" />
+    <Content Include="detail-lich-su-ten-duong.html" />
+    <Content Include="detail-tinh-huong-giao-thong.html" />
+    <Content Include="detail-van-ban-phap-luat.html" />
+    <Content Include="detail-van-hoa-giao-thong.html" />
+    <Content Include="dich-vu-sub.html" />
+    <Content Include="giao-thong-ha-noi.html" />
+    <Content Include="giao-thong-hcm.html" />
+    <Content Include="giao-thong.html" />
+    <Content Include="goi-dich-vu.html" />
+    <Content Include="hinh-su.html" />
+    <Content Include="images\anninhgiaothong.jpg" />
+    <Content Include="images\arrowl.png" />
+    <Content Include="images\arrowr.png" />
+    <Content Include="images\arrows.png" />
+    <Content Include="images\banglaioto.jpg" />
+    <Content Include="images\banglaiquocte.jpg" />
+    <Content Include="images\banglaixemay.jpg" />
+    <Content Include="images\banner.gif" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\banner_flash1.jpg" />
+    <Content Include="images\banner_flash2.jpg" />
+    <Content Include="images\banner_flash3.jpg" />
+    <Content Include="images\banner_hcm.jpg" />
+    <Content Include="images\bg_footer.jpg" />
+    <Content Include="images\bg_nav.png" />
+    <Content Include="images\bg_nav_top.jpg" />
+    <Content Include="images\bg_soantin.jpg" />
+    <Content Include="images\bienbao.jpg" />
+    <Content Include="images\bullets.png" />
+    <Content Include="images\doibanglaixe.jpg" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\giaothong.jpg" />
+    <Content Include="images\giaothonggiocaodiem.jpg" />
+    <Content Include="images\giaothonghanoi.jpg" />
+    <Content Include="images\giaothonghcm.jpg" />
+    <Content Include="images\giaothongthegioi.jpg" />
+    <Content Include="images\giaothongtuyenduong.jpg" />
+    <Content Include="images\goidichvu.jpg" />
+    <Content Include="images\goigiaothonghcm.jpg" />
+    <Content Include="images\goigiaothonghn.jpg" />
+    <Content Include="images\goihinhsu.jpg" />
+    <Content Include="images\goikhampha.jpg" />
+    <Content Include="images\goiluatgiaothong.jpg" />
+    <Content Include="images\goituvan.jpg" />
+    <Content Include="images\gthanoi.jpg" />
+    <Content Include="images\gthcm.jpg" />
+    <Content Include="images\hinhsu.jpg" />
+    <Content Include="images\hoidapgiaothong.jpg" />
+    <Content Include="images\hoso.jpg" />
+    <Content Include="images\icon_nav_left.png" />
+    <Content Include="images\icon_tinkhac.jpg" />
+    <Content Include="images\icon_title.png" />
+    <Content Include="images\icon_title_dichvu.png" />
+    <Content Include="images\images_tintuc.jpg" />
+    <Content Include="images\images_tintuc1.jpg" />
+    <Content Include="images\images_tintuc2.jpg" />
+    <Content Include="images\images_tintuc3.jpg" />
+    <Content Include="images\images_tintuc4.jpg" />
+    <Content Include="images\images_tintuc5.jpg" />
+    <Content Include="images\img_tintuc1.jpg" />
+    <Content Include="images\img_tintuc2.jpg" />
+    <Content Include="images\img_tintuc3.jpg" />
+    <Content Include="images\img_tintuc4.jpg" />
+    <Content Include="images\khampha.jpg" />
+    <Content Include="images\lichsutenduong.jpg" />
+    <Content Include="images\line_home.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo_traffic.jpg" />
+    <Content Include="images\logo_vov.png" />
+    <Content Include="images\luatgiaothong.jpg" />
+    <Content Include="images\noimages.jpg" />
+    <Content Include="images\shadow_title_dichvu.png" />
+    <Content Include="images\support.png" />
+    <Content Include="images\tinhhuonggt.jpg" />
+    <Content Include="images\tuvan.jpg" />
+    <Content Include="images\vanbanphapluat.jpg" />
+    <Content Include="images\vanhoagiaothong.jpg" />
+    <Content Include="images\vhgiaothong.jpg" />
+    <Content Include="index.html" />
+    <Content Include="js\jquery-1.4.3.min.js" />
+    <Content Include="js\jquery.min.1.3.2.js" />
+    <Content Include="js\jquery.nivo.slider.pack.js" />
+    <Content Include="js\stepcarousel.js" />
+    <Content Include="kham-pha.html" />
+    <Content Include="lien-he-hoi-dap.html" />
+    <Content Include="luat-giao-thong.html" />
+    <Content Include="thong-tin-khuyen-mai.html" />
+    <Content Include="tu-van.html" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="layout\index.psd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3419</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

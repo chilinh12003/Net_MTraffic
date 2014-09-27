@@ -1,0 +1,6 @@
+﻿21/07/2014 - 09:47:25 || luznwpjeyuudehi1zdczgr45 || D:\Projects\DLL Libraries\Source\MyConnect\MyConnectConfig.cs || GetConfigConnectionString || 17 || 13 || Errors in the process connection! || Có lỗi xảy ra trong quá trình đăng nhập! || Chilinh
+21/07/2014 - 09:47:25 || luznwpjeyuudehi1zdczgr45 || D:\Projects\DLL Libraries\Source\MyConnect\SQLServer\MyConnect.cs || GetConnection || 19 || 17 || Errors in the process connection! || Có lỗi xảy ra trong quá trình đăng nhập! || Chilinh
+21/07/2014 - 09:47:25 || luznwpjeyuudehi1zdczgr45 || D:\Projects\DLL Libraries\Source\MyConnect\SQLServer\MyGetData.cs || .ctor || 16 || 13 || Errors in the process connection! || Có lỗi xảy ra trong quá trình đăng nhập! || Chilinh
+21/07/2014 - 09:47:25 || luznwpjeyuudehi1zdczgr45 || D:\Projects\Mtraffic_V2\Source\MyVOVTraffic\Member.cs || Login || 276 || 17 || Errors in the process connection! || Có lỗi xảy ra trong quá trình đăng nhập! || Chilinh
+21/07/2014 - 09:47:25 || luznwpjeyuudehi1zdczgr45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin\Ad_Login.aspx.cs || btn_Login_Click || 82 || 17 || Errors in the process connection! || Có lỗi xảy ra trong quá trình đăng nhập! || Chilinh
+-----------------------------------------------------------

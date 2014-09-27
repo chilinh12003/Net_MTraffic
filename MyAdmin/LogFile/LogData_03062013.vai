@@ -1,0 +1,76 @@
+﻿03/06/2013 - 10:52:20 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Report\Ad_MTHistory.aspx.cs || Admin_Paging1_GetTotalPage_Callback_Change || 178 || 9 || Incorrect syntax near '@SearchContent'.
+Unclosed quotation mark after the character string ' AND ActionLog.LogPID = 6 AND ActionLog.LogDate BETWEEN @BeginDate AND @EndDate '. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:52:20 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ReGetTotalPage || 127 || 17 || Incorrect syntax near '@SearchContent'.
+Unclosed quotation mark after the character string ' AND ActionLog.LogPID = 6 AND ActionLog.LogDate BETWEEN @BeginDate AND @EndDate '. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:52:20 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 121 || 13 || Incorrect syntax near '@SearchContent'.
+Unclosed quotation mark after the character string ' AND ActionLog.LogPID = 6 AND ActionLog.LogDate BETWEEN @BeginDate AND @EndDate '. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:52:20 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Report\Ad_MTHistory.aspx.cs || BindData || 58 || 13 || Incorrect syntax near '@SearchContent'.
+Unclosed quotation mark after the character string ' AND ActionLog.LogPID = 6 AND ActionLog.LogDate BETWEEN @BeginDate AND @EndDate '. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:52:20 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Report\Ad_MTHistory.aspx.cs || btn_Search_Click || 270 || 17 || Incorrect syntax near '@SearchContent'.
+Unclosed quotation mark after the character string ' AND ActionLog.LogPID = 6 AND ActionLog.LogDate BETWEEN @BeginDate AND @EndDate '. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+-----------------------------------------------------------
+03/06/2013 - 10:53:03 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Report\Ad_MTHistory.aspx.cs || Admin_Paging1_GetTotalPage_Callback_Change || 178 || 9 ||  
+		SELECT COUNT(ActionLog.LogID) AS TotalRow 
+		FROM	ActionLog  WHERE	MSISDN = ''@SearchContent ' AND ActionLog.LogPID = 6 AND ActionLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:53:03 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ReGetTotalPage || 127 || 17 ||  
+		SELECT COUNT(ActionLog.LogID) AS TotalRow 
+		FROM	ActionLog  WHERE	MSISDN = ''@SearchContent ' AND ActionLog.LogPID = 6 AND ActionLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:53:03 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 121 || 13 ||  
+		SELECT COUNT(ActionLog.LogID) AS TotalRow 
+		FROM	ActionLog  WHERE	MSISDN = ''@SearchContent ' AND ActionLog.LogPID = 6 AND ActionLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:53:03 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Report\Ad_MTHistory.aspx.cs || BindData || 58 || 13 ||  
+		SELECT COUNT(ActionLog.LogID) AS TotalRow 
+		FROM	ActionLog  WHERE	MSISDN = ''@SearchContent ' AND ActionLog.LogPID = 6 AND ActionLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:53:03 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Report\Ad_MTHistory.aspx.cs || btn_Search_Click || 270 || 17 ||  
+		SELECT COUNT(ActionLog.LogID) AS TotalRow 
+		FROM	ActionLog  WHERE	MSISDN = ''@SearchContent ' AND ActionLog.LogPID = 6 AND ActionLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+-----------------------------------------------------------
+03/06/2013 - 10:55:59 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Report\Ad_MTHistory.aspx.cs || Admin_Paging1_GetTotalPage_Callback_Change || 178 || 9 ||  
+		SELECT COUNT(ActionLog.LogID) AS TotalRow 
+		FROM	ActionLog  WHERE	MSISDN = ''@SearchContent ' AND ActionLog.LogPID = 6 || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:55:59 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ReGetTotalPage || 127 || 17 ||  
+		SELECT COUNT(ActionLog.LogID) AS TotalRow 
+		FROM	ActionLog  WHERE	MSISDN = ''@SearchContent ' AND ActionLog.LogPID = 6 || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:55:59 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 121 || 13 ||  
+		SELECT COUNT(ActionLog.LogID) AS TotalRow 
+		FROM	ActionLog  WHERE	MSISDN = ''@SearchContent ' AND ActionLog.LogPID = 6 || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:55:59 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Report\Ad_MTHistory.aspx.cs || BindData || 58 || 13 ||  
+		SELECT COUNT(ActionLog.LogID) AS TotalRow 
+		FROM	ActionLog  WHERE	MSISDN = ''@SearchContent ' AND ActionLog.LogPID = 6 || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:55:59 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Report\Ad_MTHistory.aspx.cs || btn_Search_Click || 270 || 17 ||  
+		SELECT COUNT(ActionLog.LogID) AS TotalRow 
+		FROM	ActionLog  WHERE	MSISDN = ''@SearchContent ' AND ActionLog.LogPID = 6 || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+-----------------------------------------------------------
+03/06/2013 - 10:56:11 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Report\Ad_MTHistory.aspx.cs || Admin_Paging1_GetTotalPage_Callback_Change || 178 || 9 || Incorrect syntax near '@SearchContent'.
+Unclosed quotation mark after the character string ' AND ActionLog.LogPID = 6'. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:56:11 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ReGetTotalPage || 127 || 17 || Incorrect syntax near '@SearchContent'.
+Unclosed quotation mark after the character string ' AND ActionLog.LogPID = 6'. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:56:11 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 121 || 13 || Incorrect syntax near '@SearchContent'.
+Unclosed quotation mark after the character string ' AND ActionLog.LogPID = 6'. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:56:11 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Report\Ad_MTHistory.aspx.cs || BindData || 58 || 13 || Incorrect syntax near '@SearchContent'.
+Unclosed quotation mark after the character string ' AND ActionLog.LogPID = 6'. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:56:11 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Report\Ad_MTHistory.aspx.cs || btn_Search_Click || 270 || 17 || Incorrect syntax near '@SearchContent'.
+Unclosed quotation mark after the character string ' AND ActionLog.LogPID = 6'. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+-----------------------------------------------------------
+03/06/2013 - 10:56:29 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Report\Ad_MTHistory.aspx.cs || Admin_Paging1_GetTotalPage_Callback_Change || 178 || 9 ||  
+		SELECT COUNT(ActionLog.LogID) AS TotalRow 
+		FROM	ActionLog  WHERE	MSISDN = ''@SearchContent ' AND ActionLog.LogPID = 6 || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:56:29 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ReGetTotalPage || 127 || 17 ||  
+		SELECT COUNT(ActionLog.LogID) AS TotalRow 
+		FROM	ActionLog  WHERE	MSISDN = ''@SearchContent ' AND ActionLog.LogPID = 6 || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:56:29 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 121 || 13 ||  
+		SELECT COUNT(ActionLog.LogID) AS TotalRow 
+		FROM	ActionLog  WHERE	MSISDN = ''@SearchContent ' AND ActionLog.LogPID = 6 || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:56:29 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Report\Ad_MTHistory.aspx.cs || BindData || 58 || 13 ||  
+		SELECT COUNT(ActionLog.LogID) AS TotalRow 
+		FROM	ActionLog  WHERE	MSISDN = ''@SearchContent ' AND ActionLog.LogPID = 6 || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 10:56:29 || 2wmlmeiax22dbo55yr5ojf55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_Report\Ad_MTHistory.aspx.cs || btn_Search_Click || 270 || 17 ||  
+		SELECT COUNT(ActionLog.LogID) AS TotalRow 
+		FROM	ActionLog  WHERE	MSISDN = ''@SearchContent ' AND ActionLog.LogPID = 6 || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+-----------------------------------------------------------
+03/06/2013 - 16:30:06 || fxvoacebe5cq0055b0yngw55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_CCare\Ad_ResendMT.aspx.cs || SendMT || 380 || 9 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 16:30:06 || fxvoacebe5cq0055b0yngw55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_CCare\Ad_ResendMT.aspx.cs || btn_SendMT_Click || 222 || 17 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+-----------------------------------------------------------
+03/06/2013 - 16:31:13 || fxvoacebe5cq0055b0yngw55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_CCare\Ad_ResendMT.aspx.cs || SendMT || 380 || 9 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+03/06/2013 - 16:31:13 || fxvoacebe5cq0055b0yngw55 || D:\Projects\MTraffic\Source\MyAdmin\Admin_CCare\Ad_ResendMT.aspx.cs || btn_SendMT_Click || 222 || 17 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+-----------------------------------------------------------

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+  <SUBID>84xxxxxxxx</SUBID>
+  <ERROR>0</ERROR>
+  <ERROR_DESC>Successfull</ERROR_DESC>
+  <PRICE>giá cước thực tế charge</PRICE>
+  <PROMOTION>0 or 1</PROMOTION>
+  <NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>

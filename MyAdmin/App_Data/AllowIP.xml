@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<IPList>
+  <!--
+  Type = 1: 1 ip đơn duy nhất: EX: 113.187.31.252
+  Type = 2: các IP sẽ có dạng /SubnetMark: EX: 101.99.29.240/28
+  Type = 3: các IP sẽ có dạng /SubnetMark và có dạng 1 khoảng 147-149: EX: 206.53.147-149.241/24
+  Type = 4: các IP sẽ có dạng là 1 khoảng 147-149: EX: 206.53.147-149.241
+  -->
+  <IPItem>
+    <IP>192.168.100.1-254</IP>
+    <IPType>4</IPType>
+  </IPItem> 
+</IPList>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<REQUEST>
+  <requestid>1235</requestid>
+  <msisdn>841234092094</msisdn>
+  <fromdate>20130801000000</fromdate>
+  <todate>20130822164530</todate>
+  <pagesize>30</pagesize>
+  <pageindex>0</pageindex>
+  <application>Vinaphone</application>
+  <channel>SMS</channel>
+  <username>chilinh</username>
+  <userip>192.168.1.1</userip>
+</REQUEST>

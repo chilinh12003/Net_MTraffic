@@ -1,0 +1,16 @@
+﻿16/08/2013 - 10:38:04 || ol5nuuyzawt2pkyjxbsv0145 || D:\Projects\Mtraffic_V2\Source\MyVOVTraffic\Sub\Subscriber.cs || Select || 97 || 9 || The conversion of the nvarchar value '841234091674' overflowed an int column. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+16/08/2013 - 10:38:04 || ol5nuuyzawt2pkyjxbsv0145 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_Register.aspx.cs || btn_Execute_Click || 117 || 17 || The conversion of the nvarchar value '841234091674' overflowed an int column. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+-----------------------------------------------------------
+16/08/2013 - 10:41:50 || ol5nuuyzawt2pkyjxbsv0145 || D:\Projects\Mtraffic_V2\Source\MyVOVTraffic\Sub\Subscriber.cs || Select || 97 || 9 || The conversion of the nvarchar value '841234091674' overflowed an int column. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+16/08/2013 - 10:41:50 || ol5nuuyzawt2pkyjxbsv0145 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_Register.aspx.cs || btn_Execute_Click || 117 || 17 || The conversion of the nvarchar value '841234091674' overflowed an int column. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+-----------------------------------------------------------
+16/08/2013 - 10:41:58 || ol5nuuyzawt2pkyjxbsv0145 || D:\Projects\Mtraffic_V2\Source\MyVOVTraffic\Sub\Subscriber.cs || Select || 97 || 9 || The conversion of the nvarchar value '841234091674' overflowed an int column. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+16/08/2013 - 10:41:58 || ol5nuuyzawt2pkyjxbsv0145 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_Register.aspx.cs || btn_Execute_Click || 117 || 17 || The conversion of the nvarchar value '841234091674' overflowed an int column. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+-----------------------------------------------------------
+16/08/2013 - 10:47:04 || ol5nuuyzawt2pkyjxbsv0145 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_Register.aspx.cs || btn_Execute_Click || 140 || 21 || Column 'RegKeyword' does not belong to table . || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+-----------------------------------------------------------
+16/08/2013 - 10:47:53 || ol5nuuyzawt2pkyjxbsv0145 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_Register.aspx.cs || btn_Execute_Click || 140 || 21 || Column 'RegKeyword' does not belong to table . || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+-----------------------------------------------------------
+16/08/2013 - 12:05:31 || ol5nuuyzawt2pkyjxbsv0145 || d:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_Register.aspx || __DataBinding__control10 || 154 || 13 || DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'MSISDN'. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+16/08/2013 - 12:05:31 || ol5nuuyzawt2pkyjxbsv0145 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_Register.aspx.cs || btn_Execute_Click || 254 || 17 || DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'MSISDN'. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+-----------------------------------------------------------

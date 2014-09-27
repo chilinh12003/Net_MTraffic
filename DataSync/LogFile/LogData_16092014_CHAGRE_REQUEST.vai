@@ -1,0 +1,22 @@
+﻿16/09/2014 - 13:33:46 || REQUEST_XML --> 
+16/09/2014 - 13:33:46 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+  <SUBID>84xxxxxxxx</SUBID>
+  <ERROR>0</ERROR>
+  <ERROR_DESC>Successfull</ERROR_DESC>
+  <PRICE>giá cước thực tế charge</PRICE>
+  <PROMOTION>0 or 1</PROMOTION>
+  <NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+16/09/2014 - 13:34:35 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1410849274882"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>5000</PRICE><REASON>REG_DAILY</REASON><ORIGINALPRICE>5000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL></SUBSCRIBER></REQ></VAS>
+16/09/2014 - 13:34:35 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+  <SUBID>84xxxxxxxx</SUBID>
+  <ERROR>0</ERROR>
+  <ERROR_DESC>Successfull</ERROR_DESC>
+  <PRICE>giá cước thực tế charge</PRICE>
+  <PROMOTION>0 or 1</PROMOTION>
+  <NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+

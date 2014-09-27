@@ -1,0 +1,198 @@
+﻿05/09/2014 - 13:35:52 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1409898942468"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84917248888</SUBID><PRICE>2000</PRICE><REASON>RENEW</REASON><ORIGINALPRICE>2000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>RENEW</NOTE><CHANNEL>SYSTEM</CHANNEL></SUBSCRIBER></REQ></VAS>
+05/09/2014 - 13:35:52 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+05/09/2014 - 13:35:52 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1409898943347"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84917863798</SUBID><PRICE>2000</PRICE><REASON>RENEW</REASON><ORIGINALPRICE>2000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>RENEW</NOTE><CHANNEL>SYSTEM</CHANNEL></SUBSCRIBER></REQ></VAS>
+05/09/2014 - 13:35:52 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+05/09/2014 - 13:35:52 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+05/09/2014 - 13:35:55 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1409898955419"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84942570187</SUBID><PRICE>2000</PRICE><REASON>RENEW</REASON><ORIGINALPRICE>2000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>RENEW</NOTE><CHANNEL>SYSTEM</CHANNEL></SUBSCRIBER></REQ></VAS>
+05/09/2014 - 13:35:55 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+05/09/2014 - 13:35:56 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1409898956355"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84918350261</SUBID><PRICE>2000</PRICE><REASON>RENEW</REASON><ORIGINALPRICE>2000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>RENEW</NOTE><CHANNEL>SYSTEM</CHANNEL></SUBSCRIBER></REQ></VAS>
+05/09/2014 - 13:35:56 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+05/09/2014 - 13:35:56 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1409898956687"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84943282044</SUBID><PRICE>2000</PRICE><REASON>RENEW</REASON><ORIGINALPRICE>2000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>RENEW</NOTE><CHANNEL>SYSTEM</CHANNEL></SUBSCRIBER></REQ></VAS>
+05/09/2014 - 13:35:56 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+05/09/2014 - 13:35:57 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1409898957264"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>841254553628</SUBID><PRICE>2000</PRICE><REASON>RENEW</REASON><ORIGINALPRICE>2000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>RENEW</NOTE><CHANNEL>SYSTEM</CHANNEL></SUBSCRIBER></REQ></VAS>
+05/09/2014 - 13:35:57 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+05/09/2014 - 13:35:57 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1409898957369"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>841278882996</SUBID><PRICE>2000</PRICE><REASON>RENEW</REASON><ORIGINALPRICE>2000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>RENEW</NOTE><CHANNEL>SYSTEM</CHANNEL></SUBSCRIBER></REQ></VAS>
+05/09/2014 - 13:35:57 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+05/09/2014 - 13:35:59 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1409898959062"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>2000</PRICE><REASON>RENEW</REASON><ORIGINALPRICE>2000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>RENEW</NOTE><CHANNEL>SYSTEM</CHANNEL></SUBSCRIBER></REQ></VAS>
+05/09/2014 - 13:35:59 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1409898959131"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84944668145</SUBID><PRICE>2000</PRICE><REASON>RENEW</REASON><ORIGINALPRICE>2000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>RENEW</NOTE><CHANNEL>SYSTEM</CHANNEL></SUBSCRIBER></REQ></VAS>
+05/09/2014 - 13:35:59 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+05/09/2014 - 14:16:40 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1409901399201"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>0</PRICE><REASON>UNREG</REASON><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY</NOTE><CHANNEL>WAP</CHANNEL></SUBSCRIBER></REQ></VAS>
+05/09/2014 - 14:16:40 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+05/09/2014 - 14:16:58 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1409901418831"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>2000</PRICE><REASON>REG</REASON><ORIGINALPRICE>2000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>DK Pay</NOTE><CHANNEL>WAP</CHANNEL></SUBSCRIBER></REQ></VAS>
+05/09/2014 - 14:16:58 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+05/09/2014 - 14:20:41 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1409901641596"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>0</PRICE><REASON>UNREG</REASON><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY</NOTE><CHANNEL>WAP</CHANNEL></SUBSCRIBER></REQ></VAS>
+05/09/2014 - 14:20:41 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+05/09/2014 - 14:23:27 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1409901807735"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>2000</PRICE><REASON>REG</REASON><ORIGINALPRICE>2000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>DK Pay</NOTE><CHANNEL>WAP</CHANNEL></SUBSCRIBER></REQ></VAS>
+05/09/2014 - 14:23:27 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+05/09/2014 - 14:23:44 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1409901824082"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>0</PRICE><REASON>UNREG</REASON><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY</NOTE><CHANNEL>WAP</CHANNEL></SUBSCRIBER></REQ></VAS>
+05/09/2014 - 14:23:44 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+05/09/2014 - 14:24:11 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1409901850846"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>2000</PRICE><REASON>REG</REASON><ORIGINALPRICE>2000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>DK Pay</NOTE><CHANNEL>WAP</CHANNEL></SUBSCRIBER></REQ></VAS>
+05/09/2014 - 14:24:11 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+05/09/2014 - 14:24:29 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1409901868977"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>0</PRICE><REASON>UNREG</REASON><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY</NOTE><CHANNEL>WAP</CHANNEL></SUBSCRIBER></REQ></VAS>
+05/09/2014 - 14:24:29 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+05/09/2014 - 14:36:23 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1409902579955"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>2000</PRICE><REASON>REG</REASON><ORIGINALPRICE>2000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>DK Pay</NOTE><CHANNEL>WAP</CHANNEL></SUBSCRIBER></REQ></VAS>
+05/09/2014 - 14:36:23 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+05/09/2014 - 14:51:47 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1409903506579"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>0</PRICE><REASON>UNREG</REASON><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY</NOTE><CHANNEL>WAP</CHANNEL></SUBSCRIBER></REQ></VAS>
+05/09/2014 - 14:51:47 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+

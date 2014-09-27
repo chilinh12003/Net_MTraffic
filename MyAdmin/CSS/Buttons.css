@@ -1,0 +1,50 @@
+﻿
+.Button_1
+{
+	float: left;
+	background: url("../Images/Buttons/Button_1_L.png") no-repeat left top;
+	margin: 0;
+	padding: 0 0 0 8px;
+	text-decoration: none;
+	height: 21px;
+	cursor: pointer;
+	
+}
+.Button_1 span
+{
+	float: left;
+	display: block;
+	background: url("../Images/Buttons/Button_1_R.png") no-repeat right top;
+	padding-top: 2px;
+	padding-right: 8px;
+	color: #FFFFFF;
+	height: 19px;	
+}
+.Button_1:hover span
+{
+	color: #E5E5E5;
+}
+
+.Button_2
+{
+	float: left;
+	background: url("../Images/Buttons/Button_2_L.png") no-repeat left top;
+	margin: 0;
+	padding: 0 0 0 10px;
+	text-decoration: none;
+	height: 20px;
+	cursor: pointer;	
+}
+.Button_2 span
+{
+	float: left;
+	display: block;
+	background: url("../Images/Buttons/Button_2_R.png") no-repeat right top;
+	padding-top: 3px;
+	padding-right: 8px;	
+	height: 17px;	
+}
+.Button_2:hover span
+{
+    color: #808080;
+}

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RESPONSE>
+  <SERVICE>
+    <error>0</error>
+    <error_desc>Success</error_desc>
+    <status>1</status>
+    <last_time_subscribe>20130821025914</last_time_subscribe>
+    <last_time_unsubscribe>NULL</last_time_unsubscribe>
+    <last_time_renew>NULL</last_time_renew>
+    <last_time_retry>NULL</last_time_retry>
+    <expire_time>20130822105959</expire_time>
+  </SERVICE>
+</RESPONSE>

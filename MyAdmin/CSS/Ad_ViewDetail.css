@@ -1,0 +1,111 @@
+﻿
+.ViewDetail
+{
+	float: left;
+	width: 700px;
+	color: #000000;
+	padding: 5px;
+	background-color: #FFFFFF;
+}
+.ViewDetail_Anh
+{
+	float:left;
+	width:120px;
+	height:80px;
+}
+.ViewDetail_Header
+{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	color: #FF6600;
+	text-decoration: underline;
+}
+.ViewDetail_Left
+{
+	float: left;
+	width: 50%;
+}
+.ViewDetail_Line
+{
+	float: left;
+	width: 100%;
+	text-align: left;
+	padding-top: 5px;
+}
+.ViewDetail_Title
+{
+	background-position: left;
+	float: left;
+	width: 30%;
+	text-align: left;
+	color: #FF6600;
+	background-image: url('../Images/Icons/Bullet_2.png');
+	background-repeat: no-repeat;
+	padding-left: 16px;
+}
+.ViewDetail_Content
+{
+	float: left;
+	text-align: left;
+	width: 65%;
+}
+.ViewDetail_TieuDe
+{
+	float: left;
+	width: 100%;
+	padding-top: 5px;
+	font-weight: bold;
+	color: #333333;
+}
+.ViewDetail_MoTa
+{
+	float: left;
+	width: 100%;
+	padding-top: 5px;
+	color: #666666;
+	font-weight: bold;
+}
+.ViewDetail_NoiDung
+{
+	float:left;
+	width:100%;
+	padding-top:5px;
+	color: #333333;	
+}
+.ViewDetail_Span_Anh
+{
+	float:left;
+	width:120px;
+	height:80px;
+}
+.ViewDetail_Span_Anh *
+{
+	float:left;
+	width:120px;
+	height:80px;
+}
+.ViewDetail_Split
+{
+	float: left;
+	font-size: 14px;
+	width: 100%;
+	background-color: #E0E0E0;
+	font-weight: bold;
+	color: #FF6600;
+	padding:5px 0 5px 0;
+	text-align:center;
+}
+.ViewDetail_ContentItem
+{
+    float:left;
+	width:100%;
+	padding-top:5px;
+	color: #333333;	
+}
+
+

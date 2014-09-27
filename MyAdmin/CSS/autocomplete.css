@@ -1,0 +1,33 @@
+﻿.auto
+{
+   position:absolute;
+   top:-5px;
+}
+.auto ul
+{
+    border-style: none solid solid solid;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background-color: #FFFFFF;
+    overflow: auto;
+    max-height: 300px;
+    min-width: 100px;
+}
+.auto ul li
+{
+    margin:0px;
+    padding:5px;
+    float:none;
+    cursor:pointer;
+}
+.auto ul li.active
+{
+    background-color: #E6E6E6;
+}
+.auto ul li:hover
+{
+    background-color: #E6E6E6;
+}

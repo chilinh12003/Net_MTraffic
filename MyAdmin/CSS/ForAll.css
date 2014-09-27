@@ -1,0 +1,140 @@
+﻿a
+{
+	color: #333333;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+img
+{
+	border:none;
+}
+input[type=checkbox],input[type=button],input[type=radio],input[type=submit],input[type=reset]
+{
+	cursor:pointer;
+}
+select
+{
+	cursor:pointer;
+}
+
+fieldset { -moz-border-radius: 6px; border-radius: 6px; -webkit-border-radius: 6px; }
+fieldset legend
+{
+    font-weight:bold;
+    color:Red;
+}
+.NewLine
+{
+	float:left;
+	width:100%;
+}
+.NewLine_Pad
+{
+	float:left;
+	width:100%;
+	padding-top:5px;
+}
+.DanhDau
+{
+    font-weight: bold;
+    color: #CC3300;
+}
+
+.Div_Hidden
+{
+	display:none;
+}
+.Loading
+{
+    position: absolute;
+    background: url("../Images/Icons/Facebook_Loading.gif") no-repeat center center;
+    z-index: 1000;
+    font-size: 0xp;
+    background-color: #FFFFFF;
+    width: 0px;
+    height: 0px;
+    left: -1000px;
+    top: -1000px;
+    text-align: center;
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+
+.NoteInfo
+{
+    position:absolute;
+    z-index:10;
+    visibility:hidden;
+}
+.NoteInfo_In
+{
+    float:left;
+    width:auto;
+    height:auto;
+    position:relative;
+}
+.NoteInfo_L
+{
+    float: left;
+    width: 11px;
+    height: 20px;
+    background: url("../Images/Icons/Arrow_1.png") no-repeat center center;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.NoteInfo_R
+{
+    margin-left: 10px;
+    border: 1px solid #FEC600;
+    float: left;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 5px;
+    text-align: justify;
+    color: #808080;
+    background: url("../Images/Icons/Info.png") no-repeat left top;
+    background-color: #FBF8E9;
+}
+.ErrorInfo
+{
+    position:absolute;
+    z-index:9;
+    visibility:hidden;
+}
+.ErrorInfo_In
+{
+    float:left;
+    width:auto;
+    height:auto;
+    position:relative;
+}
+.ErrorInfo_L
+{
+    float:left;
+    width:11px;
+    height:20px;
+    background: url("../Images/Icons/Arrow_2.png") no-repeat center center;
+    z-index:1;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+.ErrorInfo_R
+{
+    margin-left: 10px;
+    border: 1px solid #FCC4C7;
+    float: left;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 5px;
+    text-align: justify;
+    color: #E3003A;
+    background: url("../Images/Icons/Warning.png") no-repeat left top;
+    background-color: #FDF0F7;
+}

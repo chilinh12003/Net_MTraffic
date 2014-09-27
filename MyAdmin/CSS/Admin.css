@@ -1,0 +1,887 @@
+﻿body
+{
+	width: 98%;
+	margin: 0px auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding:5px 1% 0px 1%;
+    min-width:900px;
+}
+input[type=text]
+{
+    border: 1px solid #e1e1e1;
+	padding:1px;	
+	
+}
+select, input, label
+{
+    display:inline-block;
+    vertical-align:middle;
+}
+.Admin
+{
+	float:left;
+	width:100%;
+	
+}
+.Banner
+{
+	float:left;
+	width:100%;
+	height:50px;
+	background:url("../Images/Images/head_Admin_bg.gif") repeat-x left bottom;
+}
+.Slogan
+{
+    padding-left:10px;
+    font-size:22px;
+    color:#DA251D;
+    padding-top:10px;
+    font-family:Verdana;
+}
+.Login
+{
+    float:right;
+    padding-right:5px;
+    padding-top:0px;
+   
+   
+}
+.Login a
+{
+    float:left;
+    color:#B0B0AD;
+    font-weight:bold;
+}
+.Login a:hover
+{
+    text-decoration:underline;
+    color:Red;
+}
+.Login a.XinChao span
+{
+    color:#F9BA1D;
+}
+.Login span.Space
+{
+    float: left;
+    background: url("../Images/Images/Footer_Space.png") no-repeat center center;
+    width: 20px;
+    font-size: 0px;
+    height: 15px;
+}
+.Menu
+{
+	float:left;
+	width:99%;	
+	padding-left:1%;	
+	height:31px;
+	background:url("../Images/Images/SubMenu_Admin.gif") repeat-x left top;
+}
+
+.Menu a
+{
+	float: left;
+	background: url("../Images/Images/MenuAdmin_L.png") no-repeat left top;
+	margin: 4px 0 0 0;
+	padding: 0 0 0 6px;
+	text-decoration: none;
+	height: 25px;
+	cursor: pointer;
+	margin-right:2px;	
+}
+.Menu a span
+{
+	float: left;
+	background: url("../Images/Images/MenuAdmin_R.png") no-repeat right top;
+	padding-right: 10px;
+	padding-left:4px;
+	padding-top: 5px;
+	height: 20px;
+	font-size: 11px;
+	color: #666666;
+}
+.Menu a span img
+{
+	float:left;
+	margin:0px 3px 0 0;	
+	height:15px;
+}
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+/* End IE5-Mac hack */
+.Menu a:hover span
+{
+	color: #000000;
+}
+.Menu a:hover
+{
+	background-position: 0% -25px;
+}
+.Menu a:hover span
+{
+	background-position: 100% -25px;
+}
+
+.SubMenu
+{
+	
+}
+.SubMenu_Item
+{
+	position: absolute;
+	display: none;	
+	background-color: #CCCCCC;
+	z-index:99;
+}
+.SubMenu_Item a
+{
+	border: 1px solid #666666;
+	margin: 1px 1px 0 1px;
+	float: left;
+	
+	background-color: #dddddd;
+	padding:2px;
+	color: #666666;
+	clear:both;
+}
+.SubMenu_Item a:hover
+{
+	background-color: #A6A6A6;
+	color: #FFFFFF;
+}
+.SubMenu_Item a span.Text
+{
+	float:left;
+	padding-left:3px;
+	
+}
+.SubMenu_Item a span.Image
+{
+    float: left;
+    width: 20px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #B1B1B1;
+    padding-right: 1px;
+}
+.SubMenu_Item a span.Image img
+{
+	float:left;
+	margin:0;
+	height:16px;	
+}
+
+
+
+/*///////SEARCH BOX//////////////////*/
+.ToolBox
+{
+	float:left;
+	width:100%;
+	padding-top:5px;
+}
+.ToolBox_Top
+{
+	float:left;
+	background: url("../Images/Images/ToolBox_TC.png") repeat-x left top;
+	width:100%;
+	height:50px;
+}
+.ToolBox_Top_L
+{
+	float:left;
+	background: url("../Images/Images/ToolBox_TL.png") no-repeat left top;
+	width:100%;
+	height:50px;
+	
+}
+.ToolBox_Top_R
+{
+	float:left;
+	background: url("../Images/Images/ToolBox_TR.png") no-repeat right top;
+	width:100%;
+	height:50px;	
+}
+.ToolBox_Top_C
+{
+	float:left;
+	width:98%;
+	padding:0 1% 0 1%;
+}
+.ToolBox_Top_C span.PageTitle
+{
+	float:left;
+	font-weight:bold;
+	font-size:16px;
+	color:#DA251D;
+	padding-top:15px;
+}
+
+.ToolBox_Top_C span.Message
+{
+	float:left;	
+	padding-top:12px;
+	padding-left:20px;
+	display:none;
+}
+.ToolBox_Top_C span.Message input
+{
+	float:left;	
+}
+.ToolBox_Top_C span.Message label
+{
+	float:left;
+	margin-top:2px;
+	padding-left:2px;
+}
+
+.Tools
+{
+    float:right;
+    padding-top:5px;
+}
+.Tools a
+{
+    float: right;
+    width: 40px;      
+    height:40px;
+    margin-left:10px;
+    text-align:center;
+    font-weight: bold;
+    color: #333333;
+}
+.Tools a span
+{
+    float: left;
+    width: 100%;
+    height: 25px;    
+}
+.Tools a:hover
+{
+    text-decoration:underline;
+    color:#CC3300;
+}
+
+.Tools a span.Export
+{
+    background: url("../Images/Buttons/Tool_Download.png") no-repeat center top;
+}
+.Tools a span.Delete
+{
+    background: url("../Images/Buttons/Tool_Delete.png") no-repeat center top;
+}
+.Tools a span.Add
+{
+    background: url("../Images/Buttons/Tool_Add.png") no-repeat center top;
+}
+.Tools a span.Edit
+{
+    background: url("../Images/Buttons/Tool_Edit.png") no-repeat center top;
+}
+.Tools a span.Save
+{
+    background: url("../Images/Buttons/Tool_Save.png") no-repeat center top;
+}
+.Tools a span.Active
+{
+    background: url("../Images/Buttons/Tool_Active.png") no-repeat center top;
+}
+.Tools a span.UnActive
+{
+    background: url("../Images/Buttons/Tool_UnActive.png") no-repeat center top;
+}
+.Tools a span.Accept
+{
+    background: url("../Images/Buttons/Tool_Accept.png") no-repeat center top;
+}
+.Tools a span.Cancel
+{
+    background: url("../Images/Buttons/Tool_Cancel.png") no-repeat center top;
+}
+.ToolBox_Content_L
+{
+    float:left;
+    width:100%;
+    background:url("../Images/Images/ToolBox_CC.png") repeat-y left top; 
+    background-color: #e6e6e6;   
+}
+.ToolBox_Content_R
+{
+    float:left;
+    width:100%;
+    background:url("../Images/Images/ToolBox_CC.png") repeat-y right top;    
+    
+}
+.ToolBox_Content
+{
+	float: left;
+	width: 98%;	
+	padding: 0 1% 0 1%;
+}
+
+
+.ToolBox_Bottom
+{
+	float:left;
+	background: url("../Images/Images/ToolBox_BC.png") repeat-x left top;
+	width:100%;
+	height:17px;	
+}
+.ToolBox_Bottom_L
+{
+	float:left;
+	background: url("../Images/Images/ToolBox_BL.png") no-repeat left top;
+	width:100%;
+	height:17px;
+}
+.ToolBox_Bottom_R
+{
+	float:right;	
+	background: url("../Images/Images/ToolBox_BR.png") no-repeat right top;
+	height:17px;
+	width:111px;
+}
+
+.ToolBox_Bottom_R a
+{
+	float:left;
+}
+.ToolBox_Bottom_R a span.Text
+{
+	float:left;	
+	width:60px;
+	text-align:center;
+	padding-top:3px;
+}
+.ToolBox_Bottom_R a span.Image
+{
+	float:left;
+	margin-top:6px;
+	width:13px;
+	height:8px;
+	background:url("../Images/Icons/Down.gif") no-repeat left top;
+	font-size:0px;
+}
+.Search
+{
+    float:left;
+	width:100%;
+	padding-top:5px;
+}
+.Search_T
+{
+    float:left;
+	width:100%;	
+	background:url("../Images/Images/Search_TC.png") repeat-x left top;
+	font-size:0px;
+	height:6px;
+}
+.Search_TL
+{
+	float:left;
+	background:url("../Images/Images/Search_TL.png") no-repeat left top;
+	font-size:0px;
+	width:100%;
+	height:6px;
+}
+.Search_TR
+{
+	float:left;
+	background:url("../Images/Images/Search_TR.png") no-repeat right top;
+	font-size:0px;
+	width:100%;
+	height:6px;
+}
+.Search_BL
+{
+	float:left;
+	background:url("../Images/Images/Search_BL.png") no-repeat left bottom;
+	font-size:0px;
+	width:100%;
+	height:10px;
+}
+.Search_B
+{
+	float:left;
+	background:url("../Images/Images/Search_BC.png") repeat-x left bottom;
+	font-size:0px;
+	width:100%;
+	height:10px;
+}
+.Search_BR
+{
+	float:left;
+	background:url("../Images/Images/Search_BR.png") no-repeat right bottom;
+	font-size:0px;
+	width:100%;
+	height:10px;
+}
+.Search_ML
+{
+    float:left;
+	background:url("../Images/Images/Search_M.png") repeat-y left top;	
+	width:100%;	
+}
+.Search_MR
+{
+    float:left;
+	background:url("../Images/Images/Search_M.png") repeat-y right top;	
+	width:100%;	
+}
+.Search_MC
+{
+	float: left;
+	width: 98%;
+	padding:0 1% 0 1%;
+}
+
+.Search_Header
+{
+	float: left;
+	width: 100%;
+	color: Red;
+	font-weight: bold;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #e1e1e1;
+	padding-bottom:3px;	
+	margin-bottom:5px;
+}
+.NoiDung
+{
+	width:100%;
+	margin:5px auto;
+	position:relative;
+	overflow:auto;
+}
+.NoiDung table.Data
+{
+	float:left;
+	min-width:100%;
+	border:0;
+}
+.NoiDung table.Data tr
+{
+	height:25px;
+}
+.NoiDung table.Data tr th
+{
+    border-style: none solid solid none;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    padding-left: 3px;
+    text-align:center;
+}
+.NoiDung table.Data tr th.last
+{
+    border-style: none solid none none;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    padding-left: 3px;
+    text-align: center;
+}
+.NoiDung table.Data tr td
+{
+    text-align:center;
+}
+.NoiDung table.Data tr td a:hover
+{
+    text-decoration:underline;
+}
+.NoiDung table.Data tr td.border-none
+{
+    border-style: none;
+}
+.NoiDung table.Data tr th.border-none
+{
+    border-style: none;
+}
+.NoiDung table.Data tr td img
+{
+	cursor:pointer;
+}
+.Table_Header
+{
+	background-color:#dadada;
+}
+.Table_Row_1
+{
+	height:25px;
+	background-color:White;
+	color: #666666;
+}
+.Table_Row_2
+{
+	height: 25px;
+	background-color: #f1f1f1;
+	color: #666666;
+}
+.Table_Row_1:hover, .Table_Row_2:hover, .Table_Row_2:hover td a,.Table_Row_1:hover td a
+{
+	color: #00CC00;
+}
+
+.Table_Row_1 td, .Table_Row_2 td
+{
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #FFFFFF;
+	padding-left:3px;
+}
+.Table_Header th,.Table_Footer td
+{
+	padding-left:4px;
+}
+
+.Table_Row_STT
+{
+	max-width:50px;
+}
+.Table_TL
+{
+	width:10px;
+	font-size:0;
+	background:url("../Images/Images/Table_TL.png") no-repeat top right;
+	 
+}
+.Table_TR
+{
+	width:10px;
+	font-size:0;
+	background:url("../Images/Images/Table_TR.png") no-repeat top left;
+}
+.Table_TL_Repeat
+{
+	width:10px;
+	font-size:0;
+	background:url("../Images/Images/Table_TL_Repeat.png") repeat-y top right;
+	 
+}
+.Table_TR_Repeat
+{
+	width:10px;
+	font-size:0;
+	background:url("../Images/Images/Table_TR_Repeat.png") repeat-y top left;
+}
+.Table_TR_Flag
+{
+    color:Red;
+    font-weight:bold;
+}
+.Table_ML_1
+{
+	width:10px;
+	font-size:0;
+	background:url("../Images/Images/Table_ML_1.png") repeat-y top left;
+}
+.Table_MR_1
+{
+	width:10px;
+	font-size:0;
+	background:url("../Images/Images/Table_MR_1.png") repeat-y top right;
+}
+.Table_ML_2
+{
+	width:10px;
+	font-size:0;
+	background:url("../Images/Images/Table_ML_2.png") repeat-y top left;
+}
+.Table_MR_2
+{
+	width:10px;
+	font-size:0;
+	background:url("../Images/Images/Table_MR_2.png") repeat-y top right;
+}
+.Table_Footer
+{
+	float:left;
+	background:url("../Images/Images/Table_BC.png") repeat-x bottom right;
+	height:34px;
+	width:100%;
+}
+.Table_BL
+{
+	float:left;	
+	background:url("../Images/Images/Table_BL.png") no-repeat top left;
+	height:29px;	
+	padding-left:10px;
+	padding-top:5px;
+	width:80%;
+}
+.Table_BR
+{
+	float:right;	
+	background:url("../Images/Images/Table_BR.png") no-repeat top right;
+	height:29px;	
+	padding-right:10px;
+	padding-top:5px;
+	width:35px;	
+}
+
+/* Control */
+.Control
+{
+	float:left;
+	width:auto;
+	height:auto;
+	margin-top:5px;
+	margin-right:10px;
+	padding-bottom:5px;
+}
+
+.Control_Title
+{
+	font-weight:bold;
+	font-style:italic;
+	font-size:12px;
+}
+.Control_Content
+{
+	float:left;
+	text-align:left;
+}
+
+.Control_Button
+{
+	float:left;
+	width:100%;
+	text-align:center;
+	margin-top:10px;
+}
+.Control_Button input
+{
+	margin-right:5px;
+}
+
+.Edit_Left
+{
+    border: 1px solid #CCCCCC;
+    float: left;
+    width: 70%;
+}
+.Edit_Right
+{
+    float:right;
+    width:29%;
+}
+.Edit_Title
+{
+    float: left;
+    width: 20%;
+    background-color: #F6F6F6;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-right-color: #E9E9E9;
+    border-bottom-color: #E9E9E9;
+    font-weight:bold;
+    color:#666666;
+    text-align:right;
+    padding: 5px 0 5px 0;
+    height:14px;
+    margin-bottom:2px;
+    padding-right:5px;
+}
+
+.Edit_Control
+{
+    float: left;
+    width: 77%;
+    height: 24px;
+    margin-bottom: 2px;
+    padding-left: 5px;
+    padding-top: 1px;
+}
+.Edit_Control_Editor
+{
+    float: left;
+    width: 77%;  
+    margin-bottom: 2px;
+    padding-left: 5px;
+    padding-top: 1px;
+}
+.Edit_Para
+{
+    float: left;    
+}
+.Edit_Control *
+{
+    float:left;
+}
+.Edit_Control label
+{
+   padding: 4px;
+   font-weight:normal;
+}
+.Edit_Control div.Upload
+{
+    float:left;
+    height:50px;
+    width:350px;
+}
+.Edit_Control div.Upload input[type=text]
+{
+    margin-top:3px;
+}
+.Edit_Control div.UploadImage
+{
+    float:left;
+    height:50px;
+}
+.Edit_Control div.UploadImage img
+{
+    float:left;
+    height:50px;
+}
+
+.Edit_Right div.Properties
+{
+    border: 1px solid #CCCCCC;
+    float: left;
+    width: 98%;
+    background-color: #F6F6F6;
+    padding-right: 1%;      
+}
+
+.Properties_Header
+{
+    border-style: solid solid none solid;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    float: left;
+    width: 98%;
+    background-color: #F6F6F6;
+    padding-right: 1%;
+}
+.Properties_Header_In
+{
+    float:left;
+    font-weight:bold;
+    font-size:14px;
+    color:#666666;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:15px;
+    background:url("../Images/Icons/Properties_Head.gif") no-repeat left center;
+}
+.Properties_Title
+{
+    border: 1px solid #E9E9E9;
+    float: left;
+    width: 40%;
+    font-weight: bold;
+    color: #666666;
+    text-align: right;
+    padding: 5px 0 5px 0;
+    height: 14px;   
+    padding-right: 1%;
+}
+
+.Properties_Control
+{
+    float: left;
+    width: 50%;
+    height: 23px;   
+    padding-left: 5px;
+    padding-top: 3px;
+}
+.Properties_Control input[type=text], textarea, select
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.Properties_Control label
+{
+     display:inline-block;
+   vertical-align:middle;
+}
+.Properties_Control input
+{
+     display:inline-block;
+   vertical-align:middle;
+}
+/*THÔNG BÁO CỦA HỆ THỐNG*/
+.Alert
+{
+    float:left;
+    width:100%;
+    font-size:16px;
+    font-weight:bold;
+    color:Red;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.DivTotal
+{
+    float:left;
+    width:100%;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-top:10px;
+    text-align:center;
+    background-color:#EFEFEF;
+    font-weight:bold;
+    font-size:12px;
+}
+.DivTotal .Total
+{
+    color:Red;
+}
+
+.Sort
+{
+    font-weight:bold;
+    text-decoration:none;
+    color:#0093F4;
+}
+.SortActive_Up
+{
+    font-weight:bold;
+    color:#C63E00;
+    text-decoration:none;
+    background:url("../Images/Icons/Sort_Up.png") no-repeat right center;
+    padding-right:13px;
+    float:left;
+}
+.SortActive_Down
+{
+    font-weight:bold;
+    color:#C63E00;
+    text-decoration:none;
+    background:url("../Images/Icons/Sort_Down.png") no-repeat right center;
+    padding-right:18px;
+    float:left;
+}
+
+
+.AjaxUnSuccess
+{
+    font-size: 16px;
+    color: Red;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 5px;
+}
+.AjaxError
+{
+    font-size: 16px;
+    color: Red;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 5px;
+}
+.AjaxWarning
+{
+    font-size: 16px;
+    color: #FF9C09;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 5px;
+}

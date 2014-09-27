@@ -1,0 +1,9 @@
+﻿06/06/2013 - 10:58:28 || fpi4q5qxwfu520zvqdcsxomi || D:\Projects\DLL Libraries\Source\MyBase\MyLoad\MyLoadBase.cs || GetHTML || 175 || 9 || Could not find stored procedure 'Sp_Article_Select'. || Xin lỗi, hệ thống hiện tại đang quá tải.<br /> Xin quý khách vui lòng quay lại sau. || Chilinh
+06/06/2013 - 10:58:28 || fpi4q5qxwfu520zvqdcsxomi || D:\Projects\MTraffic\Source\MyWeb\PHome\Home.ashx.cs || WriteHTML || 30 || 17 || Could not find stored procedure 'Sp_Article_Select'. || Xin lỗi, hệ thống hiện tại đang quá tải.<br /> Xin quý khách vui lòng quay lại sau. || Chilinh
+-----------------------------------------------------------
+06/06/2013 - 16:00:29 || e51ya3n0fbwfo4vvq2341b45 || D:\Projects\DLL Libraries\Source\MyBase\MyLoad\MyLoadBase.cs || GetHTML || 175 || 9 || Cannot interpret token '!' at position 12. || Xin lỗi, hệ thống hiện tại đang quá tải.<br /> Xin quý khách vui lòng quay lại sau. || Chilinh
+06/06/2013 - 16:00:29 || e51ya3n0fbwfo4vvq2341b45 || D:\Projects\MTraffic\Source\MyWeb\PService\ServiceDetail.ashx.cs || WriteHTML || 37 || 17 || Cannot interpret token '!' at position 12. || Xin lỗi, hệ thống hiện tại đang quá tải.<br /> Xin quý khách vui lòng quay lại sau. || Chilinh
+-----------------------------------------------------------
+06/06/2013 - 16:01:30 || e51ya3n0fbwfo4vvq2341b45 || D:\Projects\DLL Libraries\Source\MyBase\MyLoad\MyLoadBase.cs || GetHTML || 175 || 9 || Cannot interpret token '!' at position 12. || Xin lỗi, hệ thống hiện tại đang quá tải.<br /> Xin quý khách vui lòng quay lại sau. || Chilinh
+06/06/2013 - 16:01:30 || e51ya3n0fbwfo4vvq2341b45 || D:\Projects\MTraffic\Source\MyWeb\PService\ServiceDetail.ashx.cs || WriteHTML || 37 || 17 || Cannot interpret token '!' at position 12. || Xin lỗi, hệ thống hiện tại đang quá tải.<br /> Xin quý khách vui lòng quay lại sau. || Chilinh
+-----------------------------------------------------------

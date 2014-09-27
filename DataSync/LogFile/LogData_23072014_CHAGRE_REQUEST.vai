@@ -1,0 +1,170 @@
+﻿23/07/2014 - 15:14:37 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406103260194</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 15:14:37 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<VAS request_id="1375265728928" version="1.0">
+  <SUBID>841234092094</SUBID>
+  <ERROR>0</ERROR>
+  <ERROR_DESC>BlanceTooLow</ERROR_DESC>
+  <PRICE>0</PRICE>
+  <PROMOTION>0</PROMOTION>
+  <NOTE>HUY</NOTE>
+</VAS>
+23/07/2014 - 15:18:19 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406103498573</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 15:18:19 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 15:30:43 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406104242627</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK KP</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="KP" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 15:30:43 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 15:31:42 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406104302692</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK LGT</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="LGT" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 15:31:42 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 15:31:52 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406104312388</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK TV</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="TV" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 15:31:52 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 15:31:59 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406104319109</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK HS</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="HS" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 15:31:59 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 15:32:10 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406104330146</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK TG</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="TG" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 15:32:10 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 15:36:26 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406104585581</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>UNREG</Reason><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY TG</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="TG" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 15:36:26 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 15:44:51 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406105090492</SequenceNumber><SubId>84919438389</SubId><Price>1000</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>DK TG</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="TG" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 15:44:51 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 15:47:25 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406105244445</SequenceNumber><SubId>84919438389</SubId><Price>1000</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>DK TG</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="TG" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 15:47:25 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 15:57:18 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406105838712</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>UNREG</Reason><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 15:57:18 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 15:57:26 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406105846889</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>UNREG</Reason><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY KP</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="KP" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 15:57:26 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 16:42:08 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406108525705</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>UNREG</Reason><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY LGT</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="LGT" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 16:42:08 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 16:42:08 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406108528411</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>UNREG</Reason><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY TV</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="TV" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 16:42:08 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 16:42:08 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406108528498</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>UNREG</Reason><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY HS</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="HS" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 16:42:08 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 16:42:08 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406108528585</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>UNREG</Reason><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY TG</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="TG" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 16:42:08 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 16:42:49 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406108569379</SequenceNumber><SubId>84919438389</SubId><Price>1000</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>DK KP</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="KP" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 16:42:49 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 16:43:05 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406108585821</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 16:43:05 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 16:43:42 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406108622907</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK TV</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="TV" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 16:43:42 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 16:44:29 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406108669274</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK LGT</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="LGT" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 16:44:29 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+23/07/2014 - 16:48:45 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406108925565</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK HS</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="118" contentname="HS" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+23/07/2014 - 16:48:45 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>

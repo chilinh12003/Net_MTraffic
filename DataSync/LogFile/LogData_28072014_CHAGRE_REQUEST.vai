@@ -1,0 +1,251 @@
+﻿28/07/2014 - 10:34:33 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406518442891</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="3" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+28/07/2014 - 10:34:33 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+28/07/2014 - 10:55:49 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1406519748330"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>0</PRICE><REASON>REG_DAILY</REASON><ORIGINALPRICE>5000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL></SUBSCRIBER></REQ></VAS>
+28/07/2014 - 10:55:49 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+28/07/2014 - 11:05:49 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406520348454</SequenceNumber><SubId>84919438388</SubId><Price>0</Price><Reason>UNREG</Reason><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="3" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+28/07/2014 - 11:05:49 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+28/07/2014 - 11:11:04 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1406520663372"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438388</SUBID><PRICE>0</PRICE><REASON>REG_DAILY</REASON><ORIGINALPRICE>5000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL></SUBSCRIBER></REQ></VAS>
+28/07/2014 - 11:11:04 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+28/07/2014 - 11:12:11 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1406520731362"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438388</SUBID><PRICE>0</PRICE><REASON>REG_DAILY</REASON><ORIGINALPRICE>5000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL></SUBSCRIBER></REQ></VAS>
+28/07/2014 - 11:12:11 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<CCGWResponse>
+    <ERROR>0</ERROR>
+    <ErrorDesc>Successful</ErrorDesc>
+    <InternalCode>0</InternalCode>
+    <SequenceNumber>20140715155006688</SequenceNumber>
+</CCGWResponse>
+28/07/2014 - 11:14:27 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1406520867289"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438388</SUBID><PRICE>0</PRICE><REASON>UNREG_DAILY</REASON><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY</NOTE><CHANNEL>SMS</CHANNEL></SUBSCRIBER></REQ></VAS>
+28/07/2014 - 11:14:27 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+28/07/2014 - 11:14:34 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1406520874248"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438388</SUBID><PRICE>0</PRICE><REASON>REG_DAILY</REASON><ORIGINALPRICE>5000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL></SUBSCRIBER></REQ></VAS>
+28/07/2014 - 11:14:34 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<VAS request_id="20101204121212"  verson="1.0">
+            <SUBID>84xxxxxxxx</SUBID>
+            <ERROR>0</ERROR>
+            <ERROR_DESC>Successfull</ERROR_DESC>        
+	<PRICE>giá cước thực tế charge</PRICE>
+	<PROMOTION>0 or 1</PROMOTION>
+	<NOTE>PROMOTION DESCRIPTION</NOTE>
+</VAS>
+
+28/07/2014 - 11:24:48 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1406521488440"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>0</PRICE><REASON>REG_DAILY</REASON><ORIGINALPRICE>5000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL></SUBSCRIBER></REQ></VAS>
+28/07/2014 - 11:24:49 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<VAS request_id="1375265728928" version="1.0">
+  <SUBID>841234092094</SUBID>
+  <ERROR>0</ERROR>
+  <ERROR_DESC>BlanceTooLow</ERROR_DESC>
+  <PRICE>0</PRICE>
+  <PROMOTION>0</PROMOTION>
+  <NOTE>HUY</NOTE>
+</VAS>
+28/07/2014 - 11:27:56 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1406521676386"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>0</PRICE><REASON>UNREG_DAILY</REASON><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY</NOTE><CHANNEL>SMS</CHANNEL></SUBSCRIBER></REQ></VAS>
+28/07/2014 - 11:27:56 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<VAS request_id="1375265728928" version="1.0">
+  <SUBID>841234092094</SUBID>
+  <ERROR>0</ERROR>
+  <ERROR_DESC>BlanceTooLow</ERROR_DESC>
+  <PRICE>0</PRICE>
+  <PROMOTION>0</PROMOTION>
+  <NOTE>HUY</NOTE>
+</VAS>
+28/07/2014 - 11:28:09 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1406521689685"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>0</PRICE><REASON>REG_DAILY</REASON><ORIGINALPRICE>5000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL></SUBSCRIBER></REQ></VAS>
+28/07/2014 - 11:28:09 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<VAS request_id="1375265728928" version="1.0">
+  <SUBID>841234092094</SUBID>
+  <ERROR>0</ERROR>
+  <ERROR_DESC>BlanceTooLow</ERROR_DESC>
+  <PRICE>0</PRICE>
+  <PROMOTION>0</PROMOTION>
+  <NOTE>HUY</NOTE>
+</VAS>
+28/07/2014 - 11:28:41 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1406521721868"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>0</PRICE><REASON>UNREG_DAILY</REASON><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY</NOTE><CHANNEL>SMS</CHANNEL></SUBSCRIBER></REQ></VAS>
+28/07/2014 - 11:28:41 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<VAS request_id="1375265728928" version="1.0">
+  <SUBID>841234092094</SUBID>
+  <ERROR>0</ERROR>
+  <ERROR_DESC>BlanceTooLow</ERROR_DESC>
+  <PRICE>0</PRICE>
+  <PROMOTION>0</PROMOTION>
+  <NOTE>HUY</NOTE>
+</VAS>
+28/07/2014 - 11:28:52 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1406521732552"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>0</PRICE><REASON>REG_DAILY</REASON><ORIGINALPRICE>5000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL></SUBSCRIBER></REQ></VAS>
+28/07/2014 - 11:28:52 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<VAS request_id="1375265728928" version="1.0">
+  <SUBID>841234092094</SUBID>
+  <ERROR>0</ERROR>
+  <ERROR_DESC>BlanceTooLow</ERROR_DESC>
+  <PRICE>0</PRICE>
+  <PROMOTION>0</PROMOTION>
+  <NOTE>HUY</NOTE>
+</VAS>
+28/07/2014 - 11:29:40 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1406521779969"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>0</PRICE><REASON>UNREG_DAILY</REASON><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY</NOTE><CHANNEL>SMS</CHANNEL></SUBSCRIBER></REQ></VAS>
+28/07/2014 - 11:29:40 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<VAS request_id="1375265728928" version="1.0">
+  <SUBID>841234092094</SUBID>
+  <ERROR>0</ERROR>
+  <ERROR_DESC>BlanceTooLow</ERROR_DESC>
+  <PRICE>0</PRICE>
+  <PROMOTION>0</PROMOTION>
+  <NOTE>HUY</NOTE>
+</VAS>
+28/07/2014 - 11:30:06 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1406521806039"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>0</PRICE><REASON>REG_DAILY</REASON><ORIGINALPRICE>5000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL></SUBSCRIBER></REQ></VAS>
+28/07/2014 - 11:30:06 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<VAS request_id="1375265728928" version="1.0">
+  <SUBID>841234092094</SUBID>
+  <ERROR>0</ERROR>
+  <ERROR_DESC>BlanceTooLow</ERROR_DESC>
+  <PRICE>0</PRICE>
+  <PROMOTION>0</PROMOTION>
+  <NOTE>HUY</NOTE>
+</VAS>
+28/07/2014 - 11:37:47 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1406522267239"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>0</PRICE><REASON>UNREG_DAILY</REASON><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY</NOTE><CHANNEL>SMS</CHANNEL></SUBSCRIBER></REQ></VAS>
+28/07/2014 - 11:37:47 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<VAS request_id="1375265728928" version="1.0">
+  <SUBID>841234092094</SUBID>
+  <ERROR>0</ERROR>
+  <ERROR_DESC>BlanceTooLow</ERROR_DESC>
+  <PRICE>0</PRICE>
+  <PROMOTION>0</PROMOTION>
+  <NOTE>HUY</NOTE>
+</VAS>
+28/07/2014 - 11:38:09 || REQUEST_XML --> <?xml version="1.0" encoding="utf-8" standalone="yes" ?><VAS request_id="1406522289310"><REQ name="MTRAFFIC" user="mtraffic" password="mtraffic#1235"><SUBSCRIBER><SUBID>84919438389</SUBID><PRICE>0</PRICE><REASON>REG_DAILY</REASON><ORIGINALPRICE>5000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL></SUBSCRIBER></REQ></VAS>
+28/07/2014 - 11:38:09 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<VAS request_id="1375265728928" version="1.0">
+  <SUBID>841234092094</SUBID>
+  <ERROR>0</ERROR>
+  <ERROR_DESC>BlanceTooLow</ERROR_DESC>
+  <PRICE>0</PRICE>
+  <PROMOTION>0</PROMOTION>
+  <NOTE>HUY</NOTE>
+</VAS>
+28/07/2014 - 12:03:51 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406523828467</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>UNREG</Reason><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="3" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+28/07/2014 - 12:03:51 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Success</ErrorDesc>
+    <InternalCode></InternalCode>
+    <SequenceNumber>1234567890</SequenceNumber>
+    <PRICE>15000</PRICE>
+    <PROMOTION>0</PROMOTION>
+    <NOTE></NOTE>
+</CCGWResponse>
+28/07/2014 - 12:04:42 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406523882819</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK LGT</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="5" contentname="LGT" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+28/07/2014 - 12:04:42 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Success</ErrorDesc>
+    <InternalCode></InternalCode>
+    <SequenceNumber>1234567890</SequenceNumber>
+    <PRICE>15000</PRICE>
+    <PROMOTION>0</PROMOTION>
+    <NOTE></NOTE>
+</CCGWResponse>
+28/07/2014 - 12:04:48 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406523888368</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK KP</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="4" contentname="KP" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+28/07/2014 - 12:04:48 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Success</ErrorDesc>
+    <InternalCode></InternalCode>
+    <SequenceNumber>1234567890</SequenceNumber>
+    <PRICE>15000</PRICE>
+    <PROMOTION>0</PROMOTION>
+    <NOTE></NOTE>
+</CCGWResponse>
+28/07/2014 - 12:04:52 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406523892772</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK HS</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="7" contentname="HS" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+28/07/2014 - 12:04:52 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Success</ErrorDesc>
+    <InternalCode></InternalCode>
+    <SequenceNumber>1234567890</SequenceNumber>
+    <PRICE>15000</PRICE>
+    <PROMOTION>0</PROMOTION>
+    <NOTE></NOTE>
+</CCGWResponse>
+28/07/2014 - 14:20:49 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406532045993</SequenceNumber><SubId>84919438389</SubId><Price>1000</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="3" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+28/07/2014 - 14:20:49 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Success</ErrorDesc>
+    <InternalCode></InternalCode>
+    <SequenceNumber>1234567890</SequenceNumber>
+    <PRICE>15000</PRICE>
+    <PROMOTION>0</PROMOTION>
+    <NOTE></NOTE>
+</CCGWResponse>
+28/07/2014 - 14:35:42 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406532942323</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>UNREG</Reason><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="3" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+28/07/2014 - 14:35:42 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Success</ErrorDesc>
+    <InternalCode></InternalCode>
+    <SequenceNumber>1234567890</SequenceNumber>
+    <PRICE>15000</PRICE>
+    <PROMOTION>0</PROMOTION>
+    <NOTE></NOTE>
+</CCGWResponse>
+28/07/2014 - 14:41:15 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406533275107</SequenceNumber><SubId>84919438389</SubId><Price>1000</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>DK</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="3" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+28/07/2014 - 14:41:15 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Success</ErrorDesc>
+    <InternalCode></InternalCode>
+    <SequenceNumber>1234567890</SequenceNumber>
+    <PRICE>15000</PRICE>
+    <PROMOTION>0</PROMOTION>
+    <NOTE></NOTE>
+</CCGWResponse>
+28/07/2014 - 14:42:05 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406533325144</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>UNREG</Reason><ORIGINALPRICE>0</ORIGINALPRICE><PROMOTION>0</PROMOTION><NOTE>HUY</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="3" contentname="DAILY" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+28/07/2014 - 14:42:05 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Success</ErrorDesc>
+    <InternalCode></InternalCode>
+    <SequenceNumber>1234567890</SequenceNumber>
+    <PRICE>15000</PRICE>
+    <PROMOTION>0</PROMOTION>
+    <NOTE></NOTE>
+</CCGWResponse>
+28/07/2014 - 16:02:55 || REQUEST_XML --> <CCGWRequest servicename="MTRAFFIC" username="mtraffic" password="mtraffic#1235"><RequestType>1</RequestType><SequenceNumber>1406538173333</SequenceNumber><SubId>84919438389</SubId><Price>0</Price><Reason>REG</Reason><ORIGINALPRICE>1000</ORIGINALPRICE><PROMOTION>1</PROMOTION><NOTE>DK LGT</NOTE><CHANNEL>SMS</CHANNEL><Content><item contenttype="SUBSCRIPTION" subcontenttype="VI" contentid="5" contentname="LGT" cpname="MTRAFFIC" note="" playtype="" contentprice=""/></Content></CCGWRequest>
+28/07/2014 - 16:02:55 || RESPONSE_XML-- ><?xml version="1.0" encoding="utf-8" ?>
+<CCGWResponse>
+    <Error>0</Error>
+    <ErrorDesc>Success</ErrorDesc>
+    <InternalCode></InternalCode>
+    <SequenceNumber>1234567890</SequenceNumber>
+    <PRICE>15000</PRICE>
+    <PROMOTION>0</PROMOTION>
+    <NOTE></NOTE>
+</CCGWResponse>

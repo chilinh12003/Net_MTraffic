@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RESPONSE>
+  <ERRORID>%s</ERRORID>
+  <ERRORDESC>%s</ERRORDESC>
+  <TOTALPAGE>%s</TOTALPAGE>
+  <TRANSACTION>
+    <ITEM>
+      <DATETIME>%s</DATETIME>
+      <INFO>%s</INFO>
+    </ITEM>
+  </TRANSACTION>
+</RESPONSE>

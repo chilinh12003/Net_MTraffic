@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<REQUEST>
+  <requestid>1235</requestid>
+  <msisdn>841234091674</msisdn>
+  <reason>Test</reason>
+  <application>Vinaphone</application>
+  <channel>SMS</channel>
+  <username>chilinh</username>
+  <userip>192.168.1.1</userip>
+</REQUEST>

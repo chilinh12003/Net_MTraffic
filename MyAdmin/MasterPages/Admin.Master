@@ -1,0 +1,153 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="MyAdmin.MasterPages.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>.:: MTraffic CMS ::.</title>
+    <link href="../CSS/ForAll.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/FaceBox.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/Admin.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/Buttons.css" rel="stylesheet" type="text/css" />
+    <script src="../Javascript/jquery.js" type="text/javascript"></script>
+    <script src="../Javascript/ForAll.js" type="text/javascript"></script>
+    <script src="../Javascript/FaceBox.js" type="text/javascript"></script>
+    <script src="../Javascript/Admin.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="cph_Header" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <input type="hidden" runat="server" id="hid_Tocken" />
+    <div class="Admin">
+        <div class="Banner">
+            <div class="Slogan">
+                MTRAFFIC CMS
+            </div>
+            <div class="Login">
+                <%if (!MyMTraffic.Member.IsLogined())
+                  { %>
+                <a href="~/Admin/Ad_Login.aspx" runat="server" id="a_DangNhap">Đăng nhập</a>
+                <%} %>
+                <%if (MyMTraffic.Member.IsLogined())
+                  { %>
+                <a class="XinChao">Chào: <span>
+                    <%= MyMTraffic.Member.LoginName()%></span></a><span class="Space"></span>
+                <asp:LinkButton runat="server" ID="lbtn_Thoat" OnClick="lbtn_Thoat_Click">Thoát</asp:LinkButton>
+                <%} %>
+            </div>
+        </div>
+        <div class="Menu">
+            <%= Session["Menu_1"] == null ? string.Empty :Session["Menu_1"].ToString() %>
+        </div>
+        <div class="SubMenu">
+            <%=Session["Menu_2"] == null ? string.Empty : Session["Menu_2"].ToString()%>
+        </div>
+        <%if (this.ShowToolBox)
+          { %>
+        <div class="ToolBox">
+            <div class="ToolBox_Top">
+                <div class="ToolBox_Top_L">
+                    <div class="ToolBox_Top_R">
+                        <div class="ToolBox_Top_C">
+                            <span class="PageTitle">
+                                <%=str_PageTitle%>
+                            </span>
+                            <div class="Tools">
+                                <asp:ContentPlaceHolder ID="cph_Tools" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ToolBox_Content_L" id="divToolBox_Content">
+                <div class="ToolBox_Content_R">
+                    <div class="ToolBox_Content">
+                        <asp:ContentPlaceHolder ID="cph_ToolBox" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+            <div class="ToolBox_Bottom">
+                <div class="ToolBox_Bottom_L">
+                    <div class="ToolBox_Bottom_R">
+                        <a href="javascript:void(0);" onclick="ToggleToolBox();"><span id="Toggle_Text" class="Text">Mở</span> <span id="Toggle_Image" class="Image"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%} %>
+        <%if (this.ShowSearchBox)
+          { %>
+        <div class="Search">
+            <div class="Search_T">
+                <div class="Search_TL">
+                    <div class="Search_TR">
+                    </div>
+                </div>
+            </div>
+            <div class="Search_ML">
+                <div class="Search_MR">
+                    <div class="Search_MC">
+                        <div class="Search_Header">
+                            <%=str_TitleSearchBox%>
+                        </div>
+                        <asp:ContentPlaceHolder ID="cph_Search" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+            <div class="Search_B">
+                <div class="Search_BL">
+                    <div class="Search_BR">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%} %>
+        <div class="NewLine">
+            <div class="NoiDung">
+                <asp:ContentPlaceHolder ID="cph_Content" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <!-- Danh sách các trường ẩn !-->
+        <div class="Div_Hidden">
+            <input type="checkbox" runat="server" id="chk_ShowToolBox" />
+            <input type="checkbox" runat="server" id="IsShowFaceBox" />
+            <input type="checkbox" runat="server" id="IsDeleteContent" checked="checked" />
+        </div>
+    </div>
+    <!-- FaceBox !-->
+    <div class="FaceBox" id="FaceBox">
+    </div>
+    <div class="Loading" id="divLoading">
+    </div>
+    <div class="NoteInfo" id="divNoteInfo">
+    </div>
+    <script language="javascript" type="text/javascript">
+
+        chk_IsDeleteContent = document.getElementById("<%=IsDeleteContent.ClientID %>");
+
+        chk_ShowToolBox = document.getElementById('<%=chk_ShowToolBox.ClientID %>');
+        divToolBox_Content = document.getElementById("divToolBox_Content");
+        spanToolBox_Text = document.getElementById("Toggle_Text");
+        spanToolBox_Image = document.getElementById("Toggle_Image");
+
+        chk_IsShowFaceBox = document.getElementById("<%=IsShowFaceBox.ClientID %>");
+
+        ToggleToolBox_Onload();
+
+        GetCookieShowMessage();
+
+        InitFaceBox();
+    </script>
+    <asp:ContentPlaceHolder ID="cph_Javascript" runat="server">
+    </asp:ContentPlaceHolder>
+    <script language="javascript" type="text/javascript">
+        //Hàm chạy cuối cùng
+        //LastOnLoad();
+    </script>
+    </form>
+</body>
+</html>

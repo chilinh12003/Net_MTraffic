@@ -1,0 +1,5 @@
+﻿17/09/2013 - 15:34:31 || t4qxxljnunlavx55tnzlkj55 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin\Ad_Article.aspx.cs || Admin_Paging1_GetData_Callback_Change || 223 || 9 || Input string was not in a correct format. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+17/09/2013 - 15:34:31 || t4qxxljnunlavx55tnzlkj55 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || get_Data || 51 || 21 || Input string was not in a correct format. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+17/09/2013 - 15:34:31 || t4qxxljnunlavx55tnzlkj55 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || BindDa || 163 || 13 || Input string was not in a correct format. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+17/09/2013 - 15:34:31 || t4qxxljnunlavx55tnzlkj55 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || lbtn_First_Click || 174 || 17 || Input string was not in a correct format. || Có lỗi xảy ra trong quá trình phân trang! || Chilinh
+-----------------------------------------------------------

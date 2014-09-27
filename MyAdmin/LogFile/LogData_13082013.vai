@@ -1,0 +1,119 @@
+﻿13/08/2013 - 09:40:54 || t5wlgy55zovbdgmmrtimcm55 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || get_Data || 51 || 21 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình xóa dữ liệu! || Chilinh
+13/08/2013 - 09:40:54 || t5wlgy55zovbdgmmrtimcm55 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || BindDa || 163 || 13 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình xóa dữ liệu! || Chilinh
+13/08/2013 - 09:40:54 || t5wlgy55zovbdgmmrtimcm55 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 122 || 13 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình xóa dữ liệu! || Chilinh
+13/08/2013 - 09:40:54 || t5wlgy55zovbdgmmrtimcm55 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin\Ad_Permission.aspx.cs || BindData || 25 || 13 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình xóa dữ liệu! || Chilinh
+13/08/2013 - 09:40:54 || t5wlgy55zovbdgmmrtimcm55 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin\Ad_Permission.aspx.cs || lbtn_Delete_Click || 231 || 21 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình xóa dữ liệu! || Chilinh
+-----------------------------------------------------------
+13/08/2013 - 09:46:17 || t5wlgy55zovbdgmmrtimcm55 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_MOLog.aspx.cs || Admin_Paging1_GetTotalPage_Callback_Change || 161 || 9 || @LogPID is not a parameter for procedure Sp_ChargeLog_Search. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:46:17 || t5wlgy55zovbdgmmrtimcm55 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ReGetTotalPage || 127 || 17 || @LogPID is not a parameter for procedure Sp_ChargeLog_Search. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:46:17 || t5wlgy55zovbdgmmrtimcm55 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 121 || 13 || @LogPID is not a parameter for procedure Sp_ChargeLog_Search. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:46:17 || t5wlgy55zovbdgmmrtimcm55 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_MOLog.aspx.cs || BindData || 44 || 13 || @LogPID is not a parameter for procedure Sp_ChargeLog_Search. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:46:17 || t5wlgy55zovbdgmmrtimcm55 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_MOLog.aspx.cs || btn_Search_Click || 250 || 17 || @LogPID is not a parameter for procedure Sp_ChargeLog_Search. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+-----------------------------------------------------------
+13/08/2013 - 09:50:20 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_MOLog.aspx.cs || Admin_Paging1_GetTotalPage_Callback_Change || 161 || 9 || @MTTypeID is not a parameter for procedure Sp_ChargeLog_Search. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:50:20 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ReGetTotalPage || 127 || 17 || @MTTypeID is not a parameter for procedure Sp_ChargeLog_Search. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:50:20 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 121 || 13 || @MTTypeID is not a parameter for procedure Sp_ChargeLog_Search. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:50:20 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_MOLog.aspx.cs || BindData || 44 || 13 || @MTTypeID is not a parameter for procedure Sp_ChargeLog_Search. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:50:20 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_MOLog.aspx.cs || btn_Search_Click || 250 || 17 || @MTTypeID is not a parameter for procedure Sp_ChargeLog_Search. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+-----------------------------------------------------------
+13/08/2013 - 09:52:11 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_MOLog.aspx.cs || Admin_Paging1_GetTotalPage_Callback_Change || 161 || 9 ||  
+		SELECT COUNT(MOLog.LogID) AS TotalRow 
+		FROM	MOLog  WHERE	MSISDN = @SearchContent  AND MOLog.PID = 0 AND MOLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:52:11 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ReGetTotalPage || 127 || 17 ||  
+		SELECT COUNT(MOLog.LogID) AS TotalRow 
+		FROM	MOLog  WHERE	MSISDN = @SearchContent  AND MOLog.PID = 0 AND MOLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:52:11 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 121 || 13 ||  
+		SELECT COUNT(MOLog.LogID) AS TotalRow 
+		FROM	MOLog  WHERE	MSISDN = @SearchContent  AND MOLog.PID = 0 AND MOLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:52:11 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_MOLog.aspx.cs || BindData || 44 || 13 ||  
+		SELECT COUNT(MOLog.LogID) AS TotalRow 
+		FROM	MOLog  WHERE	MSISDN = @SearchContent  AND MOLog.PID = 0 AND MOLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:52:11 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_MOLog.aspx.cs || btn_Search_Click || 250 || 17 ||  
+		SELECT COUNT(MOLog.LogID) AS TotalRow 
+		FROM	MOLog  WHERE	MSISDN = @SearchContent  AND MOLog.PID = 0 AND MOLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+-----------------------------------------------------------
+13/08/2013 - 09:54:25 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_MOLog.aspx.cs || Admin_Paging1_GetTotalPage_Callback_Change || 161 || 9 ||  
+		SELECT COUNT(MOLog.LogID) AS TotalRow 
+		FROM	MOLog  WHERE	MSISDN = @SearchContent  AND MOLog.PID = 0 AND MOLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:54:25 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ReGetTotalPage || 127 || 17 ||  
+		SELECT COUNT(MOLog.LogID) AS TotalRow 
+		FROM	MOLog  WHERE	MSISDN = @SearchContent  AND MOLog.PID = 0 AND MOLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:54:25 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 121 || 13 ||  
+		SELECT COUNT(MOLog.LogID) AS TotalRow 
+		FROM	MOLog  WHERE	MSISDN = @SearchContent  AND MOLog.PID = 0 AND MOLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:54:25 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_MOLog.aspx.cs || BindData || 44 || 13 ||  
+		SELECT COUNT(MOLog.LogID) AS TotalRow 
+		FROM	MOLog  WHERE	MSISDN = @SearchContent  AND MOLog.PID = 0 AND MOLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:54:25 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_MOLog.aspx.cs || btn_Search_Click || 250 || 17 ||  
+		SELECT COUNT(MOLog.LogID) AS TotalRow 
+		FROM	MOLog  WHERE	MSISDN = @SearchContent  AND MOLog.PID = 0 AND MOLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+-----------------------------------------------------------
+13/08/2013 - 09:57:50 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_MOLog.aspx.cs || Admin_Paging1_GetTotalPage_Callback_Change || 161 || 9 ||  
+		SELECT COUNT(MOLog.LogID) AS TotalRow 
+		FROM	MOLog  WHERE	MSISDN = @SearchContent  AND MOLog.PID = 1 AND MOLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:57:50 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ReGetTotalPage || 127 || 17 ||  
+		SELECT COUNT(MOLog.LogID) AS TotalRow 
+		FROM	MOLog  WHERE	MSISDN = @SearchContent  AND MOLog.PID = 1 AND MOLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:57:50 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 121 || 13 ||  
+		SELECT COUNT(MOLog.LogID) AS TotalRow 
+		FROM	MOLog  WHERE	MSISDN = @SearchContent  AND MOLog.PID = 1 AND MOLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:57:50 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_MOLog.aspx.cs || BindData || 44 || 13 ||  
+		SELECT COUNT(MOLog.LogID) AS TotalRow 
+		FROM	MOLog  WHERE	MSISDN = @SearchContent  AND MOLog.PID = 1 AND MOLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 09:57:50 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_MOLog.aspx.cs || btn_Search_Click || 250 || 17 ||  
+		SELECT COUNT(MOLog.LogID) AS TotalRow 
+		FROM	MOLog  WHERE	MSISDN = @SearchContent  AND MOLog.PID = 1 AND MOLog.LogDate BETWEEN @BeginDate AND @EndDate  || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+-----------------------------------------------------------
+13/08/2013 - 10:06:40 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_ChargeLog.aspx.cs || Admin_Paging1_GetTotalPage_Callback_Change || 159 || 9 || @LogPID is not a parameter for procedure Sp_ChargeLog_Search. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 10:06:40 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ReGetTotalPage || 127 || 17 || @LogPID is not a parameter for procedure Sp_ChargeLog_Search. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 10:06:40 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 121 || 13 || @LogPID is not a parameter for procedure Sp_ChargeLog_Search. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 10:06:40 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_ChargeLog.aspx.cs || BindData || 45 || 13 || @LogPID is not a parameter for procedure Sp_ChargeLog_Search. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 10:06:40 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_ChargeLog.aspx.cs || btn_Search_Click || 248 || 17 || @LogPID is not a parameter for procedure Sp_ChargeLog_Search. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+-----------------------------------------------------------
+13/08/2013 - 10:08:14 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_ChargeLog.aspx.cs || Admin_Paging1_GetTotalPage_Callback_Change || 159 || 9 || Invalid column name 'LogDate'.
+Invalid column name 'LogDate'. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 10:08:14 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ReGetTotalPage || 127 || 17 || Invalid column name 'LogDate'.
+Invalid column name 'LogDate'. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 10:08:14 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 121 || 13 || Invalid column name 'LogDate'.
+Invalid column name 'LogDate'. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 10:08:14 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_ChargeLog.aspx.cs || BindData || 45 || 13 || Invalid column name 'LogDate'.
+Invalid column name 'LogDate'. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+13/08/2013 - 10:08:14 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Report\Ad_ChargeLog.aspx.cs || btn_Search_Click || 248 || 17 || Invalid column name 'LogDate'.
+Invalid column name 'LogDate'. || Có lỗi xảy ra trong quá trình tìm kiếm! || Chilinh
+-----------------------------------------------------------
+13/08/2013 - 11:32:34 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || get_Data || 51 || 21 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:32:34 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || BindDa || 163 || 13 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:32:34 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 122 || 13 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:32:34 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_SubInfo.aspx.cs || BindData || 81 || 17 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:32:34 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_SubInfo.aspx.cs || ChangeLog || 176 || 17 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+-----------------------------------------------------------
+13/08/2013 - 11:33:23 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || get_Data || 51 || 21 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:33:23 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || BindDa || 163 || 13 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:33:23 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 122 || 13 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:33:23 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_SubInfo.aspx.cs || BindData || 81 || 17 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:33:23 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_SubInfo.aspx.cs || ChangeLog || 176 || 17 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+-----------------------------------------------------------
+13/08/2013 - 11:33:36 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || get_Data || 51 || 21 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:33:36 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || BindDa || 163 || 13 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:33:36 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 122 || 13 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:33:36 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_SubInfo.aspx.cs || BindData || 81 || 17 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:33:36 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_SubInfo.aspx.cs || ChangeLog || 176 || 17 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+-----------------------------------------------------------
+13/08/2013 - 11:34:25 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || get_Data || 51 || 21 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:34:25 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || BindDa || 163 || 13 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:34:25 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 122 || 13 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:34:25 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_SubInfo.aspx.cs || BindData || 80 || 17 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:34:25 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_SubInfo.aspx.cs || ChangeLog || 175 || 17 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+-----------------------------------------------------------
+13/08/2013 - 11:35:08 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || get_Data || 51 || 21 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:35:08 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || BindDa || 163 || 13 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:35:08 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 122 || 13 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:35:08 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_SubInfo.aspx.cs || BindData || 80 || 17 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:35:08 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_SubInfo.aspx.cs || ChangeLog || 175 || 17 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+-----------------------------------------------------------
+13/08/2013 - 11:35:59 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || get_Data || 51 || 21 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:35:59 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || BindDa || 163 || 13 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:35:59 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_Control\Admin_Paging.ascx.cs || ResetLoadData || 122 || 13 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:35:59 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_SubInfo.aspx.cs || BindData || 80 || 17 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+13/08/2013 - 11:35:59 || kdsyzc55zqktey3eynxr3s45 || D:\Projects\Mtraffic_V2\Source\MyAdmin\Admin_CCare\Ad_SubInfo.aspx.cs || ChangeLog || 175 || 17 || Object reference not set to an instance of an object. || Có lỗi xảy ra trong quá trình tải dữ liệu! || Chilinh
+-----------------------------------------------------------

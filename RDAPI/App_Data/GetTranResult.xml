@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RESPONSE>
+  <RESPONSE>
+    <ERRORID>0</ERRORID>
+    <ERRORDESC>Success</ERRORDESC>
+    <TOTALPAGE>1</TOTALPAGE>
+    <TRANSACTION>
+      <ITEM>
+        <DATETIME>20130821061514</DATETIME>
+        <INFO>Charge|Service:Trieu Phu The Thao|Reason:REG_DAILY|Price:5000.0|Result:ChargeSuccess</INFO>
+      </ITEM>
+      <ITEM>
+        <DATETIME>20130821061514</DATETIME>
+        <INFO>Charge|Service:Trieu Phu The Thao|Reason:UNREG_DAILY|Price:0.0|Result:ChargeSuccess</INFO>
+      </ITEM>
+      <ITEM>
+        <DATETIME>20130821061514</DATETIME>
+        <INFO>Charge|Service:Trieu Phu The Thao|Reason:REG_DAILY|Price:5000.0|Result:ChargeSuccess</INFO>
+      </ITEM>
+      <ITEM>
+        <DATETIME>20130821061514</DATETIME>
+        <INFO>Charge|Service:Trieu Phu The Thao|Reason:UNREG_DAILY|Price:0.0|Result:ChargeSuccess</INFO>
+      </ITEM>
+    </TRANSACTION>
+  </RESPONSE>
+</RESPONSE>

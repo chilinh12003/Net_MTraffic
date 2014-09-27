@@ -1,0 +1,516 @@
+﻿
+/*///Frame_1////////////////////////*/
+.Frame_1
+{
+	margin: 0px 0px 0px 0px;
+	height:auto;
+	float:left;
+	width:100%;
+}
+.Frame_1_T
+{
+	float: left; 
+	width: 100%;
+	height:31px;	
+	font-size:0px;
+}
+.Frame_1_TL
+{
+	float:left;
+	width:100%;
+	height:31px;
+	background:url("../Images/Frames/1_TL.png") no-repeat left top;
+	padding-left:5px;	
+}
+.Frame_1_TC
+{
+	float:left;
+	width:98%;
+	height:24px;
+	background:url("../Images/Frames/1_TC.png") repeat-x right top;
+	font-weight:bold;
+	color:#FFFFFF;
+	font-size:12px;
+	padding-top:7px;
+	padding-left:2%;
+}
+.Frame_1_TR
+{
+	float:left;
+	width:100%;
+	height:31px;
+	background:url("../Images/Frames/1_TR.png") no-repeat right top;
+	padding-right:5px;	
+}
+.Frame_1_M
+{
+	float: left; 
+	width: 100%;
+}
+.Frame_1_ML
+{
+	float:left;
+	width:100%;
+	height:auto;
+	background:url("../Images/Frames/1_ML.gif") repeat-y left top;
+	padding-left:5px;
+}
+.Frame_1_MC
+{
+    float: left;
+    width: 100%;
+    height: auto;
+    background-color:#FFFFFF;
+}
+.Frame_1_MR
+{
+	padding-right:5px;
+	float:left;
+	width:100%;
+	height:auto;
+	background:url("../Images/Frames/1_MR.gif") repeat-y right top;	
+}
+
+.Frame_1_B
+{
+	float: left; 
+	width: 100%;
+	height:7px;
+	font-size:0px;
+}
+
+.Frame_1_BL
+{
+	float:left;
+	width:100%;
+	height:7px;
+	background:url("../Images/Frames/1_BL.gif") no-repeat left top;
+	padding-left:5px;	
+}
+.Frame_1_BC
+{
+	float:left;
+	width:100%;
+	height:7px;
+	background:url("../Images/Frames/1_BC.gif") repeat-x right top;
+}
+.Frame_1_BR
+{
+	float:left;
+	width:100%;
+	height:7px;
+	background:url("../Images/Frames/1_BR.gif") no-repeat right top;
+	padding-right:5px;	
+}
+
+/*///Frame_2////////////////////////*/
+.Frame_2_C
+{
+    float:left;
+    width:100%;
+    background:url("../Images/Frames/2_C.png") repeat-x left top;
+    height:29px;
+}
+.Frame_2_L
+{
+    float:left;
+    width:100%;
+    background:url("../Images/Frames/2_L.png") no-repeat left top;
+    height:29px;
+}
+.Frame_2_R
+{
+    float:left;
+    width:100%;
+    background:url("../Images/Frames/2_R.png") no-repeat right top;
+    height:29px;
+}
+.Frame_2_Head
+{
+    float:left;   
+    padding-top:6px;
+    padding-left:10px;
+     font-size:13px;
+    font-weight:bold;
+    color:#FFFFFF;
+}
+.Frame_2_R a
+{
+    float:left;   
+    padding-top:6px;
+    padding-left:10px;
+     font-size:13px;
+    font-weight:bold;
+    color:#FFFFFF;
+}
+.Frame_2_R a:hover
+{
+    color: #EFEFEF;
+}
+
+/*///Frame_3////////////////////////*/
+
+.Frame_3
+{
+    float:left;
+	width:100%;
+}
+.Frame_3_TC
+{
+    float:left;
+	width:100%;
+	height:12px;
+	font-size:0px;
+	background:url("../Images/Frames/3_TC.png") repeat-x left top;
+}
+.Frame_3_TL
+{
+    float:left;
+	width:100%;
+	height:12px;
+	font-size:0px;
+	background:url("../Images/Frames/3_TL.png") no-repeat left top;
+}
+.Frame_3_TR
+{
+    float:left;
+	width:100%;
+	height:12px;
+	font-size:0px;
+	background:url("../Images/Frames/3_TR.png") no-repeat right top;
+}
+.Frame_3_ML
+{
+    float: left;
+    width: 100%;
+    background: url("../Images/Frames/3_ML.png") repeat-y left top;
+}
+.Frame_3_MC
+{
+    float: left;
+    width: 100%;
+}
+.Frame_3_MR
+{
+    float: left;
+    width: 100%;
+    background: url("../Images/Frames/3_MR.png") repeat-y right top;
+}
+.Frame_3_BC
+{
+    float:left;
+	width:100%;
+	height:12px;
+	font-size:0px;
+	background:url("../Images/Frames/3_BC.png") repeat-x left top;
+}
+.Frame_3_BL
+{
+    float:left;
+	width:100%;
+	height:12px;
+	font-size:0px;
+	background:url("../Images/Frames/3_BL.png") no-repeat left top;
+}
+.Frame_3_BR
+{
+    float:left;
+	width:100%;
+	height:12px;
+	font-size:0px;
+	background:url("../Images/Frames/3_BR.png") no-repeat right top;
+}
+
+/*///Frame_4////////////////////////*/
+
+.Frame_4
+{
+    float:left;
+	width:100%;
+}
+.Frame_4_TC
+{
+    float:left;
+	width:100%;
+	height:18px;
+	font-size:0px;
+	background:url("../Images/Frames/4_TC.png") repeat-x left top;
+}
+.Frame_4_TL
+{
+    float:left;
+	width:100%;
+	height:18px;
+	font-size:0px;
+	background:url("../Images/Frames/4_TL.png") no-repeat left top;
+}
+.Frame_4_TR
+{
+    float:left;
+	width:100%;
+	height:18px;
+	font-size:0px;
+	background:url("../Images/Frames/4_TR.png") no-repeat right top;
+}
+.Frame_4_ML
+{
+    float: left;
+    width: 100%;
+    background: url("../Images/Frames/4_ML.png") repeat-y left top;
+}
+.Frame_4_MC
+{
+    float: left;
+    width: 100%;
+}
+.Frame_4_MR
+{
+    float: left;
+    width: 100%;
+    background: url("../Images/Frames/4_MR.png") repeat-y right top;
+}
+.Frame_4_BC
+{
+    float:left;
+	width:100%;
+	height:23px;
+	font-size:0px;
+	background:url("../Images/Frames/4_BC.png") repeat-x left top;
+}
+.Frame_4_BL
+{
+    float:left;
+	width:100%;
+	height:23px;
+	font-size:0px;
+	background:url("../Images/Frames/4_BL.png") no-repeat left top;
+}
+.Frame_4_BR
+{
+    float:left;
+	width:100%;
+	height:23px;
+	font-size:0px;
+	background:url("../Images/Frames/4_BR.png") no-repeat right top;
+}
+
+/*///Frame_5////////////////////////*/
+
+.Frame_5
+{
+    float:left;
+	width:100%;
+}
+.Frame_5_TC
+{
+    float:left;
+	width:100%;
+	height:6px;
+	font-size:0px;
+	background:url("../Images/Frames/5_TC.gif") repeat-x left top;
+}
+.Frame_5_TL
+{
+    float:left;
+	width:100%;
+	height:6px;
+	font-size:0px;
+	background:url("../Images/Frames/5_TL.gif") no-repeat left top;
+}
+.Frame_5_TR
+{
+    float:left;
+	width:100%;
+	height:6px;
+	font-size:0px;
+	background:url("../Images/Frames/5_TR.gif") no-repeat right top;
+}
+.Frame_5_ML
+{
+    float: left;
+    width: 100%;
+    background: url("../Images/Frames/5_ML.gif") repeat-y left top;
+}
+.Frame_5_MC
+{
+    float: left;
+    width: 100%;
+}
+.Frame_5_MR
+{
+    float: left;
+    width: 100%;
+    background: url("../Images/Frames/5_MR.gif") repeat-y right top;
+}
+.Frame_5_BC
+{
+    float:left;
+	width:100%;
+	height:6px;
+	font-size:0px;
+	background:url("../Images/Frames/5_BC.gif") repeat-x left bottom;
+}
+.Frame_5_BL
+{
+    float:left;
+	width:100%;
+	height:6px;
+	font-size:0px;
+	background:url("../Images/Frames/5_BL.gif") no-repeat left top;
+}
+.Frame_5_BR
+{
+    float:left;
+	width:100%;
+	height:6px;
+	font-size:0px;
+	background:url("../Images/Frames/5_BR.gif") no-repeat right top;
+}
+
+/*///Frame_6////////////////////////*/
+
+.Frame_6
+{
+    float:left;
+	width:100%;
+}
+.Frame_6_TC
+{
+    float:left;
+	width:100%;
+	height:8px;
+	font-size:0px;
+	background:url("../Images/Frames/6_TC.gif") repeat-x left top;
+}
+.Frame_6_TL
+{
+    float:left;
+	width:100%;
+	height:8px;
+	font-size:0px;
+	background:url("../Images/Frames/6_TL.gif") no-repeat left top;
+}
+.Frame_6_TR
+{
+    float:left;
+	width:100%;
+	height:8px;
+	font-size:0px;
+	background:url("../Images/Frames/6_TR.gif") no-repeat right top;
+}
+.Frame_6_ML
+{
+    float: left;
+    width: 100%;
+    background: url("../Images/Frames/6_ML.gif") repeat-y left top;
+}
+.Frame_6_MC
+{
+    float: left;
+    width: 100%;
+}
+.Frame_6_MR
+{
+    float: left;
+    width: 100%;
+    background: url("../Images/Frames/6_MR.gif") repeat-y right top;
+}
+.Frame_6_BC
+{
+    float:left;
+	width:100%;
+	height:8px;
+	font-size:0px;
+	background:url("../Images/Frames/6_BC.gif") repeat-x left top;
+}
+.Frame_6_BL
+{
+    float:left;
+	width:100%;
+	height:18px;
+	font-size:0px;
+	background:url("../Images/Frames/6_BL.gif") no-repeat left top;
+}
+.Frame_6_BR
+{
+    float:left;
+	width:100%;
+	height:8px;
+	font-size:0px;
+	background:url("../Images/Frames/6_BR.gif") no-repeat right top;
+}
+
+/*///Frame_7////////////////////////*/
+
+.Frame_7
+{
+    float:left;
+	width:100%;
+}
+.Frame_7_TC
+{
+    float:left;
+	width:100%;
+	height:6px;
+	font-size:0px;
+	background:url("../Images/Frames/7_TC.gif") repeat-x left top;
+}
+.Frame_7_TL
+{
+    float:left;
+	width:100%;
+	height:6px;
+	font-size:0px;
+	background:url("../Images/Frames/7_TL.gif") no-repeat left top;
+}
+.Frame_7_TR
+{
+    float:left;
+	width:100%;
+	height:6px;
+	font-size:0px;
+	background:url("../Images/Frames/7_TR.gif") no-repeat right top;
+}
+.Frame_7_ML
+{
+    float: left;
+    width: 100%;
+    background: url("../Images/Frames/7_ML.gif") repeat-y left top;
+}
+.Frame_7_MC
+{
+    float: left;
+    width: 100%;
+}
+.Frame_7_MR
+{
+    float: left;
+    width: 100%;
+    background: url("../Images/Frames/7_MR.gif") repeat-y right top;
+}
+.Frame_7_BC
+{
+    float:left;
+	width:100%;
+	height:29px;
+	font-size:0px;
+	background:url("../Images/Frames/7_BC.gif") repeat-x left top;
+}
+.Frame_7_BL
+{
+    float:left;
+	width:100%;
+	height:29px;
+	font-size:0px;
+	background:url("../Images/Frames/7_BL.gif") no-repeat left top;
+}
+.Frame_7_BR
+{
+    float:left;
+	width:100%;
+	height:29px;
+	font-size:0px;
+	background:url("../Images/Frames/7_BR.gif") no-repeat right top;
+}
+
+
