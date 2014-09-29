@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMTraffic", "MyVOVTraffic\MyMTraffic.csproj", "{066E3A46-9FA2-4234-A9B4-34D767E650EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMTraffic", "MyMTraffic\MyMTraffic.csproj", "{066E3A46-9FA2-4234-A9B4-34D767E650EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAdmin", "MyAdmin\MyAdmin.csproj", "{1D3C458C-280F-46C2-A1FC-EA9B74F1FB8C}"
 	ProjectSection(ProjectDependencies) = postProject

@@ -8,8 +8,8 @@
     <ProjectGuid>{066E3A46-9FA2-4234-A9B4-34D767E650EA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyVOVTraffic</RootNamespace>
-    <AssemblyName>MyVOVTraffic</AssemblyName>
+    <RootNamespace>MyMTraffic</RootNamespace>
+    <AssemblyName>MyMTraffic</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>

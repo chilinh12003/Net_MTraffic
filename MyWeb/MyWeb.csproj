@@ -233,7 +233,7 @@
       <Project>{806C8AE7-4E83-4BFB-A76B-A77EB11EB262}</Project>
       <Name>MySetting</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MyVOVTraffic\MyMTraffic.csproj">
+    <ProjectReference Include="..\MyMTraffic\MyMTraffic.csproj">
       <Project>{066E3A46-9FA2-4234-A9B4-34D767E650EA}</Project>
       <Name>MyVOVTraffic</Name>
     </ProjectReference>

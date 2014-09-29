@@ -67,7 +67,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyVOVTraffic\MyMTraffic.csproj">
+    <ProjectReference Include="..\MyMTraffic\MyMTraffic.csproj">
       <Project>{066E3A46-9FA2-4234-A9B4-34D767E650EA}</Project>
       <Name>MyMTraffic</Name>
     </ProjectReference>
