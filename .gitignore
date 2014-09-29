@@ -5,6 +5,8 @@
 *.suo
 *.user
 *.sln.docstates
+# MyConfig de khong push len server.
+CuteSoft_Client*/
 
 # Build results
 
