@@ -56,7 +56,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReportSync\SyncSub.cs" />
-    <Compile Include="ReportSync\ThreadDataSync.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

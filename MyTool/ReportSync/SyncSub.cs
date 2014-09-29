@@ -12,8 +12,6 @@ namespace MyTool.ReportSync
 {
     public class SyncSub
     {
-       
-
         /// <summary>
         /// Cho biết dừng thread hay không
         /// </summary>
@@ -170,7 +168,6 @@ namespace MyTool.ReportSync
                 }
                 if (mProType == RP_Sub_Object.PropertyType.RateSaleDay)
                 {
-                    
                     return;
                 }
                 #endregion
@@ -199,7 +196,7 @@ namespace MyTool.ReportSync
                         }
                     }
 
-                    //nếu không tồn tại RP_Sub_Object thì thêm mới
+                    //Nếu không tồn tại RP_Sub_Object thì thêm mới
                     if (!Exist)
                     {
                         RP_Sub_Object mObj = new RP_Sub_Object();

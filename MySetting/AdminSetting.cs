@@ -7,7 +7,6 @@ namespace MySetting
 {
     public class AdminSetting
     {
-
         public enum ListPage
         {
             [DescriptionAttribute("Quản trị thể loại")]
