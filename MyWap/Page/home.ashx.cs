@@ -14,8 +14,8 @@ namespace MyWap.Page
     /// </summary>
     public class home : MyWapBase
     {
-        
-          public override void WriteHTML()
+
+        public override void WriteHTML()
         {
             try
             {
@@ -29,7 +29,7 @@ namespace MyWap.Page
                 MyHeader mHeader = new MyHeader();
                 Write(mHeader.GetHTML());
 
-                MyBanner mBanner = new MyBanner(MyBanner.PageSelected.Nothing,MSISDN);
+                MyBanner mBanner = new MyBanner(MyBanner.PageSelected.Nothing, MSISDN);
                 Write(mBanner.GetHTML());
 
                 MyContent mContent = new MyContent(MSISDN);
@@ -48,7 +48,7 @@ namespace MyWap.Page
             Write(mFooter.GetHTML());
         }
 
-          string mContent_InsertHTML_Change()
+        string mContent_InsertHTML_Change()
         {
             try
             {

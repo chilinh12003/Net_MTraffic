@@ -1,0 +1,47 @@
+/* Arthor hungv@aivietnam.net*/
+
+body {background:#A8A8B7;padding-top:40px}
+.contain_popup {width:100%;background:#fff;margin:0 auto; box-shadow:1px 1px 3px 0px #333}
+.title_containpopup {position:relative; background:#00468C;margin-bottom:8px}
+.title_containpopup h1 {color:#fff;line-height:32px;height:32px;padding-left:20px; font-size:13px;}
+.tbl_style {width:100%;border:1pt solid #ccc;border-collapse:collapse}
+.tbl_style td, .tbl_style th {border:1pt solid #ccc;border-collapse:collapse;padding:5px 0px}
+.tbl_style th {color:#00468C;padding:8px 0px}
+.tbl_style th {background:url('../images/bg_th.jpg') repeat-x 0px 0px #F9FAFD;}
+.tbl_style td span {padding:0px 5px;display:inline-block}
+.mainmenu_btn {width:26px;height:32px; background:url('../images/menu_btn.jpg') no-repeat 100% center; position:absolute;right:9px;top:0px;overflow:hidden;white-space:nowrap;text-indent:1000px}
+.flyout{position:absolute;width:852px;right:0px;top:30px;background:url('../images/linear.jpg') repeat-y 120px 0px #99BADF;overflow: hidden;z-index:10000;box-shadow:1px 1px 3px 0px #333}
+.hidden{display:none;}
+.items_menu_pagepopup {overflow:hident; height:100%}
+.items_menu_pagepopup li {float:left; background:#F0F0F0;border:1pt solid #fff;border-radius:3px;margin-bottom:2px;margin-right:2px; width:230px}
+.items_menu_pagepopup li  a {display:block;line-height:26px;height:26px;background:url('../images/arrow1.jpg') no-repeat 8px center; padding-left:20px}
+.items_menu_pagepopup li  a:hover {background:url('../images/arrow2.jpg') no-repeat 8px center #5F93CD;color:#fff} 
+.search_menuitems {border-bottom:2px solid #eee;padding:10px}
+.search_menuitems .text {border:0px;background:#fff;float:left;height:25px;line-height:18px; width:200px;padding-left:10px}
+.search_menuitems .btn {background:url('../images/iconsearch.jpg') no-repeat  0px center #fff;width:25px;float:left;border:0px;height:25px}
+.tbl_style .icon_open {background:url('../images/icon_open.jpg') no-repeat 0px center;padding-left:20px;color:#5A9F52}
+.tbl_style .icon_lock {background:url('../images/icon_lock.jpg') no-repeat 0px center;padding-left:20px;color:#CA0000}
+.contain_scroll {overflow: auto;  width: 884px;}
+.fillterarea {background:#DFE8F6;border:1pt solid #B8CCEB;padding:10px;margin-bottom:10px}
+input.datetime {background:url('../images/bg_datetime.jpg') no-repeat 100% center;border:1pt solid #B5B8C8;height:20px;}
+input.textbox {background:url('../images/bg_textbox.jpg') repeat-x 0px 0px;border:1pt solid #B5B8C8;height:20px}
+.btn_search {height:22px;line-height:22px;border:1pt solid #B5B8C8;background:url('../images/btn_search.jpg') no-repeat 5px center #FAFAFA;padding-left:20px;border-radius:4px;padding-right:10px;cursor:pointer}
+.boxstyle360 {background:#DFE8F6;border:1pt solid #99BBE8;border-radius:5px}
+.boxstyle360 .titleboxstyle {background:url('../images/bg_titleboxstyle.jpg') repeat-x  0px 0px;border-radius:5px 5px 0px 0px;text-align:center}
+.boxstyle360 .titleboxstyle h1 {color:#33608C;font-size:12px;line-height:24px}
+.w50 {width:49%}
+.w60 {width:59.5%}
+.w40 {width:39.5%}
+.savebtn {padding:0px 10px 0px 25px;border:1pt solid #ccc;border-radius:4px; cursor:pointer;background:url('../images/save.jpg') no-repeat  5px center #fff;line-height:20px;display:inline-block}
+.listbtnview360 ul {overflow:hidden;height:100%}
+.listbtnview360 ul li {float:left;display:inline-block;margin-right:10px;border-radius:4px;border:1pt solid #ccc}
+.listbtnview360 ul li  a {display:inline-block;padding:0px 20px;line-height:40px;background:#DFE8F6;font-weight:bold}
+.listbtnview360 ul li  a:hover {background:#99BBE8}
+.btn_detail {background:url('../images/btn_detail.png') no-repeat 0px 1px;padding-left:20px;display:inline-block;line-height:20px}
+.listbtninbound a {display:inline-block;margin:5px 2px;border:1pt solid #fff;border-radius:5px;padding:8px 15px;box-shadow:1px 1px 2px 1px #CCCCCC;background:url('../images/linear1.jpg') repeat-x 0px 0px #DEDEDE; color:#333;font-weight:bold}
+.listbtninbound a:hover {background:#fff}
+.boxmnl {float:left; width:120px}
+.boxmnr {float:left; width:730px; }
+#nav a {display:block;background:#E3EAF6; border-bottom:1pt solid #BED2EB; border-top:1pt solid #fff}
+#nav a span {line-height:55px;display:block;padding-left:40px; color:##1E5B99;font-weight:bold; background:url('../images/arrow.png') no-repeat 10px center}
+#nav a:hover, #nav a.selected {background:#99BADF}

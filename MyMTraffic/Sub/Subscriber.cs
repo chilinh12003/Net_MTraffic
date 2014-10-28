@@ -62,6 +62,20 @@ namespace MyMTraffic.Sub
             }
         }
 
+        public DataTable Select(int Type)
+        {
+            try
+            {
+                string[] mPara = { "Type"};
+                string[] mValue = { Type.ToString() };
+                return mGet.GetDataTable("Sp_Subscriber_Select", mPara, mValue);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         /// <summary>
         /// 
         /// </summary>

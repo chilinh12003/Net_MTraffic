@@ -18,7 +18,8 @@ namespace MyMTraffic.Service
             Register = 100,
             DeRegister = 200,
             PustMT = 300,
-            PushMT_Retry = 301
+            PushMT_Retry = 301,
+            ResendMT= 302
         }
           MyExecuteData mExec;
             MyGetData mGet;
@@ -48,6 +49,29 @@ namespace MyMTraffic.Service
                     mSet.Tables[0].TableName = "Child";
                 }
                 return mSet;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Type">
+        /// <para>Type = 2: Lấy 1 report theo PID, LogID</para>
+        /// </param>
+        /// <param name="Para_1"></param>
+        /// <param name="Para_2"></param>
+        /// <returns></returns>
+        public DataTable Select(int Type, string Para_1, string Para_2)
+        {
+            try
+            {
+                string[] mPara = { "Type", "Para_1", "Para_2" };
+                string[] mValue = { Type.ToString(), Para_1, Para_2 };
+                return mGet.GetDataTable("Sp_ActionLog_Select", mPara, mValue);
             }
             catch (Exception ex)
             {

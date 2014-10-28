@@ -7,55 +7,54 @@ using MyConnect.SQLServer;
 using MyUtility;
 using System.Web;
 using System.ComponentModel;
-using System.ComponentModel;
 namespace MyMTraffic.Service
 {
     public class MOLog
     {
-        public string ConvertMTTypeIDToDescription(DefineMT.DefineMT.MTType mMTType, MyConfig.ChannelType mChannelType)
+        public string ConvertMTTypeIDToDescription(DefineMT.MTType mMTType, MyConfig.ChannelType mChannelType)
         {
             try
             {
                 if (mChannelType == MyConfig.ChannelType.WAP)
                 {
-                   if ( mMTType == DefineMT.DefineMT.MTType.RegAgainSuccessFree ||
-                        mMTType == DefineMT.DefineMT.MTType.RegAgainSuccessNotFree ||
-                        mMTType == DefineMT.DefineMT.MTType.RegFail ||
-                        mMTType == DefineMT.DefineMT.MTType.RegHelp ||
-                        mMTType == DefineMT.DefineMT.MTType.RegNewSuccess ||
-                        mMTType == DefineMT.DefineMT.MTType.RegNotEnoughMoney ||
-                        mMTType == DefineMT.DefineMT.MTType.RegRepeatFree ||
-                        mMTType == DefineMT.DefineMT.MTType.RegRepeatNotFree)
+                   if ( mMTType == DefineMT.MTType.RegAgainSuccessFree ||
+                        mMTType == DefineMT.MTType.RegAgainSuccessNotFree ||
+                        mMTType == DefineMT.MTType.RegFail ||
+                        mMTType == DefineMT.MTType.RegHelp ||
+                        mMTType == DefineMT.MTType.RegNewSuccess ||
+                        mMTType == DefineMT.MTType.RegNotEnoughMoney ||
+                        mMTType == DefineMT.MTType.RegRepeatFree ||
+                        mMTType == DefineMT.MTType.RegRepeatNotFree)
                     {
-                        return "Đăng ký từ wapsite http://m.mtraffic.vn";
+                        return "Đăng ký từ WAP";
                     }
-                    else if (mMTType == DefineMT.DefineMT.MTType.DeRegFail ||
-                        mMTType == DefineMT.DefineMT.MTType.DeRegNotRegister ||
-                        mMTType == DefineMT.DefineMT.MTType.DeRegSuccess)
+                    else if (mMTType == DefineMT.MTType.DeRegFail ||
+                        mMTType == DefineMT.MTType.DeRegNotRegister ||
+                        mMTType == DefineMT.MTType.DeRegSuccess)
                     {
-                        return "Hủy đăng ký từ wapsite http://m.mtraffic.vn";
+                        return "Hủy đăng ký từ WAP";
                     }
                     else
-                        return "Truy cập wapsite";
+                       return "Truy cập WAP";
                 }
                 else
                 {
-                    if (mMTType == DefineMT.DefineMT.MTType.Invalid)
+                    if (mMTType == DefineMT.MTType.Invalid)
                         return "Gửi MO sai cú pháp";
-                    else if (mMTType == DefineMT.DefineMT.MTType.RegAgainSuccessFree ||
-                            mMTType == DefineMT.DefineMT.MTType.RegAgainSuccessNotFree ||
-                        mMTType == DefineMT.DefineMT.MTType.RegFail ||
-                        mMTType == DefineMT.DefineMT.MTType.RegHelp ||
-                        mMTType == DefineMT.DefineMT.MTType.RegNewSuccess ||
-                        mMTType == DefineMT.DefineMT.MTType.RegNotEnoughMoney ||
-                        mMTType == DefineMT.DefineMT.MTType.RegRepeatFree ||
-                        mMTType == DefineMT.DefineMT.MTType.RegRepeatNotFree)
+                    else if (mMTType == DefineMT.MTType.RegAgainSuccessFree ||
+                            mMTType == DefineMT.MTType.RegAgainSuccessNotFree ||
+                        mMTType == DefineMT.MTType.RegFail ||
+                        mMTType == DefineMT.MTType.RegHelp ||
+                        mMTType == DefineMT.MTType.RegNewSuccess ||
+                        mMTType == DefineMT.MTType.RegNotEnoughMoney ||
+                        mMTType == DefineMT.MTType.RegRepeatFree ||
+                        mMTType == DefineMT.MTType.RegRepeatNotFree)
                     {
                         return "Gửi MO DK dịch vụ";
                     }
-                    else if (mMTType == DefineMT.DefineMT.MTType.DeRegFail ||
-                        mMTType == DefineMT.DefineMT.MTType.DeRegNotRegister ||
-                        mMTType == DefineMT.DefineMT.MTType.DeRegSuccess)
+                    else if (mMTType == DefineMT.MTType.DeRegFail ||
+                        mMTType == DefineMT.MTType.DeRegNotRegister ||
+                        mMTType == DefineMT.MTType.DeRegSuccess)
                     {
                         return "Gửi MO HUY dịch vụ";
                     }
@@ -70,34 +69,48 @@ namespace MyMTraffic.Service
             }
         }
 
-        public string ConvertMTTypeIDToActionName(DefineMT.DefineMT.MTType mMTType, MyConfig.ChannelType mChannelType)
+        public string ConvertMTTypeIDToActionName(DefineMT.MTType mMTType, MyConfig.ChannelType mChannelType)
         {
             try
             {
                 if (mChannelType == MyConfig.ChannelType.WAP)
                 {
-                    return "Truy cập WAP";
+                    if (mMTType == DefineMT.MTType.RegAgainSuccessFree ||
+                            mMTType == DefineMT.MTType.RegAgainSuccessNotFree ||
+                        mMTType == DefineMT.MTType.RegFail ||
+                        mMTType == DefineMT.MTType.RegHelp ||
+                        mMTType == DefineMT.MTType.RegNewSuccess ||
+                        mMTType == DefineMT.MTType.RegNotEnoughMoney ||
+                        mMTType == DefineMT.MTType.RegRepeatFree ||
+                        mMTType == DefineMT.MTType.RegRepeatNotFree)
+                        return "Đăng ký từ WAP";
+                    else if (mMTType == DefineMT.MTType.DeRegFail ||
+                            mMTType == DefineMT.MTType.DeRegNotRegister ||
+                        mMTType == DefineMT.MTType.DeRegSuccess)
+                        return "Hủy từ WAP";
+                    else
+                        return "Truy cập WAP";
                 }
                 else 
                 {
-                    if (mMTType == DefineMT.DefineMT.MTType.Invalid)
-                        return "Gửi MO";
-                    else if (mMTType == DefineMT.DefineMT.MTType.RegAgainSuccessFree ||
-                            mMTType == DefineMT.DefineMT.MTType.RegAgainSuccessNotFree ||
-                        mMTType == DefineMT.DefineMT.MTType.RegFail ||
-                        mMTType == DefineMT.DefineMT.MTType.RegHelp ||
-                        mMTType == DefineMT.DefineMT.MTType.RegNewSuccess ||
-                        mMTType == DefineMT.DefineMT.MTType.RegNotEnoughMoney ||
-                        mMTType == DefineMT.DefineMT.MTType.RegRepeatFree ||
-                        mMTType == DefineMT.DefineMT.MTType.RegRepeatNotFree)
+                    if (mMTType == DefineMT.MTType.Invalid)
+                        return "Gửi MO sai cú pháp";
+                    else if (mMTType == DefineMT.MTType.RegAgainSuccessFree ||
+                            mMTType == DefineMT.MTType.RegAgainSuccessNotFree ||
+                        mMTType == DefineMT.MTType.RegFail ||
+                        mMTType == DefineMT.MTType.RegHelp ||
+                        mMTType == DefineMT.MTType.RegNewSuccess ||
+                        mMTType == DefineMT.MTType.RegNotEnoughMoney ||
+                        mMTType == DefineMT.MTType.RegRepeatFree ||
+                        mMTType == DefineMT.MTType.RegRepeatNotFree)
                     {
-                        return "Gửi MO";
+                        return "Gửi MO Đăng ký";
                     }
-                    else if (mMTType == DefineMT.DefineMT.MTType.DeRegFail ||
-                        mMTType == DefineMT.DefineMT.MTType.DeRegNotRegister ||
-                        mMTType == DefineMT.DefineMT.MTType.DeRegSuccess)
+                    else if (mMTType == DefineMT.MTType.DeRegFail ||
+                        mMTType == DefineMT.MTType.DeRegNotRegister ||
+                        mMTType == DefineMT.MTType.DeRegSuccess)
                     {
-                        return "Gửi MO";
+                        return "Gửi MO Hủy";
                     }
                     else
                         return "Gửi MO";
@@ -291,8 +304,8 @@ namespace MyMTraffic.Service
 
                 foreach (DataRow mRow in mTable.Rows)
                 {
-                    mRow["ActionName"] = ConvertMTTypeIDToActionName((DefineMT.DefineMT.MTType)int.Parse(mRow["MTTypeID"].ToString()), (MyConfig.ChannelType)int.Parse(mRow["ChannelTypeID"].ToString()));
-                    mRow["Description"] = ConvertMTTypeIDToDescription((DefineMT.DefineMT.MTType)int.Parse(mRow["MTTypeID"].ToString()), (MyConfig.ChannelType)int.Parse(mRow["ChannelTypeID"].ToString()));
+                    mRow["ActionName"] = ConvertMTTypeIDToActionName((DefineMT.MTType)int.Parse(mRow["MTTypeID"].ToString()), (MyConfig.ChannelType)int.Parse(mRow["ChannelTypeID"].ToString()));
+                    mRow["Description"] = ConvertMTTypeIDToDescription((DefineMT.MTType)int.Parse(mRow["MTTypeID"].ToString()), (MyConfig.ChannelType)int.Parse(mRow["ChannelTypeID"].ToString()));
 
                     mTable_Service.DefaultView.RowFilter = "ServiceID = '" + mRow["ServiceID"].ToString() + "'";
                     if (mTable_Service.DefaultView.Count < 1)

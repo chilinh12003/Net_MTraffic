@@ -1,0 +1,29 @@
+﻿.Paging {
+    height:20px;
+    display:inline-block;
+    margin-top:10px;
+    width:100%;
+    text-align:right;
+}
+.Paging select
+{
+    border:none;
+    margin-left:5px;
+}
+.Paging a
+{
+    padding: 3px 5px 3px 5px;
+    font-weight: bold;
+    border:1pt solid #ccc;
+    color:#333;
+}
+.Paging a:hover
+{
+    background:#1E5C9A;
+    color:#fff;
+    text-decoration:underline;
+}
+    .Paging a.Active {
+        background: #1E5C9A;
+        color: #fff;
+    }

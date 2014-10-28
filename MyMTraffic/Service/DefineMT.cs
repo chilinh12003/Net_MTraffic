@@ -8,7 +8,7 @@ using MyUtility;
 using System.Web;
 using System.ComponentModel;
 
-namespace MyMTraffic.DefineMT
+namespace MyMTraffic.Service
 {
     public class DefineMT
     {

@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="MyCCare.MasterPages.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%=Title%><</title>
+    <link media="screen" rel="stylesheet" href="../css/reset.css" />
+    <link media="screen" rel="stylesheet" href="../css/style.css" />
+    <link href="../Calendar/dhtmlgoodies_calendar/dhtmlgoodies_calendar.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../js/jtabber.js"></script>
+    <script type="text/javascript" src="../Calendar/dhtmlgoodies_calendar/dhtmlgoodies_calendar.js"></script>
+    <asp:ContentPlaceHolder ID="cph_Header" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class='contain_popup'>
+            <div class='p8'>
+                <div class='title_containpopup'>
+                    <h1>GUI - MTraffic</h1>
+                   <div class='usercontrolarea'><i class="iconUser">&nbsp;</i>Xin chào: <b><%=MyCCare.Login1.GetUserName() %></b><span style="padding:0 5px 0 5px;">|</span><i class="iconLogout">&nbsp;</i><a  href="../Logout.aspx"><b>Đăng xuất</b></a></div>
+                </div>
+                <div class='containdatapopup'>
+                    <div class='supportarea'>
+                        <li class='labelsp'>Đầu mối giải quyết khiếu nại dịch vụ: </li>
+                        <li class='username'>Vũ Thị Thùy Chi</li>
+                        <li class='email'>chivtt@hbcom.vn</li>
+                        <li class='mobile'>04.3516.1994</li>
+                    </div>
+                    <asp:ContentPlaceHolder ID="cph_Content" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

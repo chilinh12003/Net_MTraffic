@@ -51,12 +51,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FiftyOne.Foundation, Version=0.1.10.2, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="MyBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\DLL\FiftyOne.Foundation.dll</HintPath>
-    </Reference>
-    <Reference Include="MyBase">
-      <HintPath>..\..\..\DLL Libraries\Source\MyBase\bin\Debug\MyBase.dll</HintPath>
+      <HintPath>..\..\MyLibrary\MyBase\bin\Debug\MyBase.dll</HintPath>
     </Reference>
     <Reference Include="MyUtility">
       <HintPath>..\..\..\DLL Libraries\Source\MyUtility\bin\Debug\MyUtility.dll</HintPath>
@@ -81,6 +78,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\web_browsers_patch.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\banner.gif" />
@@ -102,7 +102,11 @@
     <Content Include="Reg\Accept.ashx" />
     <Content Include="Reg\Deny.ashx" />
     <Content Include="Error.ashx" />
+    <Content Include="App_Data\wurfl.zip">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
     <None Include="Service References\WS_MTraffic\MTraffic.disco" />
     <None Include="Service References\WS_MTraffic\configuration91.svcinfo" />
     <None Include="Service References\WS_MTraffic\configuration.svcinfo" />
@@ -138,6 +142,8 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="VNP\RedirectVNP.ashx" />
+    <Content Include="VNP\ReturnVNP.ashx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.cs">
@@ -198,10 +204,15 @@
     <Compile Include="test\wss.ashx.cs">
       <DependentUpon>wss.ashx</DependentUpon>
     </Compile>
+    <Compile Include="VNP\RedirectVNP.ashx.cs">
+      <DependentUpon>RedirectVNP.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="VNP\ReturnVNP.ashx.cs">
+      <DependentUpon>ReturnVNP.ashx</DependentUpon>
+    </Compile>
     <Compile Include="VNP\VNPGetMSISDN.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>

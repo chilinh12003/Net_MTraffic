@@ -10,6 +10,8 @@ using MyMTraffic.Sub;
 using MyMTraffic.Gateway;
 using System.ComponentModel;
 using System.Data;
+using System.Net;
+using System.IO;
 namespace MyService
 {
     /// <summary>
@@ -34,6 +36,8 @@ namespace MyService
             public string UniqueID = string.Empty;
             public string PartnerKey = string.Empty;
             public bool Result = false;
+            public string PackageName = string.Empty;
+
         }
 
         private enum REGResult
@@ -62,18 +66,24 @@ namespace MyService
         {
             return ((int)mResult).ToString() + "|" + MyEnum.StringValueOf(mResult);
         }
-        private PartnerSignature CheckSignature(string Signature)
+        private PartnerSignature CheckSignature(string Signature, int LenghtLimit)
         {
             PartnerSignature mResult = new PartnerSignature();
             try
             {
                 string Data = MySecurity.AES.Decrypt(Signature, MySetting.AdminSetting.RegWSKey);
                 string[] arr = Data.Split('|');
-                if (arr.Length != 3)
+                if (arr.Length != LenghtLimit)
                     return mResult;
+
                 mResult.MSISDN = arr[0];
                 mResult.PartnerKey = arr[1];
                 mResult.UniqueID = arr[2];
+                if (arr.Length == 4)
+                {
+                    mResult.PackageName = arr[3];
+                }
+
                 if (string.IsNullOrEmpty(mResult.MSISDN) ||
                     string.IsNullOrEmpty(mResult.PartnerKey) ||
                     string.IsNullOrEmpty(mResult.UniqueID))
@@ -102,7 +112,7 @@ namespace MyService
             string RequestID = string.Empty;
             try
             {
-                mSig = CheckSignature(Signature);
+                mSig = CheckSignature(Signature,3);
 
                 MyConfig.Telco mTelco = MyConfig.Telco.Nothing;
                 if (mSig.Result == false || !MyCheck.CheckPhoneNumber(ref mSig.MSISDN, ref mTelco, "84") || mTelco != MyConfig.Telco.Vinaphone)
@@ -165,7 +175,7 @@ namespace MyService
             string RequestID = string.Empty;
             try
             {
-                mSig = CheckSignature(Signature);
+                mSig = CheckSignature(Signature,3);
                 
                 MyConfig.Telco mTelco = MyConfig.Telco.Nothing;
                 if (mSig.Result == false || !MyCheck.CheckPhoneNumber(ref mSig.MSISDN, ref mTelco, "84") || mTelco != MyConfig.Telco.Vinaphone)
@@ -228,7 +238,7 @@ namespace MyService
             string RequestID = string.Empty;
             try
             {
-                mSig = CheckSignature(Signature);
+                mSig = CheckSignature(Signature,3);
 
                 MyConfig.Telco mTelco = MyConfig.Telco.Nothing;
                 if (mSig.Result == false || !MyCheck.CheckPhoneNumber(ref mSig.MSISDN, ref mTelco, "84") || mTelco != MyConfig.Telco.Vinaphone)
@@ -274,7 +284,7 @@ namespace MyService
             string RequestID = string.Empty;
             try
             {
-                mSig = CheckSignature(Signature);
+                mSig = CheckSignature(Signature,3);
 
                 MyConfig.Telco mTelco = MyConfig.Telco.Nothing;
                 if (mSig.Result == false || !MyCheck.CheckPhoneNumber(ref mSig.MSISDN, ref mTelco, "84") || mTelco != MyConfig.Telco.Vinaphone)
@@ -326,6 +336,272 @@ namespace MyService
 
             return mTable_Return;
         }
-    
+
+
+        public static string VNPAPI_Link
+        {
+            get
+            {
+                string Temp = MyConfig.GetKeyInConfigFile("VNPAPI_Link");
+                if (string.IsNullOrEmpty(Temp))
+                    return " http://10.1.10.173/vascmd/vasprovisioning/api";
+                else
+                    return Temp;
+            }
+        }
+
+        public static string VNPApplication
+        {
+            get
+            {
+                string Temp = MyConfig.GetKeyInConfigFile("VNPApplication");
+                if (string.IsNullOrEmpty(Temp))
+                    return "CP_HBCOM";
+                else
+                    return Temp;
+            }
+        }
+
+        public static string VNPService
+        {
+            get
+            {
+                string Temp = MyConfig.GetKeyInConfigFile("VNPService");
+                if (string.IsNullOrEmpty(Temp))
+                    return "MTRAFFIC";
+                else
+                    return Temp;
+            }
+        }
+
+        private REGResult ConvertResult(VNPResult mVNPResult)
+        {
+            if (mVNPResult.error.Equals("0") ||
+                mVNPResult.error.Equals("3") ||
+                mVNPResult.error.Equals("4") ||
+                mVNPResult.error.Equals("6") ||
+                mVNPResult.error.Equals("7") ||
+                mVNPResult.error.Equals("8"))
+            {
+                return REGResult.Success;
+            }
+            else if (mVNPResult.error.Equals("1") ||
+                mVNPResult.error.Equals("2"))
+            {
+                return REGResult.Exist;
+            }
+            else
+                return REGResult.Fail;
+        }
+        [WebMethod]
+        public string Reg_VNP(string UserName, string IP, string Signature, MyConfig.ChannelType mChannel)
+        {
+            REGResult mResult = REGResult.UnknowError;
+            PartnerSignature mSig = new PartnerSignature();
+
+            string RequestID = string.Empty;
+            try
+            {
+                mSig = CheckSignature(Signature, 4);
+
+                MyConfig.Telco mTelco = MyConfig.Telco.Nothing;
+                if (mSig.Result == false || !MyCheck.CheckPhoneNumber(ref mSig.MSISDN, ref mTelco, "84") || mTelco != MyConfig.Telco.Vinaphone)
+                {
+                    mResult = REGResult.InputInvalid;
+                    return BuildResult(mResult);
+                }
+
+                int PID = MyPID.GetPIDByPhoneNumber(mSig.MSISDN, MySetting.AdminSetting.MaxPID);
+
+                DataTable mTable_Sub = mSub.Select(2, PID.ToString(), mSig.MSISDN);
+                if (mTable_Sub.Rows.Count > 0)
+                {
+                    mResult = REGResult.Exist;
+                    return BuildResult(mResult);
+                }
+
+                RequestID = MySecurity.CreateCode(9);
+
+                string XML = BuildRequest_Reg(RequestID, mSig.MSISDN, VNPService, mSig.PackageName, VNPApplication, mChannel.ToString(), UserName, IP);
+
+                VNPResult mVNPResult = PostXML(XML);
+                mResult = ConvertResult(mVNPResult);
+                return BuildResult(mResult);
+            }
+            catch (Exception ex)
+            {
+
+                MyLogfile.WriteLogError(ex);
+                mResult = REGResult.Error;
+                return BuildResult(mResult);
+            }
+            finally
+            {
+                MyLogfile.WriteLogData("REQUEST-->PartnerKey:" + mSig.PartnerKey + "|MSISDN:" + mSig.MSISDN + "|UniqueID:" + mSig.UniqueID + "|ChannelType:" + mChannel.ToString() + "|Signature:" + Signature + "|Result:" + BuildResult(mResult));
+            }
+        }
+
+        [WebMethod]
+        public string DeReg_VNP(string UserName, string IP, string Signature, MyConfig.ChannelType mChannel)
+        {
+            REGResult mResult = REGResult.UnknowError;
+            PartnerSignature mSig = new PartnerSignature();
+
+            string RequestID = string.Empty;
+            try
+            {
+                mSig = CheckSignature(Signature, 4);
+
+                MyConfig.Telco mTelco = MyConfig.Telco.Nothing;
+                if (mSig.Result == false || !MyCheck.CheckPhoneNumber(ref mSig.MSISDN, ref mTelco, "84") || mTelco != MyConfig.Telco.Vinaphone)
+                {
+                    mResult = REGResult.InputInvalid;
+                    return BuildResult(mResult);
+                }
+
+                int PID = MyPID.GetPIDByPhoneNumber(mSig.MSISDN, MySetting.AdminSetting.MaxPID);
+
+                DataTable mTable_Sub = mSub.Select(2, PID.ToString(), mSig.MSISDN);
+                if (mTable_Sub.Rows.Count < 1)
+                {
+                    mResult = REGResult.NotRegister;
+                    return BuildResult(mResult);
+                }
+
+                RequestID = MySecurity.CreateCode(9);
+
+                string XML = BuildRequest_DeReg(RequestID, mSig.MSISDN, VNPService, mSig.PackageName, VNPApplication, mChannel.ToString(), UserName, IP);
+
+                VNPResult mVNPResult = PostXML(XML);
+
+                mResult = ConvertResult(mVNPResult);
+                return BuildResult(mResult);
+
+            }
+            catch (Exception ex)
+            {
+
+                MyLogfile.WriteLogError(ex);
+                mResult = REGResult.Error;
+                return BuildResult(mResult);
+            }
+            finally
+            {
+                MyLogfile.WriteLogData("REQUEST-->PartnerKey:" + mSig.PartnerKey + "|MSISDN:" + mSig.MSISDN + "|UniqueID:" + mSig.UniqueID + "|ChannelType:" + mChannel.ToString() + "|Signature:" + Signature + "|Result:" + BuildResult(mResult));
+            }
+        }
+
+        private string BuildRequest_Reg(string requestid, string msisdn, string service, string package,
+                                        string application, string channel, string username, string userip)
+        {
+            string Template = "<RQST>" +
+                                  "<name>subscribe</name>" +
+                                  "<requestid>{0}</requestid>" +
+                                  "<msisdn>{1}</msisdn>" +
+                                  "<service>{2}</service>" +
+                                  "<package>{3}</package>" +
+                                  "<promotion>0</promotion>" +
+                                  "<trial>0</trial>" +
+                                  "<bundle>0</bundle>" +
+                                  "<note>Test</note>" +
+                                  "<application>{4}</application>" +
+                                  "<channel>{5}</channel>" +
+                                  "<username>{6}</username>" +
+                                  "<userip>{7}</userip>" +
+                                "</RQST>";
+            return string.Format(Template, new object[] { requestid, msisdn, service, package, application, channel, username, userip });
+
+        }
+
+        private string BuildRequest_DeReg(string requestid, string msisdn, string service, string package,
+                                        string application, string channel, string username, string userip)
+        {
+            string Template = "<RQST>" +
+                                  "<name>unsubscribe</name>" +
+                                  "<requestid>{0}</requestid>" +
+                                  "<msisdn>{1}</msisdn>" +
+                                  "<service>{2}</service>" +
+                                  "<package>{3}</package>" +
+                                  "<policy>0</policy>" +
+                                  "<promotion>0</promotion>" +
+                                  "<note>Test</note>" +
+                                  "<application>{4}</application>" +
+                                  "<channel>{5}</channel>" +
+                                  "<username>{6}</username>" +
+                                  "<userip>{7}</userip>" +
+                                "</RQST>";
+            return string.Format(Template, new object[] { requestid, msisdn, service, package, application, channel, username, userip });
+        }
+
+        private class VNPResult
+        {
+            public string requestid = string.Empty;
+            public string error = string.Empty;
+            public string error_desc = string.Empty;
+            public bool IsNull
+            {
+                get
+                {
+                    if (string.IsNullOrEmpty(requestid) ||
+                        string.IsNullOrEmpty(error) ||
+                        string.IsNullOrEmpty(error_desc))
+                        return true;
+                    else return false;
+                }
+            }
+        }
+        private VNPResult PostXML(string XML)
+        {
+            string XMLRquest = string.Empty;
+            string XMLResponse = string.Empty;
+
+            WebRequest req = null;
+            WebResponse rsp = null;
+
+            VNPResult mVNPResult = new VNPResult();
+
+            try
+            {
+                XMLRquest = XML;
+                System.Net.ServicePointManager.Expect100Continue = false;
+                req = WebRequest.Create(VNPAPI_Link);
+                //req.Proxy = WebProxy.GetDefaultProxy(); // Enable if using proxy
+                req.Method = "POST";        // Post method
+                req.ContentType = "text/xml";     // content type
+                // Wrap the request stream with a text-based writer
+
+                StreamWriter writer = new StreamWriter(req.GetRequestStream());
+
+                // Write the XML text into the stream
+                writer.WriteLine(XMLRquest);
+                writer.Close();
+                //Send the data to the webserver
+                rsp = req.GetResponse();
+                XMLResponse = new StreamReader(rsp.GetResponseStream()).ReadToEnd();
+
+                DataSet mSet = MyXML.GetDataSetFromXMLString(XMLResponse);
+
+                if (mSet.Tables.Count > 0 && mSet.Tables[0].Rows.Count > 0)
+                {
+                    mVNPResult.requestid = mSet.Tables[0].Rows[0]["requestid"].ToString();
+                    mVNPResult.error = mSet.Tables[0].Rows[0]["error"].ToString();
+                    mVNPResult.error_desc = mSet.Tables[0].Rows[0]["error_desc"].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MyLogfile.WriteLogError(ex);
+            }
+            finally
+            {
+                MyLogfile.WriteLogData("POST_XML_VNP", "REQUEST XML --> " + XMLRquest);
+                MyLogfile.WriteLogData("POST_XML_VNP", "RESPONSE XML --> " + XMLResponse);
+
+                if (req != null) req.GetRequestStream().Close();
+                if (rsp != null) rsp.GetResponseStream().Close();
+            }
+
+            return mVNPResult;
+        }
     }
 }

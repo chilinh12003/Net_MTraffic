@@ -149,7 +149,50 @@ namespace MyMTraffic.Permission
                 throw ex;
             }
         }
+        public bool Insert(string TableName, string OldData, string NewData, ActionType Action, bool IsSuccess, string SearchContent, int MemberID, string LoginName)
+        {
+            try
+            {
+                //Tạo dữ liệu mẫu;
+                DataSet mSet = CreateDataSet();
+                if (mSet == null || mSet.Tables.Count != 1)
+                {
+                    return false;
+                }
+                string RequestIP = string.Empty;
+                RequestIP = MyUtility.MyCurrent.GetRequestIP;
 
+                //Hiệu chỉnh các column dạng DateTime thành dạng string
+                MyConvert.ConvertDateColumnToStringColumn(ref mSet);
+
+                //Tạo dòng dữ liêu mẫu
+                DataRow mRow = mSet.Tables[0].NewRow();
+                mRow["MemberID"] = MemberID;
+                mRow["MemberName"] = LoginName;
+                mRow["TableName"] = TableName;
+                mRow["ActionID"] = (int)Action;
+                mRow["ActionName"] = Action.ToString();
+                mRow["OldData"] = OldData;
+                mRow["NewData"] = NewData;
+
+                mRow["IsSuccess"] = IsSuccess;
+                mRow["RequestIP"] = RequestIP;
+                mRow["CreateDate"] = DateTime.Now.ToString(MyConfig.DateFormat_InsertToDB);
+                mRow["SearchContent"] = SearchContent;
+
+                mSet.Tables[0].Rows.Add(mRow);
+                mSet.AcceptChanges();
+
+                //thực hiện insert dữ liệu
+                return Insert(0, mSet.GetXml());
+
+            }
+            catch (Exception ex)
+            {
+                MyLogfile.WriteLogError(ex);
+                return false;
+            }
+        }
       
         public bool Insert(string TableName, string OldData, string NewData, ActionType Action, bool IsSuccess, string SearchContent)
         {

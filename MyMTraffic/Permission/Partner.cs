@@ -182,24 +182,13 @@ namespace MyMTraffic.Permission
         {
             try
             {
-                string[] mPara = { "Type"};
+                string[] mPara = { "Type" };
                 string[] mValue = { Type.ToString() };
 
                 DataTable mTable = new DataTable();
-                if (Type == 4)
-                {
-                    if (MyCurrent.CurrentPage.Session != null && MyCurrent.CurrentPage.Session[MySetting.AdminSetting.ParaSave.Partner] != null)
-                        mTable = ((DataTable)MyCurrent.CurrentPage.Session[MySetting.AdminSetting.ParaSave.Partner]).Copy();
-                    else
-                    {
-                        mTable = mGet.GetDataTable("Sp_Partner_Select", mPara, mValue);
-                        MyCurrent.CurrentPage.Session[MySetting.AdminSetting.ParaSave.Partner] = mTable;
-                    }
-                }
-                else
-                {
-                    mTable = mGet.GetDataTable("Sp_Partner_Select", mPara, mValue);
-                }
+
+                mTable = mGet.GetDataTable("Sp_Partner_Select", mPara, mValue);
+
                 return mTable;
             }
             catch (Exception ex)
