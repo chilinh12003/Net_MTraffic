@@ -29,6 +29,7 @@ namespace MyCCare.Admin_CCare
                 if (!IsPostBack)
                 {
                     ViewState["SortBy"] = string.Empty;
+                    tbx_MSISDN.Value = MySetting.AdminSetting.MSISDN;
                 }
 
                 Admin_Paging1.rpt_Data = rpt_Data;
@@ -171,6 +172,7 @@ namespace MyCCare.Admin_CCare
                     return;
                 }
                 tbx_MSISDN.Value = MSISDN;
+                MySetting.AdminSetting.MSISDN = MSISDN;
                 Admin_Paging1.ResetLoadData();
             }
             catch (Exception ex)

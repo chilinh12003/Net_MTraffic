@@ -21,7 +21,7 @@
             <div class='p8'>
                 <div class='title_containpopup'>
                     <h1>GUI - MTraffic</h1>
-                   <div class='usercontrolarea'><i class="iconUser">&nbsp;</i>Xin chào: <b><%=MyCCare.Login1.GetUserName() %></b><span style="padding:0 5px 0 5px;">|</span><i class="iconLogout">&nbsp;</i><a  href="../Logout.aspx"><b>Đăng xuất</b></a></div>
+                   <div class='usercontrolarea'><i class="iconUser">&nbsp;</i>Xin chào: <b><%=MyCCare.Login1.GetUserName() %></b></div>
                 </div>
                 <div class='containdatapopup'>
                     <div class='supportarea'>

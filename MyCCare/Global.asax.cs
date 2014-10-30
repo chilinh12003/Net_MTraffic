@@ -17,8 +17,8 @@ namespace MyCCare
 
         protected void Session_Start(object sender, EventArgs e)
         {
-            Session["Username"] = "CL";
-            Session["Role"] = "2";
+            //Session["Username"] = "CL";
+            //Session["Role"] = "2";
         }
 
         protected void Application_BeginRequest(object sender, EventArgs e)

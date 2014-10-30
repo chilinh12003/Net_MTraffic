@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel;
 using MyUtility;
+using System.Web;
 namespace MySetting
 {
     public class AdminSetting
@@ -133,6 +134,46 @@ namespace MySetting
                     return @"~/App_Data/AllowIP.xml";
                 else
                     return Temp;
+            }
+        }
+
+        /// <summary>
+        /// Lưu MSISDN xuống session
+        /// </summary>
+        public static string MSISDN
+        {
+            get
+            {
+                try
+                {
+                    if (MyCurrent.CurrentPage.Session["MSISDN"] == null ||
+                        string.IsNullOrEmpty(MyCurrent.CurrentPage.Session["MSISDN"].ToString()))
+                    {
+                        return string.Empty;
+                    }
+                    else
+                    {
+                        return MyCurrent.CurrentPage.Session["MSISDN"].ToString();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MyLogfile.WriteLogError(ex);
+                    return string.Empty;
+                }
+
+            }
+            set
+            {
+                try
+                {
+                    MyCurrent.CurrentPage.Session["MSISDN"] = value;
+                }
+                catch (Exception ex)
+                {
+                    MyLogfile.WriteLogError(ex);
+                }
+
             }
         }
 
