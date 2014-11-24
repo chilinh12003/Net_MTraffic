@@ -86,6 +86,56 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="Reg_VNP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Signature" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mChannel" type="tns:ChannelType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="ChannelType">
+        <s:restriction base="s:string">
+          <s:enumeration value="SMS" />
+          <s:enumeration value="IVR" />
+          <s:enumeration value="WEB" />
+          <s:enumeration value="WAP" />
+          <s:enumeration value="USSD" />
+          <s:enumeration value="CLIENT" />
+          <s:enumeration value="API" />
+          <s:enumeration value="UNSUB" />
+          <s:enumeration value="CSKH" />
+          <s:enumeration value="MAXRETRY" />
+          <s:enumeration value="SUBNOTEXIST" />
+          <s:enumeration value="SYSTEM" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="Reg_VNPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Reg_VNPResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeReg_VNP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Signature" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mChannel" type="tns:ChannelType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeReg_VNPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeReg_VNPResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="CheckSoapIn">
@@ -118,6 +168,18 @@
   <wsdl:message name="GetInfoSoapOut">
     <wsdl:part name="parameters" element="tns:GetInfoResponse" />
   </wsdl:message>
+  <wsdl:message name="Reg_VNPSoapIn">
+    <wsdl:part name="parameters" element="tns:Reg_VNP" />
+  </wsdl:message>
+  <wsdl:message name="Reg_VNPSoapOut">
+    <wsdl:part name="parameters" element="tns:Reg_VNPResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeReg_VNPSoapIn">
+    <wsdl:part name="parameters" element="tns:DeReg_VNP" />
+  </wsdl:message>
+  <wsdl:message name="DeReg_VNPSoapOut">
+    <wsdl:part name="parameters" element="tns:DeReg_VNPResponse" />
+  </wsdl:message>
   <wsdl:portType name="MTrafficSoap">
     <wsdl:operation name="Check">
       <wsdl:input message="tns:CheckSoapIn" />
@@ -138,6 +200,14 @@
     <wsdl:operation name="GetInfo">
       <wsdl:input message="tns:GetInfoSoapIn" />
       <wsdl:output message="tns:GetInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Reg_VNP">
+      <wsdl:input message="tns:Reg_VNPSoapIn" />
+      <wsdl:output message="tns:Reg_VNPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeReg_VNP">
+      <wsdl:input message="tns:DeReg_VNPSoapIn" />
+      <wsdl:output message="tns:DeReg_VNPSoapOut" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="MTrafficSoap" type="tns:MTrafficSoap">
@@ -180,6 +250,24 @@
     </wsdl:operation>
     <wsdl:operation name="GetInfo">
       <soap:operation soapAction="http://Mtraffic.vn/GetInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reg_VNP">
+      <soap:operation soapAction="http://Mtraffic.vn/Reg_VNP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeReg_VNP">
+      <soap:operation soapAction="http://Mtraffic.vn/DeReg_VNP" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -235,13 +323,31 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="Reg_VNP">
+      <soap12:operation soapAction="http://Mtraffic.vn/Reg_VNP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeReg_VNP">
+      <soap12:operation soapAction="http://Mtraffic.vn/DeReg_VNP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="MTraffic">
     <wsdl:port name="MTrafficSoap" binding="tns:MTrafficSoap">
-      <soap:address location="http://localhost:8080/MTraffic_WS/MTraffic.asmx" />
+      <soap:address location="http://localhost:8082/MTraffic_WebService/MTraffic.asmx" />
     </wsdl:port>
     <wsdl:port name="MTrafficSoap12" binding="tns:MTrafficSoap12">
-      <soap12:address location="http://localhost:8080/MTraffic_WS/MTraffic.asmx" />
+      <soap12:address location="http://localhost:8082/MTraffic_WebService/MTraffic.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

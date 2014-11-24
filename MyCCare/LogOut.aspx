@@ -14,13 +14,13 @@
             $(function ()
             {
                 // log user out from SSO service
-                $.get('http//10.211.0.250:8080/SSO/SSOService.svc/user/Logout?callback=?', {},
+                $.get('<%=MyCCare.Login1.SSOLink %>/SSO/SSOService.svc/user/Logout?callback=?', {},
                     function (ssodata)
                     {
                         // client's no longer logged in, redirect to logon page
                         // giá trị trả về dạng json
                         //?( {"LogoutResult":true} );
-                        document.location = 'http://192.168.39.226:9090/default.aspx';
+                        document.location = '<%=MyUtility.MyConfig.Domain %>/cskh/login.aspx';
                     }, 'jsonp');
             });
         </script>

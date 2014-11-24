@@ -147,9 +147,10 @@ namespace MyCCare.Admin_CCare
                     return;
                 }
                 CommandCode = mTable_Service.DefaultView[0]["DeregKeyword"].ToString();
-   
+                ServiceName = mTable_Service.DefaultView[0]["ServiceName"].ToString();
+
                 WS_MTraffic.MTrafficSoapClient mClient = new WS_MTraffic.MTrafficSoapClient();
-                Signature = MSISDN + "|CMS|" + DateTime.Now.ToString("yyyyMMddHHmmssfff") + "|" + mTable_Service.DefaultView[0]["PacketName"].ToString();
+                Signature = MSISDN + "|CMS|" + DateTime.Now.ToString("yyyyMMddHHmmssfff") + "|" + mTable_Service.DefaultView[0]["PacketName"].ToString() + "|" + mTable_Service.DefaultView[0]["ServiceID"].ToString();
                 Signature = MySecurity.AES.Encrypt(Signature, MySetting.AdminSetting.RegWSKey);
                 System.Net.ServicePointManager.Expect100Continue = false;
                 Result = mClient.DeReg_VNP(Login1.GetUserName(), MyCurrent.GetRequestIP, Signature, WS_MTraffic.ChannelType.CSKH);
@@ -214,7 +215,7 @@ namespace MyCCare.Admin_CCare
                 Result = string.Empty;
 
                 WS_MTraffic.MTrafficSoapClient mClient = new WS_MTraffic.MTrafficSoapClient();
-                Signature = MSISDN + "|CMS|" + DateTime.Now.ToString("yyyyMMddHHmmssfff") + "|" + mTable_Service.DefaultView[0]["PacketName"].ToString();
+                Signature = MSISDN + "|CMS|" + DateTime.Now.ToString("yyyyMMddHHmmssfff") + "|" + mTable_Service.DefaultView[0]["PacketName"].ToString() + "|" + mTable_Service.DefaultView[0]["ServiceID"].ToString();
                 Signature = MySecurity.AES.Encrypt(Signature, MySetting.AdminSetting.RegWSKey);
                 System.Net.ServicePointManager.Expect100Continue = false;
                 Result = mClient.Reg_VNP(Login1.GetUserName(),MyCurrent.GetRequestIP,Signature,WS_MTraffic.ChannelType.CSKH);

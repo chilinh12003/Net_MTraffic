@@ -37,6 +37,7 @@ namespace MyService
             public string PartnerKey = string.Empty;
             public bool Result = false;
             public string PackageName = string.Empty;
+            public int ServiceID = 0;
 
         }
 
@@ -66,22 +67,24 @@ namespace MyService
         {
             return ((int)mResult).ToString() + "|" + MyEnum.StringValueOf(mResult);
         }
-        private PartnerSignature CheckSignature(string Signature, int LenghtLimit)
+        private PartnerSignature CheckSignature(string Signature)
         {
             PartnerSignature mResult = new PartnerSignature();
             try
             {
                 string Data = MySecurity.AES.Decrypt(Signature, MySetting.AdminSetting.RegWSKey);
-                string[] arr = Data.Split('|');
-                if (arr.Length != LenghtLimit)
-                    return mResult;
+                string[] arr = Data.Split('|');              
 
                 mResult.MSISDN = arr[0];
                 mResult.PartnerKey = arr[1];
                 mResult.UniqueID = arr[2];
-                if (arr.Length == 4)
+                if (arr.Length >= 4)
                 {
                     mResult.PackageName = arr[3];
+                }
+                if(arr.Length >= 5)
+                {
+                    int.TryParse(arr[4], out mResult.ServiceID);
                 }
 
                 if (string.IsNullOrEmpty(mResult.MSISDN) ||
@@ -112,7 +115,7 @@ namespace MyService
             string RequestID = string.Empty;
             try
             {
-                mSig = CheckSignature(Signature,3);
+                mSig = CheckSignature(Signature);
 
                 MyConfig.Telco mTelco = MyConfig.Telco.Nothing;
                 if (mSig.Result == false || !MyCheck.CheckPhoneNumber(ref mSig.MSISDN, ref mTelco, "84") || mTelco != MyConfig.Telco.Vinaphone)
@@ -175,7 +178,7 @@ namespace MyService
             string RequestID = string.Empty;
             try
             {
-                mSig = CheckSignature(Signature,3);
+                mSig = CheckSignature(Signature);
                 
                 MyConfig.Telco mTelco = MyConfig.Telco.Nothing;
                 if (mSig.Result == false || !MyCheck.CheckPhoneNumber(ref mSig.MSISDN, ref mTelco, "84") || mTelco != MyConfig.Telco.Vinaphone)
@@ -238,7 +241,7 @@ namespace MyService
             string RequestID = string.Empty;
             try
             {
-                mSig = CheckSignature(Signature,3);
+                mSig = CheckSignature(Signature);
 
                 MyConfig.Telco mTelco = MyConfig.Telco.Nothing;
                 if (mSig.Result == false || !MyCheck.CheckPhoneNumber(ref mSig.MSISDN, ref mTelco, "84") || mTelco != MyConfig.Telco.Vinaphone)
@@ -284,7 +287,7 @@ namespace MyService
             string RequestID = string.Empty;
             try
             {
-                mSig = CheckSignature(Signature,3);
+                mSig = CheckSignature(Signature);
 
                 MyConfig.Telco mTelco = MyConfig.Telco.Nothing;
                 if (mSig.Result == false || !MyCheck.CheckPhoneNumber(ref mSig.MSISDN, ref mTelco, "84") || mTelco != MyConfig.Telco.Vinaphone)
@@ -402,7 +405,7 @@ namespace MyService
             string RequestID = string.Empty;
             try
             {
-                mSig = CheckSignature(Signature, 4);
+                mSig = CheckSignature(Signature);
 
                 MyConfig.Telco mTelco = MyConfig.Telco.Nothing;
                 if (mSig.Result == false || !MyCheck.CheckPhoneNumber(ref mSig.MSISDN, ref mTelco, "84") || mTelco != MyConfig.Telco.Vinaphone)
@@ -413,7 +416,7 @@ namespace MyService
 
                 int PID = MyPID.GetPIDByPhoneNumber(mSig.MSISDN, MySetting.AdminSetting.MaxPID);
 
-                DataTable mTable_Sub = mSub.Select(2, PID.ToString(), mSig.MSISDN);
+                DataTable mTable_Sub = mSub.Select(2, PID.ToString(), mSig.MSISDN, mSig.ServiceID.ToString());
                 if (mTable_Sub.Rows.Count > 0)
                 {
                     mResult = REGResult.Exist;
@@ -450,7 +453,7 @@ namespace MyService
             string RequestID = string.Empty;
             try
             {
-                mSig = CheckSignature(Signature, 4);
+                mSig = CheckSignature(Signature);
 
                 MyConfig.Telco mTelco = MyConfig.Telco.Nothing;
                 if (mSig.Result == false || !MyCheck.CheckPhoneNumber(ref mSig.MSISDN, ref mTelco, "84") || mTelco != MyConfig.Telco.Vinaphone)
@@ -461,7 +464,7 @@ namespace MyService
 
                 int PID = MyPID.GetPIDByPhoneNumber(mSig.MSISDN, MySetting.AdminSetting.MaxPID);
 
-                DataTable mTable_Sub = mSub.Select(2, PID.ToString(), mSig.MSISDN);
+                DataTable mTable_Sub = mSub.Select(2, PID.ToString(), mSig.MSISDN,mSig.ServiceID.ToString());
                 if (mTable_Sub.Rows.Count < 1)
                 {
                     mResult = REGResult.NotRegister;

@@ -18,11 +18,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8080/MTraffic_WS/MTraffic.asmx" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8082/MTraffic_WebService/MTraffic.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="MTraffic.wsdl" MetadataType="Wsdl" ID="3ebac272-bfe0-4954-8f46-40d7114d10ee" SourceId="1" SourceUrl="http://localhost:8080/MTraffic_WS/MTraffic.asmx?wsdl" />
-    <MetadataFile FileName="MTraffic.disco" MetadataType="Disco" ID="67b86bdd-42b9-49c5-b593-9c61fb031dba" SourceId="1" SourceUrl="http://localhost:8080/MTraffic_WS/MTraffic.asmx?disco" />
+    <MetadataFile FileName="MTraffic1.wsdl" MetadataType="Wsdl" ID="4ce7f518-8b9f-4e3d-9a11-1c09c817bf4b" SourceId="1" SourceUrl="http://localhost:8082/MTraffic_WebService/MTraffic.asmx?wsdl" />
+    <MetadataFile FileName="MTraffic1.disco" MetadataType="Disco" ID="8248e652-4993-43d4-8eba-b3f126d84c15" SourceId="1" SourceUrl="http://localhost:8082/MTraffic_WebService/MTraffic.asmx?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

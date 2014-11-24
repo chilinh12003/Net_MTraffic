@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="LZGaexIqyJV+HkeCVT9bZq1AsKc=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="hz2n0bXz+2r7v+GVE141RH5/t7g=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="basicHttpBinding" name="MTrafficSoap">
       <properties>
@@ -112,10 +112,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="MTrafficSoap" contract="WS_MTraffic.MTrafficSoap" bindingType="basicHttpBinding" address="http://localhost:8080/MTraffic_WS/MTraffic.asmx" bindingConfiguration="MTrafficSoap">
+    <endpoint name="MTrafficSoap" contract="WS_MTraffic.MTrafficSoap" bindingType="basicHttpBinding" address="http://localhost:8082/MTraffic_WebService/MTraffic.asmx" bindingConfiguration="MTrafficSoap">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:8080/MTraffic_WS/MTraffic.asmx</serializedValue>
+          <serializedValue>http://localhost:8082/MTraffic_WebService/MTraffic.asmx</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

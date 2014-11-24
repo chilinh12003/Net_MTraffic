@@ -28,7 +28,6 @@
                 <th class="last " rowspan="2">STT</th>
                 <th class="last" rowspan="2">Ngày</th>
                 <th class="last" rowspan="2">Dịch vụ</th>
-                <th class="last" rowspan="2">Đối tác</th>
                 <th colspan="5">Đăng ký</th>
                 <th  colspan="5">Hủy</th>
                 <th  colspan="4">Gia hạn</th>
@@ -67,7 +66,6 @@
                      <td><%#(Container.ItemIndex + PageIndex).ToString()%></td>
                     <%#this.GetReport_HTML((DateTime)Eval("ReportDay"))%>
                      <td><%# Eval("ServiceName").ToString()%></td>
-                     <td><%# Eval("PartnerName").ToString()%></td>
                      <td><%#((double)Eval("SubTotal")).ToString(MyUtility.MyConfig.IntFormat)%></td>
                      <td><%#((double)Eval("SubNew")).ToString(MyUtility.MyConfig.IntFormat)%></td>
                      <td><%#((double)Eval("SubSMS")).ToString(MyUtility.MyConfig.IntFormat)%></td>
@@ -97,7 +95,6 @@
                     <td><%#(Container.ItemIndex + PageIndex).ToString()%></td>
                     <%#this.GetReport_HTML((DateTime)Eval("ReportDay"))%>
                      <td><%# Eval("ServiceName").ToString()%></td>
-                     <td><%# Eval("PartnerName").ToString()%></td>
                      <td><%#((double)Eval("SubTotal")).ToString(MyUtility.MyConfig.IntFormat)%></td>
                      <td><%#((double)Eval("SubNew")).ToString(MyUtility.MyConfig.IntFormat)%></td>
                      <td><%#((double)Eval("SubSMS")).ToString(MyUtility.MyConfig.IntFormat)%></td>

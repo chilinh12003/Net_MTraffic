@@ -230,9 +230,8 @@ namespace MyAdmin.Admin_Report
                 DateTime BeginDate = tbx_FromDate.Value.Length > 0 ? DateTime.ParseExact(tbx_FromDate.Value, "dd/MM/yyyy", null) : DateTime.MinValue;
                 DateTime EndDate = tbx_ToDate.Value.Length > 0 ? DateTime.ParseExact(tbx_ToDate.Value, "dd/MM/yyyy", null) : DateTime.MinValue;
                 int ServiceID = 0;
-                int PartnerID = Member.PartnerID();
 
-                return mRP_Sub.TotalRow(SearchType, BeginDate, EndDate, ServiceID, PartnerID);
+                return mRP_Sub.TotalRow_VNP(SearchType, BeginDate, EndDate, ServiceID);
             }
             catch (Exception ex)
             {
@@ -253,9 +252,8 @@ namespace MyAdmin.Admin_Report
 
                 PageIndex = (Admin_Paging1.mPaging.CurrentPageIndex - 1) * Admin_Paging1.mPaging.PageSize + 1;
                 int ServiceID = 0;
-                int PartnerID = Member.PartnerID();
 
-                return mRP_Sub.Search(SearchType, Admin_Paging1.mPaging.BeginRow, Admin_Paging1.mPaging.EndRow, BeginDate, EndDate,ServiceID,PartnerID, SortBy);
+                return mRP_Sub.Search_VNP(SearchType, Admin_Paging1.mPaging.BeginRow, Admin_Paging1.mPaging.EndRow, BeginDate, EndDate,ServiceID, SortBy);
             }
             catch (Exception ex)
             {

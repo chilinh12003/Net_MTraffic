@@ -199,10 +199,15 @@ namespace MyMTraffic.Report
                 mTable.Columns.Add(mCol_1);
                 mTable.Columns.Add(mCol_2);
 
-                MyMTraffic.Service.Service mService = new MyMTraffic.Service.Service(this.KeyConnect_InConfig);
-                DataTable mTable_Service = mService.Select(4, null);
+                MyMTraffic.Service.Service mService = new MyMTraffic.Service.Service();
+                MyMTraffic.Permission.Partner mPartner = new MyMTraffic.Permission.Partner();
+                if (!string.IsNullOrEmpty(KeyConnect_InConfig))
+                {
+                    mService = new MyMTraffic.Service.Service(KeyConnect_InConfig);
+                    mPartner = new MyMTraffic.Permission.Partner(KeyConnect_InConfig);
+                }
 
-                MyMTraffic.Permission.Partner mPartner = new MyMTraffic.Permission.Partner(this.KeyConnect_InConfig);
+                DataTable mTable_Service = mService.Select(4, null);
                 DataTable mTable_Partner = mPartner.Select(4);
 
                 foreach (DataRow mRow in mTable.Rows)
@@ -229,5 +234,76 @@ namespace MyMTraffic.Report
             }
         }
 
+
+        public int TotalRow_VNP(int? Type, DateTime BeginDate, DateTime EndDate, int ServiceID)
+        {
+            try
+            {
+                string str_BeginDate = null;
+                string str_EndDate = null;
+
+                if (BeginDate != DateTime.MinValue && BeginDate != DateTime.MaxValue &&
+                    EndDate != DateTime.MinValue && EndDate != DateTime.MaxValue)
+                {
+                    str_BeginDate = BeginDate.ToString(MyConfig.DateFormat_InsertToDB);
+                    str_EndDate = EndDate.ToString(MyConfig.DateFormat_InsertToDB);
+                }
+                string[] mPara = { "Type", "BeginDate", "EndDate", "ServiceID",  "IsTotalRow" };
+                string[] mValue = { Type.ToString(), str_BeginDate, str_EndDate, ServiceID.ToString(),  true.ToString() };
+
+                return (int)mGet.GetExecuteScalar("Sp_RP_Sub_Search_VNP", mPara, mValue);
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+        }
+
+        public DataTable Search_VNP(int? Type, int BeginRow, int EndRow, DateTime BeginDate, DateTime EndDate, int ServiceID, string OrderBy)
+        {
+            try
+            {
+                string str_BeginDate = null;
+                string str_EndDate = null;
+
+                if (BeginDate != DateTime.MinValue && BeginDate != DateTime.MaxValue &&
+                    EndDate != DateTime.MinValue && EndDate != DateTime.MaxValue)
+                {
+                    str_BeginDate = BeginDate.ToString(MyConfig.DateFormat_InsertToDB);
+                    str_EndDate = EndDate.ToString(MyConfig.DateFormat_InsertToDB);
+                }
+
+                string[] mpara = { "Type", "BeginRow", "EndRow", "BeginDate", "EndDate", "ServiceID",  "OrderBy", "IsTotalRow" };
+                string[] mValue = { Type.ToString(), BeginRow.ToString(), EndRow.ToString(), str_BeginDate, str_EndDate, ServiceID.ToString(), OrderBy, false.ToString() };
+                DataTable mTable = mGet.GetDataTable("Sp_RP_Sub_Search_VNP", mpara, mValue);
+
+                DataColumn mCol_1 = new DataColumn("ServiceName", typeof(string));
+                mTable.Columns.Add(mCol_1);
+
+                MyMTraffic.Service.Service mService = new MyMTraffic.Service.Service();
+                if (!string.IsNullOrEmpty(KeyConnect_InConfig))
+                {
+                    mService = new MyMTraffic.Service.Service(KeyConnect_InConfig);
+                }
+
+                DataTable mTable_Service = mService.Select(4, null);
+
+                foreach (DataRow mRow in mTable.Rows)
+                {
+                    mTable_Service.DefaultView.RowFilter = "ServiceID = '" + mRow["ServiceID"].ToString() + "'";
+                    if (mTable_Service.DefaultView.Count > 0)
+                    {
+                        mRow["ServiceName"] = mTable_Service.DefaultView[0]["ServiceName"].ToString();
+                    }                   
+                }
+                mTable_Service.DefaultView.RowFilter = string.Empty;
+
+                return mTable;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

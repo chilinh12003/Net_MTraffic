@@ -35,6 +35,57 @@ namespace MyAdmin.WS_MTraffic {
         [System.ServiceModel.OperationContractAttribute(Action="http://Mtraffic.vn/GetInfo", ReplyAction="*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Data.DataTable GetInfo(string Signature);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://Mtraffic.vn/Reg_VNP", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        string Reg_VNP(string UserName, string IP, string Signature, MyAdmin.WS_MTraffic.ChannelType mChannel);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://Mtraffic.vn/DeReg_VNP", ReplyAction="*")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        string DeReg_VNP(string UserName, string IP, string Signature, MyAdmin.WS_MTraffic.ChannelType mChannel);
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://Mtraffic.vn/")]
+    public enum ChannelType {
+        
+        /// <remarks/>
+        SMS,
+        
+        /// <remarks/>
+        IVR,
+        
+        /// <remarks/>
+        WEB,
+        
+        /// <remarks/>
+        WAP,
+        
+        /// <remarks/>
+        USSD,
+        
+        /// <remarks/>
+        CLIENT,
+        
+        /// <remarks/>
+        API,
+        
+        /// <remarks/>
+        UNSUB,
+        
+        /// <remarks/>
+        CSKH,
+        
+        /// <remarks/>
+        MAXRETRY,
+        
+        /// <remarks/>
+        SUBNOTEXIST,
+        
+        /// <remarks/>
+        SYSTEM,
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -82,6 +133,14 @@ namespace MyAdmin.WS_MTraffic {
         
         public System.Data.DataTable GetInfo(string Signature) {
             return base.Channel.GetInfo(Signature);
+        }
+        
+        public string Reg_VNP(string UserName, string IP, string Signature, MyAdmin.WS_MTraffic.ChannelType mChannel) {
+            return base.Channel.Reg_VNP(UserName, IP, Signature, mChannel);
+        }
+        
+        public string DeReg_VNP(string UserName, string IP, string Signature, MyAdmin.WS_MTraffic.ChannelType mChannel) {
+            return base.Channel.DeReg_VNP(UserName, IP, Signature, mChannel);
         }
     }
 }

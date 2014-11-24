@@ -24,14 +24,14 @@
                 MTRAFFIC CMS
             </div>
             <div class="Login">
-                <%if (!MyMTraffic.Member.IsLogined())
+                <%if (!MyMTraffic.Permission.Member.IsLogined())
                   { %>
                 <a href="~/Admin/Ad_Login.aspx" runat="server" id="a_DangNhap">Đăng nhập</a>
                 <%} %>
-                <%if (MyMTraffic.Member.IsLogined())
+                <%if (MyMTraffic.Permission.Member.IsLogined())
                   { %>
                 <a class="XinChao">Chào: <span>
-                    <%= MyMTraffic.Member.LoginName()%></span></a><span class="Space"></span>
+                    <%= MyMTraffic.Permission.Member.LoginName()%></span></a><span class="Space"></span>
                 <asp:LinkButton runat="server" ID="lbtn_Thoat" OnClick="lbtn_Thoat_Click">Thoát</asp:LinkButton>
                 <%} %>
             </div>

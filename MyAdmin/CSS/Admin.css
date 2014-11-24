@@ -885,3 +885,20 @@ select, input, label
     text-align: center;
     padding: 5px;
 }
+.wrapping-link {
+    word-break: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    white-space:pre-line;
+}
+.wrapping-link-inline 
+{
+    word-break: normal;
+    word-wrap: normal;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    white-space:nowrap;
+}

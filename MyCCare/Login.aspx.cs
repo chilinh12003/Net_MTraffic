@@ -5,6 +5,7 @@ using System.Net;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using MyUtility;
 namespace MyCCare
 {
     public partial class Login : System.Web.UI.Page
@@ -13,7 +14,7 @@ namespace MyCCare
         {
             if (!string.IsNullOrEmpty(Login1.GetUserName()))
             {
-                Response.Redirect("~/Admin_CCare/Ad_SubInfo.aspx");
+                Response.Redirect(MyConfig.Domain + "/Admin_CCare/Ad_SubInfo.aspx");
             }
         }
     }

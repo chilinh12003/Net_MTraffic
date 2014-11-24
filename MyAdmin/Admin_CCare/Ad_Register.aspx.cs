@@ -125,10 +125,11 @@ namespace MyAdmin.Admin_CCare
                 CommandCode = mTable_Service.DefaultView[0]["DeregKeyword"].ToString();
                
                 WS_MTraffic.MTrafficSoapClient mClient = new WS_MTraffic.MTrafficSoapClient();
-                Signature = MSISDN + "|CMS|" + DateTime.Now.ToString("yyyyMMddHHmmssfff");
+                Signature = MSISDN + "|CMS|" + DateTime.Now.ToString("yyyyMMddHHmmssfff") + "|" + mTable_Service.DefaultView[0]["PacketName"].ToString() + "|" + mTable_Service.DefaultView[0]["ServiceID"].ToString();
                 Signature = MySecurity.AES.Encrypt(Signature, MySetting.AdminSetting.RegWSKey);
                 System.Net.ServicePointManager.Expect100Continue = false;
-                Result = mClient.Dereg_CMD((int)MyConfig.ChannelType.CSKH, Signature, CommandCode);
+                //Result = mClient.Dereg_CMD((int)MyConfig.ChannelType.CSKH, Signature, CommandCode);
+                Result = mClient.DeReg_VNP(Member.LoginName(), MyCurrent.GetRequestIP, Signature, WS_MTraffic.ChannelType.CSKH);
                 string[] Arr_Result = Result.Split('|');
 
                 ErrorCode = Arr_Result[0];
@@ -190,10 +191,11 @@ namespace MyAdmin.Admin_CCare
                 Result = string.Empty; 
 
                 WS_MTraffic.MTrafficSoapClient mClient = new WS_MTraffic.MTrafficSoapClient();
-                Signature = MSISDN + "|CMS|" + DateTime.Now.ToString("yyyyMMddHHmmssfff");
+                Signature = MSISDN + "|CMS|" + DateTime.Now.ToString("yyyyMMddHHmmssfff") + "|" + mTable_Service.DefaultView[0]["PacketName"].ToString() + "|" + mTable_Service.DefaultView[0]["ServiceID"].ToString();
                 Signature = MySecurity.AES.Encrypt(Signature, MySetting.AdminSetting.RegWSKey);
                 System.Net.ServicePointManager.Expect100Continue = false;
-                Result = mClient.Reg_CMD((int)MyConfig.ChannelType.CSKH, Signature, CommandCode);
+                //Result = mClient.Reg_CMD((int)MyConfig.ChannelType.CSKH, Signature, CommandCode);
+                Result = mClient.Reg_VNP(Member.LoginName(), MyCurrent.GetRequestIP, Signature, WS_MTraffic.ChannelType.CSKH);
                 string[] Arr_Result = Result.Split('|');
 
                 ErrorCode = Arr_Result[0];

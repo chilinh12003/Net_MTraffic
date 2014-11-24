@@ -135,14 +135,16 @@
     <Content Include="CSS\SubInfo.css" />
     <Content Include="packages.config" />
     <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
-    <None Include="Service References\WS_MTraffic\MTraffic.disco" />
+    <None Include="Properties\PublishProfiles\Profile1.pubxml" />
     <None Include="Service References\WS_MTraffic\configuration91.svcinfo" />
     <None Include="Service References\WS_MTraffic\configuration.svcinfo" />
+    <None Include="Service References\WS_MTraffic\MTraffic1.wsdl" />
     <None Include="Service References\WS_MTraffic\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="Error.aspx" />
+    <None Include="Service References\WS_MTraffic\MTraffic1.disco" />
     <Content Include="Templates\Copy of RP_Sub.htm" />
     <Content Include="Templates\RP_Sub.htm" />
     <Content Include="Web.config">
@@ -761,7 +763,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Service References\WS_MTraffic\MTraffic.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -770,13 +771,13 @@
     <WCFMetadataStorage Include="Service References\WS_MTraffic\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MySetting\MySetting.csproj">
-      <Project>{806c8ae7-4e83-4bfb-a76b-a77eb11eb262}</Project>
-      <Name>MySetting</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MyMTraffic\MyMTraffic.csproj">
       <Project>{066e3a46-9fa2-4234-a9b4-34d767e650ea}</Project>
       <Name>MyMTraffic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MySetting\MySetting.csproj">
+      <Project>{806c8ae7-4e83-4bfb-a76b-a77eb11eb262}</Project>
+      <Name>MySetting</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

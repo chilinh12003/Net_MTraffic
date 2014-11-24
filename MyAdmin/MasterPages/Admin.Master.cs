@@ -114,14 +114,14 @@ namespace MyAdmin.MasterPages
 
                 DataTable mTable = mMenuAdmin.Select(8, Member.MemberGroupID().ToString());
 
-                string strFormat_1 = "  <a href='javascript:void(0);' onmouseover='ShowSubMenu(this);' onmouseout='HideSubMenu(this.title);' title='Sub_{0}'> " +
-                                            "<span>{1}</span> " +
-                                        "</a>";
+                string strFormat_1 = "  <a class='wrapping-link-inline' href='javascript:void(0);' onmouseover='ShowSubMenu(this);' onmouseout='HideSubMenu(this.title);' title='Sub_{0}'> " +
+                                           "<span>{1}</span> " +
+                                       "</a>";
 
                 string strFormat_2_Out = "  <div class='SubMenu_Item' id='Sub_{0}' onmouseover='UndoHideSubMenu();' onmouseout='HideSubMenu(this.id);'>";
 
-                string strFormat_2 = "  <a href='{0}'>"+
-	                                        "<span class='Text'>{1}</span>"+
+                string strFormat_2 = "  <a class='wrapping-link-inline' href='{0}'>" +
+                                            "<span class='Text'>{1}</span>" +
                                         "</a>";
 
 
