@@ -20,8 +20,7 @@
         <ul>
             <li><a href='Ad_HistoryRegDereg.aspx' >Lịch sử Đăng ký / Hủy</a></li>
             <li><a href='Ad_HistoryCharge.aspx' >Lịch sử trừ cước</a></li>
-            <li><a href='Ad_HistoryUsing.aspx' >Lịch sử sử dụng</a></li>
-            <li><a href='Ad_HistoryMOMT.aspx' class='select'>Lịch sử MO /MT</a></li>
+            <li><a href='Ad_HistoryMOMT.aspx' class='select wrapping-link-inline'>Lịch sử MO /MT</a></li>
         </ul>
     </div>
     <div class='fillterarea'>
@@ -52,7 +51,7 @@
     <table class='tbl_style'>
         <thead>
             <tr>
-                <th>Thời gian hệ thống nhận MO</th>
+                <th>Thời gian nhận</th>
                 <th>Nội dung MO</th>
                 <th>Trạng thái</th>
                 <th>Cước phí MO</th>
@@ -75,7 +74,7 @@
                     <td align='center'>1546</td>
                     <td align='center'><%#Eval("LogDate") == DBNull.Value ? string.Empty : ((DateTime)Eval("LogDate")).ToString(MyUtility.MyConfig.LongDateFormat)%></td>
                     <td align='center'><%#Eval("MT")%></td>
-                     <td align='center'>TRIEUPHUTT</td>
+                     <td align='center'><%#Eval("ServiceName")%></td>
                     <td align='center'>Đã gửi</td>
                     <td align='center'>0</td>
                     <td align='center'>1546</td>

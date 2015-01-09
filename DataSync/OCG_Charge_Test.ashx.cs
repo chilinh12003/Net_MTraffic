@@ -7,47 +7,42 @@ using MyUtility;
 using System.Data;
 using MyMTraffic.Service;
 using MyMTraffic.Sub;
-
+using MyBase.MyWeb;
 namespace DataSync
 {
     /// <summary>
     /// Summary description for OCG_Charge_Test
     /// </summary>
-    public class OCG_Charge_Test : IHttpHandler
+    public class OCG_Charge_Test : MyASHXBase
     {
 
-        public void ProcessRequest(HttpContext context)
+        public override void WriteHTML()
         {
+
             string XMLRequest = "";
             string XMLResponse = "";
             try
             {
                 //throw new Exception("Loi tu tao day");
-                StreamReader reader = new StreamReader(context.Request.InputStream);
+                StreamReader reader = new StreamReader(Request.InputStream);
                 XMLRequest = reader.ReadToEnd();
                 XMLRequest = XMLRequest.TrimEnd().TrimStart();
 
-                context.Response.ContentType = "text/xml";
+                Response.ContentType = "text/xml";
                 XMLResponse = MyFile.ReadFile(MyFile.GetFullPathFile("~/App_Data/OCG_Charge_Result.xml"));
-                context.Response.Write(XMLResponse);
+                Response.Write(XMLResponse);
             }
             catch (Exception ex)
             {
-                MyUtility.MyLogfile.WriteLogError(ex);
+                mLog.Error(ex);
             }
             finally
             {
-                MyUtility.MyLogfile.WriteLogData("CHAGRE_REQUEST", "REQUEST_XML --> " + XMLRequest);
-                MyUtility.MyLogfile.WriteLogData("CHAGRE_REQUEST", "RESPONSE_XML-- >" + XMLResponse);
+                mLog.Debug("CHAGRE_REQUEST", "REQUEST_XML --> " + XMLRequest);
+                mLog.Debug("CHAGRE_REQUEST", "RESPONSE_XML-- >" + XMLResponse);
             }
         }
 
-        public bool IsReusable
-        {
-            get
-            {
-                return false;
-            }
-        }
+
     }
 }

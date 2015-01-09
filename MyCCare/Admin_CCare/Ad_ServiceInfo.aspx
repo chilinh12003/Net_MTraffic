@@ -34,7 +34,7 @@
         </p>
         <br />
         <h4 class='titlecheck'>Cách sử dụng dịch vụ:</h4>
-        <p>Để đăng ký dịch vụ và có cơ hội tham gia chương trình khuyến mại, khách hàng soạn tin DK gửi 1546 (cước thuê bao: 1.000đ/ngày, miễn phí 7 ngày đầu tiên cho các khách hàng đăng ký dịch vụ lần đầu)</p>
+        <p>Để đăng ký dịch vụ và có cơ hội tham gia chương trình khuyến mại, khách hàng soạn tin DK gửi 1546 (cước thuê bao: 1.000đ/ngày, miễn phí ngày đầu tiên cho các khách hàng đăng ký dịch vụ lần đầu)</p>
         <br />
         <h4 class='titlecheck'>Giá cước:</h4>
         <p>

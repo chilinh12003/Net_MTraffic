@@ -158,7 +158,6 @@ namespace MySetting
                 }
                 catch (Exception ex)
                 {
-                    MyLogfile.WriteLogError(ex);
                     return string.Empty;
                 }
 
@@ -171,7 +170,79 @@ namespace MySetting
                 }
                 catch (Exception ex)
                 {
-                    MyLogfile.WriteLogError(ex);
+                    
+                }
+
+            }
+        }
+
+        public static string BeginDate
+        {
+            get
+            {
+                try
+                {
+                    if (MyCurrent.CurrentPage.Session["BeginDate"] == null ||
+                        string.IsNullOrEmpty(MyCurrent.CurrentPage.Session["BeginDate"].ToString()))
+                    {
+                        return MyConfig.StartDayOfMonth.ToString(MyConfig.ShortDateFormat);
+                    }
+                    else
+                    {
+                        return MyCurrent.CurrentPage.Session["BeginDate"].ToString();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    
+                    return MyConfig.StartDayOfMonth.ToString(MyConfig.ShortDateFormat);
+                }
+
+            }
+            set
+            {
+                try
+                {
+                    MyCurrent.CurrentPage.Session["BeginDate"] = value;
+                }
+                catch (Exception ex)
+                {
+                    
+                }
+
+            }
+        }
+
+        public static string EndDate
+        {
+            get
+            {
+                try
+                {
+                    if (MyCurrent.CurrentPage.Session["EndDate"] == null ||
+                        string.IsNullOrEmpty(MyCurrent.CurrentPage.Session["EndDate"].ToString()))
+                    {
+                        return DateTime.Now.ToString(MyConfig.ShortDateFormat);
+                    }
+                    else
+                    {
+                        return MyCurrent.CurrentPage.Session["EndDate"].ToString();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return DateTime.Now.ToString(MyConfig.ShortDateFormat);
+                }
+
+            }
+            set
+            {
+                try
+                {
+                    MyCurrent.CurrentPage.Session["EndDate"] = value;
+                }
+                catch (Exception ex)
+                {
                 }
 
             }

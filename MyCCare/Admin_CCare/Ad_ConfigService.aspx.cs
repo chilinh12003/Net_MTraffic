@@ -9,10 +9,10 @@ using MyUtility;
 using MyMTraffic.Permission;
 using MyMTraffic.Service;
 using MyMTraffic.Sub;
-
+using MyBase.MyWeb;
 namespace MyCCare.Admin_CCare
 {
-    public partial class Ad_ConfigService : System.Web.UI.Page
+    public partial class Ad_ConfigService : MyASPXBase
     {
         public int PageIndex = 1;
         Subscriber mSub = new Subscriber();
@@ -38,7 +38,7 @@ namespace MyCCare.Admin_CCare
             }
             catch (Exception ex)
             {
-                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.LoadDataError, "Chilinh");
+                mLog.Error(MyNotice.AdminError.LoadDataError, true, ex);
             }
         }
         protected void btn_Search_Click(object sender, EventArgs e)
@@ -78,7 +78,8 @@ namespace MyCCare.Admin_CCare
             }
             catch (Exception ex)
             {
-                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.SeachError, "Chilinh");
+                mLog.Error(MyNotice.AdminError.SeachError, true, ex);
+                
             }
         }
 
@@ -141,7 +142,7 @@ namespace MyCCare.Admin_CCare
             }
             catch (Exception ex)
             {
-                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.SeachError, "Chilinh");
+                mLog.Error(MyNotice.AdminError.SeachError, true, ex);
             }
         }
     }

@@ -52,6 +52,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MyBase">
+      <HintPath>..\..\MyLibrary\MyBase\bin\Debug\MyBase.dll</HintPath>
+    </Reference>
+    <Reference Include="MyConnect, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MyLibrary\MyConnect\bin\Debug\MyConnect.dll</HintPath>
+    </Reference>
     <Reference Include="MyUtility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\MyLibrary\MyUtility\bin\Debug\MyUtility.dll</HintPath>
@@ -82,6 +89,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\DataSyncVNP.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -93,6 +101,9 @@
       <DependentUpon>OCG_Charge_Test.ashx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test.ashx.cs">
+      <DependentUpon>Test.ashx</DependentUpon>
+    </Compile>
     <Compile Include="XML_Charge_Test.ashx.cs">
       <DependentUpon>XML_Charge_Test.ashx</DependentUpon>
     </Compile>
@@ -108,6 +119,9 @@
       <Project>{066e3a46-9fa2-4234-a9b4-34d767e650ea}</Project>
       <Name>MyMTraffic</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Test.ashx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

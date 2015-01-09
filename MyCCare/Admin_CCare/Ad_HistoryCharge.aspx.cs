@@ -5,14 +5,14 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
-using MyUtility;
+using MyUtility;using MyBase.MyWeb;
 using MyMTraffic;
 using MyMTraffic.Service;
 using MyMTraffic.Sub;
 
 namespace MyCCare.Admin_CCare
 {
-    public partial class Ad_HistoryCharge : System.Web.UI.Page
+    public partial class Ad_HistoryCharge : MyASPXBase
     {
         public int PageIndex = 1;
         ChargeLog mChargeLog = new ChargeLog();
@@ -53,17 +53,21 @@ namespace MyCCare.Admin_CCare
                     ViewState["SortBy"] = string.Empty;
                     tbx_MSISDN.Value = MySetting.AdminSetting.MSISDN;
 
-                    tbx_FromDate.Value = MyConfig.StartDayOfMonth.ToString(MyConfig.ShortDateFormat);
-                    tbx_ToDate.Value = DateTime.Now.ToString(MyConfig.ShortDateFormat);
+                    tbx_FromDate.Value = MySetting.AdminSetting.BeginDate;
+                    tbx_ToDate.Value = MySetting.AdminSetting.EndDate;
                 }
-
+                else
+                {
+                    MySetting.AdminSetting.BeginDate = tbx_FromDate.Value;
+                    MySetting.AdminSetting.EndDate = tbx_ToDate.Value;
+                }
                 Admin_Paging1.rpt_Data = rpt_Data;
                 Admin_Paging1.GetData_Callback_Change += new MyAdmin.Admin_Control.Admin_Paging.GetData_Callback(Admin_Paging1_GetData_Callback_Change);
                 Admin_Paging1.GetTotalPage_Callback_Change += new MyAdmin.Admin_Control.Admin_Paging.GetTotalPage_Callback(Admin_Paging1_GetTotalPage_Callback_Change);
             }
             catch (Exception ex)
             {
-                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.LoadDataError, "Chilinh");
+                mLog.Error(MyNotice.AdminError.LoadDataError, true, ex);
             }
         }
 
@@ -96,7 +100,7 @@ namespace MyCCare.Admin_CCare
                     int.TryParse(sel_Service.Value, out ServiceID);
                 }
 
-                return mChargeLog.TotalRow_SelectType(SearchType, SearchContent, PID,ServiceID, 0, 0, 0, BeginDate, EndDate, 3);
+                return mChargeLog.TotalRow_SelectType(SearchType, SearchContent, PID,ServiceID, 0, (int)ChargeLog.ChargeStatus.ChargeSuccess, 0, BeginDate, EndDate, 3);
             }
             catch (Exception ex)
             {
@@ -133,7 +137,7 @@ namespace MyCCare.Admin_CCare
                 {
                     int.TryParse(sel_Service.Value, out ServiceID);
                 }
-                DataTable mTable = mChargeLog.Search_SelectType(SearchType, Admin_Paging1.mPaging.BeginRow, Admin_Paging1.mPaging.EndRow, SearchContent, PID,ServiceID, 0, 0, 0, BeginDate, EndDate, 3, SortBy);
+                DataTable mTable = mChargeLog.Search_SelectType(SearchType, Admin_Paging1.mPaging.BeginRow, Admin_Paging1.mPaging.EndRow, SearchContent, PID, ServiceID, 0, (int)ChargeLog.ChargeStatus.ChargeSuccess,0, BeginDate, EndDate, 3, SortBy);
                 DataColumn mCol_1 = new DataColumn("ActionName", typeof(string));
                 mTable.Columns.Add(mCol_1);
 
@@ -184,7 +188,7 @@ namespace MyCCare.Admin_CCare
             }
             catch (Exception ex)
             {
-                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.SeachError, "Chilinh");
+                mLog.Error(MyNotice.AdminError.SeachError, true, ex);
             }
         }
 

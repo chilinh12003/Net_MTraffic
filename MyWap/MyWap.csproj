@@ -55,8 +55,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\MyLibrary\MyBase\bin\Debug\MyBase.dll</HintPath>
     </Reference>
-    <Reference Include="MyUtility">
-      <HintPath>..\..\..\DLL Libraries\Source\MyUtility\bin\Debug\MyUtility.dll</HintPath>
+    <Reference Include="MyUtility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MyLibrary\MyUtility\bin\Debug\MyUtility.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -78,9 +79,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\web_browsers_patch.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="App_Data\web_browsers_patch.xml" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\banner.gif" />
@@ -102,9 +101,7 @@
     <Content Include="Reg\Accept.ashx" />
     <Content Include="Reg\Deny.ashx" />
     <Content Include="Error.ashx" />
-    <Content Include="App_Data\wurfl.zip">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="App_Data\wurfl.zip" />
     <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
     <None Include="Properties\PublishProfiles\Profile1.pubxml" />
     <None Include="Service References\WS_MTraffic\MTraffic.disco" />

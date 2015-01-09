@@ -15,6 +15,7 @@ namespace MyLoad_Wap.LoadService
 {
     public class MyRegister : MyLoadBase
     {
+
         Service mService = new Service();
         Subscriber mSub = new Subscriber();
         sms_receive_queue mQuere = new sms_receive_queue(MySetting.AdminSetting.MySQLConnection_Gateway);
@@ -55,7 +56,7 @@ namespace MyLoad_Wap.LoadService
                 }
                 catch (Exception ex)
                 {
-                    MyLogfile.WriteLogError(ex);
+                    mLog.Error(ex);
                 }
 
                 if (string.IsNullOrEmpty(Para_Encode))
@@ -123,7 +124,7 @@ namespace MyLoad_Wap.LoadService
             }
             finally
             {
-                MyLogfile.WriteLogData("Register", "CommandCode:" + CommandCode + "|MSISDN:" + MSISDN + "|Signature:" + Signature + "|Result:" + Result);
+                mLog.Debug("Register", "CommandCode:" + CommandCode + "|MSISDN:" + MSISDN + "|Signature:" + Signature + "|Result:" + Result);
             }
         }
     }

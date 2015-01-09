@@ -5,36 +5,20 @@ using System.Reflection;
 using System.IO;
 using MyUtility;
 using System.Data;
-using MyVOVTraffic.Service;
-using MyVOVTraffic.Sub;
+using MyBase.MyWeb;
+using MyMTraffic.Service;
+using MyMTraffic;
+
 namespace DataSync
 {
     /// <summary>
     /// Summary description for VNPRequest
     /// </summary>
-    public class VNPRequest : IHttpHandler
+    public class VNPRequest : MyASHXBase
     {
-        /// <summary>
-        /// ID của dịch vụ Giao thông theo tuyến đường
-        /// </summary>
-        public static int StreetServiceID
-        {
-            get
-            {
-                string ConfigValue = MyConfig.GetKeyInConfigFile("StreetServiceID");
+       
 
-                if (string.IsNullOrEmpty(ConfigValue))
-                    return 0;
-                else
-                    return int.Parse(ConfigValue);
-            }
-        }
-
-        /// <summary>
-        /// Mã của tên đường nếu dịch vụ là Giao thông theo tuyến
-        /// </summary>
-        private int StreetID = 0;
-
+    
         /// <summary>
         /// Chứa thông tin do VNP chuyển sang
         /// </summary>
@@ -100,14 +84,14 @@ namespace DataSync
             }
             catch (Exception ex)
             {
-                MyLogfile.WriteLogError(ex);
+                 mLog.Error(ex);
                 mResult_Response = DataSyncVNP.Result.SystemError;
             }
             finally
             {
                 string Response_XML = GetResponse(mResult_Response);
-                MyLogfile.WriteLogData("VNP_REQUEST","REQUEST_XML --> " +XML);
-                MyLogfile.WriteLogData("VNP_REQUEST", "RESPONSE_XML-- >" + Response_XML);
+                mLog.Debug("VNP_REQUEST","REQUEST_XML --> " +XML);
+                mLog.Debug("VNP_REQUEST", "RESPONSE_XML-- >" + Response_XML);
                 context.Response.Write(Response_XML);
             }
         }       
@@ -366,35 +350,7 @@ namespace DataSync
             }
         }
 
-        /// <summary>
-        /// Xóa tên đường đã đăng ký
-        /// </summary>
-        /// <returns></returns>
-        private bool DeleteRegisterStreet()
-        {
-            try
-            {
-                RegisterStreet mRegStreet = new RegisterStreet();
-
-                int PID = MyPID.GetPIDByPhoneNumber(mDataSyncVNPObject.MSISDN);
-                DataSet mSet = new DataSet("Parent");
-                DataTable mTable = new DataTable("Child");
-                DataRow mRow = mTable.NewRow();
-
-                mRow["PID"] = PID;
-                mRow["StreetID"] = StreetID;
-                mRow["MSISDN"] = mDataSyncVNPObject.MSISDN;
-                mTable.Rows.Add(mRow);
-
-                mSet.Tables.Add(mTable);
-
-                return mRegStreet.Delete(3, mSet.GetXml());
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
+      
 
         /// <summary>
         /// Huy đăng ký dịch vụ

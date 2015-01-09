@@ -16,6 +16,12 @@ namespace DataSync
         {
             context.Response.ContentType = "text/xml";
             context.Response.Write(Post());
+
+            context.Response.ContentType = "text/xml";
+            StreamReader reader = new StreamReader(context.Request.InputStream);
+            string XML = reader.ReadToEnd();
+            XML = XML.TrimEnd().TrimStart();
+            
         }
 
         private string Post()
@@ -26,7 +32,7 @@ namespace DataSync
             try
             {
                 string XML = MyUtility.MyFile.ReadFile(MyUtility.MyFile.GetFullPathFile("~/App_Data/RequestFromVNP.xml"));
-                string uri = "http://localhost:8080/MTraffic_DataSync/VNPRequest.ashx";
+                string uri = "http://localhost:8080/ModuleSync.ashx";
                 req = WebRequest.Create(uri);
                 //req.Proxy = WebProxy.GetDefaultProxy(); // Enable if using proxy
                 req.Method = "POST";        // Post method

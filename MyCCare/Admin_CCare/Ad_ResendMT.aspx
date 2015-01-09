@@ -63,7 +63,7 @@
                     <td align='center'><%#Eval("LogDate") == DBNull.Value ? string.Empty : ((DateTime)Eval("LogDate")).ToString(MyUtility.MyConfig.LongDateFormat)%></td>
                     <td align='center'><%#Eval("MT")%></td>
                     <td align='center'>Đã gửi</td>
-                    <td align='center'><asp:Button CssClass="resend" runat="server" ID="btn_Resend" Text="Gửi lại" CommandArgument='<%# Eval("LogID") %>' OnClick="btn_Resend_Click" OnClientClick="return confirm('Bạn muộn gửi lại MT cho số thuê bao này?');"></asp:Button></td>
+                    <td align='center'><asp:Button CssClass="resend"  Enabled="<%#MyCCare.Login1.IsAdmin() %>" runat="server" ID="btn_Resend" Text="Gửi lại" CommandArgument='<%# Eval("LogID") %>' OnClick="btn_Resend_Click" OnClientClick="return confirm('Bạn muộn gửi lại MT cho số thuê bao này?');"></asp:Button></td>
                 </tr>
             </ItemTemplate>
         </asp:Repeater>

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+using MyBase.MyWeb;
 namespace MyCCare.Admin_CCare
 {
-    public partial class Ad_ServiceInfo : System.Web.UI.Page
+    public partial class Ad_ServiceInfo : MyASPXBase
     {
         protected void Page_Load(object sender, EventArgs e)
         {

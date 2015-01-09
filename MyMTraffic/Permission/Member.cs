@@ -126,7 +126,6 @@ namespace MyMTraffic.Permission
             }
             catch (Exception ex)
             {
-                MyLogfile.WriteLogError(ex);
                 return false;
             }
         }
@@ -206,7 +205,6 @@ namespace MyMTraffic.Permission
             }
             catch (Exception ex)
             {
-                MyLogfile.WriteLogError(ex);
                 return 0;
             }
         }

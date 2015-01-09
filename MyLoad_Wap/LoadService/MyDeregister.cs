@@ -55,7 +55,7 @@ namespace MyLoad_Wap.LoadService
                 }
                 catch (Exception ex)
                 {
-                    MyLogfile.WriteLogError(ex);
+                    mLog.Error(ex);
                 }
 
                 if (string.IsNullOrEmpty(Para_Encode))
@@ -122,7 +122,7 @@ namespace MyLoad_Wap.LoadService
             }
             finally
             {
-                MyLogfile.WriteLogData("Deregister", "CommandCode:" + CommandCode + "|MSISDN:" + MSISDN + "|Signature:" + Signature + "|Result:" + Result);
+                mLog.Debug("Deregister", "CommandCode:" + CommandCode + "|MSISDN:" + MSISDN + "|Signature:" + Signature + "|Result:" + Result);
             }
         }
     }

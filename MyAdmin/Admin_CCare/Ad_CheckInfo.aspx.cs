@@ -364,7 +364,7 @@ namespace MyAdmin.Admin_CCare
                 }
                 PageIndex = (Admin_Paging1.mPaging.CurrentPageIndex - 1) * Admin_Paging1.mPaging.PageSize + 1;
                 int PID = MyPID.GetPIDByPhoneNumber(MSISDN, MySetting.AdminSetting.MaxPID);
-                return mMOLog.Search_MOMT(SearchType, Admin_Paging1.mPaging.BeginRow, Admin_Paging1.mPaging.EndRow, MSISDN, PID, ServiceID, BeginDate, EndDate, SortBy);
+                return mMOLog.Search_MOMT(SearchType, Admin_Paging1.mPaging.BeginRow, Admin_Paging1.mPaging.EndRow, MSISDN, PID, ServiceID, BeginDate, EndDate, " LogDate DESC ");
             }
             catch (Exception ex)
             {

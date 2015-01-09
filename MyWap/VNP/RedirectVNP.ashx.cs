@@ -54,7 +54,7 @@ namespace MyWap.VNP
             }
             catch (Exception ex)
             {
-                MyLogfile.WriteLogError("_Error", ex, false, MyNotice.EndUserError.LoadDataError, "Chilinh");
+                mLog.Error(ex);
                 Write(MyNotice.EndUserError.LoadDataError);
             }
             finally
@@ -78,14 +78,21 @@ namespace MyWap.VNP
                     return string.Empty;
                 }
 
+                mTable.DefaultView.RowFilter = "ServiceID = " + sid.ToString();
+                if (mTable.DefaultView.Count < 1)
+                {
+                    MyCurrent.CurrentPage.Response.Redirect(MySetting.WapSetting.NotifyURL + "?nid=" + ((int)MyNotify.NotifyType.InvalidService).ToString(), false);
+                    return string.Empty;
+                }
+
                 if(aid == 1)
                 {
-                    MyCurrent.CurrentPage.Response.Redirect(BuildLink_Reg(sid, mTable.Rows[0]["PacketName"].ToString()),false);
+                    MyCurrent.CurrentPage.Response.Redirect(BuildLink_Reg(sid, mTable.DefaultView[0]["PacketName"].ToString()), false);
                     return string.Empty;
                 }
                 else if(aid == 2)
                 {
-                    MyCurrent.CurrentPage.Response.Redirect(BuildLink_DeReg(sid, mTable.Rows[0]["PacketName"].ToString()), false);
+                    MyCurrent.CurrentPage.Response.Redirect(BuildLink_DeReg(sid, mTable.DefaultView[0]["PacketName"].ToString()), false);
                     return string.Empty;
                 }
                 else
@@ -206,7 +213,7 @@ namespace MyWap.VNP
             }
             finally
             {
-                MyLogfile.WriteLogData("Redirect VNP", "URL:" + URL_Encode);
+                mLog.Debug("Redirect VNP", "URL:" + URL_Encode);
             }
         }
 
@@ -254,7 +261,7 @@ namespace MyWap.VNP
             }
             finally
             {
-                MyLogfile.WriteLogData("Redirect VNP", "URL:" + URL_Encode);
+                mLog.Debug("Redirect VNP", "URL:" + URL_Encode);
             }
         }
         public String GetMD5Hash(String input)

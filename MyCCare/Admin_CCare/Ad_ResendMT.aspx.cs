@@ -5,14 +5,14 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
-using MyUtility;
+using MyUtility;using MyBase.MyWeb;
 using MyMTraffic;
 using MyMTraffic.Service;
 using MyMTraffic.Sub;
 using MyMTraffic.Gateway;
 namespace MyCCare.Admin_CCare
 {
-    public partial class Ad_ResendMT : System.Web.UI.Page
+    public partial class Ad_ResendMT : MyASPXBase
     {
         public int PageIndex = 1;
         ActionLog mActionLog = new ActionLog();
@@ -55,8 +55,13 @@ namespace MyCCare.Admin_CCare
                     ViewState["SortBy"] = string.Empty;
                     tbx_MSISDN.Value = MySetting.AdminSetting.MSISDN;
 
-                    tbx_FromDate.Value = MyConfig.StartDayOfMonth.ToString(MyConfig.ShortDateFormat);
-                    tbx_ToDate.Value = DateTime.Now.ToString(MyConfig.ShortDateFormat);
+                    tbx_FromDate.Value = MySetting.AdminSetting.BeginDate;
+                    tbx_ToDate.Value = MySetting.AdminSetting.EndDate;
+                }
+                else
+                {
+                    MySetting.AdminSetting.BeginDate = tbx_FromDate.Value;
+                    MySetting.AdminSetting.EndDate = tbx_ToDate.Value;
                 }
 
                 Admin_Paging1.rpt_Data = rpt_Data;
@@ -65,7 +70,7 @@ namespace MyCCare.Admin_CCare
             }
             catch (Exception ex)
             {
-                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.LoadDataError, "Chilinh");
+                mLog.Error(MyNotice.AdminError.LoadDataError, true, ex);
             }
         }
 
@@ -186,7 +191,7 @@ namespace MyCCare.Admin_CCare
             }
             catch (Exception ex)
             {
-                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.SeachError, "Chilinh");
+                mLog.Error(MyNotice.AdminError.SeachError, true, ex);
             }
         }
 
@@ -245,7 +250,7 @@ namespace MyCCare.Admin_CCare
             }
             catch (Exception ex)
             {
-                MyLogfile.WriteLogError(ex, true, MyNotice.AdminError.SeachError, "Chilinh");
+                mLog.Error(MyNotice.AdminError.SeachError, true, ex);
             }
         }
         private void UpdateMOLog(string RequestID, string MSISDN, DefineMT.MTType mMTType, int ServiceID, string LogContent, string MT)
@@ -293,7 +298,7 @@ namespace MyCCare.Admin_CCare
             }
             finally
             {
-                MyLogfile.WriteLogData("_Resend_MT", "UserName:" + Login1.GetUserName() + "|USER_ID:" + USER_ID + "|COMMAND_CODE:" + COMMAND_CODE + "|REQUEST_ID:" + REQUEST_ID + "|INFO:" + MTContent + "|Result:" + Result.ToString());
+                mLog.Debug("_Resend_MT", "UserName:" + Login1.GetUserName() + "|USER_ID:" + USER_ID + "|COMMAND_CODE:" + COMMAND_CODE + "|REQUEST_ID:" + REQUEST_ID + "|INFO:" + MTContent + "|Result:" + Result.ToString());
             }
         }
 

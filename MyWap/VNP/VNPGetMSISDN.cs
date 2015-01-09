@@ -9,6 +9,7 @@ namespace MyWap.VNP
     public class VNPGetMSISDN
     {
 
+        MyLog mLog = new MyLog(typeof(VNPGetMSISDN));
 
         public static string getRemoteAddr()
         {
@@ -109,7 +110,6 @@ namespace MyWap.VNP
             string MSISDN_Return = string.Empty;
             try
             {
-
                 //Nhận thực qua MIN
                 string remoteip = getRemoteAddr();
                 string msisdn = MyCurrent.CurrentPage.Request.Headers["msisdn"];
@@ -186,7 +186,7 @@ namespace MyWap.VNP
             }
             finally
             {
-                MyLogfile.WriteLogData("GET_MSISDN_VNP", "MSISDN_Return:" + MSISDN_Return + " || GetFrom:" + GetFrom);
+                mLog.Debug("GET_MSISDN_VNP", "MSISDN_Return:" + MSISDN_Return + " || GetFrom:" + GetFrom);
             }
         }      
 
@@ -197,32 +197,32 @@ namespace MyWap.VNP
             string MSISDN_Return = string.Empty;
             try
             {
-                URL = MySetting.WapSetting.Charging_URLGetMSISDN_VNP + "?msisdn=" + msisdn + "&xipaddress=" + xipaddress + "&xforwarded=" + xforwarded + "&xwapmsisdn=" + xwapmsisdn + "&userip=" + userip + "&remoteip=" + remoteip + "&service=" + service;
+                //URL = MySetting.WapSetting.Charging_URLGetMSISDN_VNP + "?msisdn=" + msisdn + "&xipaddress=" + xipaddress + "&xforwarded=" + xforwarded + "&xwapmsisdn=" + xwapmsisdn + "&userip=" + userip + "&remoteip=" + remoteip + "&service=" + service;
 
-                Response = MyFile.ReadContentFromURL(URL);
+                //Response = MyFile.ReadContentFromURL(URL);
 
-                if (string.IsNullOrEmpty(Response))
-                    MSISDN_Return = string.Empty;
-                else
-                {
-                    string[] arr = Response.Split('|');
-                    if (arr.Length > 2)
-                        MSISDN_Return = arr[1];
-                    MyConfig.Telco mTelco = MyConfig.Telco.Nothing;
-                    MyCheck.CheckPhoneNumber(ref MSISDN_Return, ref mTelco, "84");
-                    if (mTelco != MyConfig.Telco.Vinaphone)
-                        MSISDN_Return = string.Empty;
-                }
+                //if (string.IsNullOrEmpty(Response))
+                //    MSISDN_Return = string.Empty;
+                //else
+                //{
+                //    string[] arr = Response.Split('|');
+                //    if (arr.Length > 2)
+                //        MSISDN_Return = arr[1];
+                //    MyConfig.Telco mTelco = MyConfig.Telco.Nothing;
+                //    MyCheck.CheckPhoneNumber(ref MSISDN_Return, ref mTelco, "84");
+                //    if (mTelco != MyConfig.Telco.Vinaphone)
+                //        MSISDN_Return = string.Empty;
+                //}
 
 
             }
             catch (Exception ex)
             {
-                MyLogfile.WriteLogError("Error_MIN_VNP", ex);
+                mLog.Error(ex);
             }
             finally
             {
-                MyLogfile.WriteLogData("GET_MSISDN_VNP", "URL_GET:" + URL + " || Response:" + Response + " || MSISDN_Return:" + MSISDN_Return + " || GetFrom:MIN ");
+                mLog.Debug("GET_MSISDN_VNP", "URL_GET:" + URL + " || Response:" + Response + " || MSISDN_Return:" + MSISDN_Return + " || GetFrom:MIN ");
             }
             return MSISDN_Return;
         }

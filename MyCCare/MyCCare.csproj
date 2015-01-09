@@ -40,6 +40,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MyBase">
+      <HintPath>..\..\MyLibrary\MyBase\bin\Debug\MyBase.dll</HintPath>
+    </Reference>
     <Reference Include="MyUtility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\MyLibrary\MyUtility\bin\Debug\MyUtility.dll</HintPath>
@@ -71,7 +74,6 @@
     <Content Include="Admin_CCare\Ad_HistoryCharge.aspx" />
     <Content Include="Admin_CCare\Ad_HistoryMOMT.aspx" />
     <Content Include="Admin_CCare\Ad_HistoryRegDereg.aspx" />
-    <Content Include="Admin_CCare\Ad_HistoryUsing.aspx" />
     <Content Include="Admin_CCare\Ad_RegDereg.aspx" />
     <Content Include="Admin_CCare\Ad_ResendMT.aspx" />
     <Content Include="Admin_CCare\Ad_ServiceInfo.aspx" />
@@ -175,6 +177,9 @@
     <Content Include="Templates\GUI - Tra cứu sử dụng dịch vụ - Tra cứu mã dự thưởng - Tuan.html" />
     <Content Include="Templates\GUI - Tra cứu sử dụng dịch vụ - Tra cứu mã dự thưởng.html" />
     <Content Include="Templates\GUI - Tra cứu thuê bao.html" />
+    <Content Include="u\FileMau.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -205,13 +210,6 @@
     </Compile>
     <Compile Include="Admin_CCare\Ad_HistoryRegDereg.aspx.designer.cs">
       <DependentUpon>Ad_HistoryRegDereg.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin_CCare\Ad_HistoryUsing.aspx.cs">
-      <DependentUpon>Ad_HistoryUsing.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin_CCare\Ad_HistoryUsing.aspx.designer.cs">
-      <DependentUpon>Ad_HistoryUsing.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin_CCare\Ad_RegDereg.aspx.cs">
       <DependentUpon>Ad_RegDereg.aspx</DependentUpon>
@@ -308,6 +306,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\WS_MTraffic\" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

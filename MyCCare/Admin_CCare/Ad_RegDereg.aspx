@@ -48,10 +48,11 @@
                         <td>MTraffic</td>
                         <td><%#Eval("ServiceName") %></td>
                         <td width='100px'>
-                            <asp:LinkButton runat="server" CssClass="btnintbl" CommandArgument='<%#Eval("ServiceID")%>'  ID="lbtn_Dereg"  Text="Hủy" OnClick="tbx_Dereg_Click" OnClientClick='<%# "return ConfirmDereg(\""+Eval("MSISDN")+"\",\""+Eval("ServiceName")+"\");"%>'><span class='iconhuy'>Hủy</span></asp:LinkButton>
+                            
+                            <asp:LinkButton runat="server" Enabled="<%#MyCCare.Login1.IsAdmin() %>"  CssClass="btnintbl" CommandArgument='<%#Eval("ServiceID")%>'  ID="lbtn_Dereg"  Text="Hủy" OnClick="tbx_Dereg_Click" OnClientClick='<%# "return ConfirmDereg(\""+Eval("MSISDN")+"\",\""+Eval("ServiceName")+"\");"%>'><span class='iconhuy'>Hủy</span></asp:LinkButton>
                         </td>
                         <td width='100px'>
-                            <asp:LinkButton runat="server" CssClass="btnintbl" CommandArgument='<%#Eval("ServiceID")%>' ID="lbtn_Reset" Text="Reset"><span class='iconreset'>Reset</span></asp:LinkButton>
+                            <asp:LinkButton runat="server" Enabled="<%#MyCCare.Login1.IsAdmin() %>" CssClass="btnintbl" CommandArgument='<%#Eval("ServiceID")%>' ID="lbtn_Reset" Text="Reset"><span class='iconreset'>Reset</span></asp:LinkButton>
                         </td>
                     </tr>
                 </ItemTemplate>
@@ -62,7 +63,7 @@
                          <td>MTraffic</td>
                         <td><%#Eval("ServiceName") %></td>
                         <td colspan='2'>
-                            <asp:LinkButton runat="server"  CssClass="btnintbl" CommandArgument='<%#Eval("ServiceID")%>' ID="lbtn_Reg" Text="Đăng ký" OnClick="tbx_Reg_Click" OnClientClick='<%# "return ConfirmReg(\""+Eval("MSISDN")+"\",\""+Eval("ServiceName")+"\");"%>'><span class='icondk'>Đăng ký</span></asp:LinkButton>
+                            <asp:LinkButton runat="server" Enabled="<%#MyCCare.Login1.IsAdmin() %>"  CssClass="btnintbl" CommandArgument='<%#Eval("ServiceID")%>' ID="lbtn_Reg" Text="Đăng ký" OnClick="tbx_Reg_Click" OnClientClick='<%# "return ConfirmReg(\""+Eval("MSISDN")+"\",\""+Eval("ServiceName")+"\");"%>'><span class='icondk'>Đăng ký</span></asp:LinkButton>
 
                         </td>
                     </tr>
@@ -72,6 +73,18 @@
     </table>
 
     <uc1:Admin_Paging ID="Admin_Paging1" runat="server" ShowPageSize="false" />
+    <h4 class='mb10'>Hủy theo file</h4>
+				<table>
+					<tr>
+						<td>Gói cước:</td>
+						<td>  <select style='width: 150px' class="dropdownlist" runat="server" id="sel_Service">
+                        <option>-- Chọn gói cước --</option>
+                    </select></td>
+						<td align='right' width='180'>Chọn file (File mẫu <a href="../u/FileMau.txt">FileMau.txt</a>):</td>
+						<td> <input type="file" runat="server" id="file_UploadText" /></td>
+                        <td><asp:LinkButton runat="server"  CssClass="btnintbl" ID="lbtn_DeregFile"  Text="Hủy" OnClick="lbtn_DeregFile_Click" OnClientClick='<%# "return ConfirmDereg_File();"%>'><span class='iconhuy'>Hủy</span></asp:LinkButton></td>
+					</tr>
+				</table>
     <script language="javascript" type="text/javascript">
         function ConfirmDereg(MSISDN, ServiceName) {
             debugger;

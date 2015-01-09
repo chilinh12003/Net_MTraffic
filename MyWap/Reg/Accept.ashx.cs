@@ -45,7 +45,7 @@ namespace MyWap.Reg
             }
             catch (Exception ex)
             {
-                MyLogfile.WriteLogError("_Error", ex, false, MyNotice.EndUserError.LoadDataError, "Chilinh");
+                mLog.Error(ex);
                 Write(MyNotice.EndUserError.LoadDataError);
             }
 
@@ -185,12 +185,12 @@ namespace MyWap.Reg
             catch (Exception ex)
             {
                 ErrorDesc = "Xin lỗi,hệ thống đang quá tải, xin vui lòng thử lại sau ít phút.";
-                MyLogfile.WriteLogError("_Error", ex, false, MyNotice.EndUserError.LoadDataError, "Chilinh");
+                mLog.Error(ex);
                 Write(MyNotice.EndUserError.LoadDataError);
             }
             finally
             {
-                MyLogfile.WriteLogData("REGISTER", "REGISTER INFO:Keyword:" + Keyword + "|MSISDN:" + MSISDN + "|ErrorCode:" + ErrorCode + "|ErrorDesc:" + ErrorDesc);
+                mLog.Debug("REGISTER", "REGISTER INFO:Keyword:" + Keyword + "|MSISDN:" + MSISDN + "|ErrorCode:" + ErrorCode + "|ErrorDesc:" + ErrorDesc);
             }
 
             MyNotify mNote_1 = new MyNotify(ErrorDesc);
